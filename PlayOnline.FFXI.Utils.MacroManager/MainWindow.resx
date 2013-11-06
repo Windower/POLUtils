@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="mnuTreeContext.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="mnuTreeClear.Text" xml:space="preserve">
+    <value>&amp;Clear</value>
+  </data>
+  <data name="mnuTreeDelete.Text" xml:space="preserve">
+    <value>&amp;Delete</value>
+  </data>
+  <data name="mnuTreeRename.Text" xml:space="preserve">
+    <value>&amp;Rename</value>
+  </data>
+  <data name="mnuTreeSave.Text" xml:space="preserve">
+    <value>&amp;Save Changes</value>
+  </data>
+  <data name="mnuTreeSep.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="mnuTreeCollapse.Text" xml:space="preserve">
+    <value>Co&amp;llapse</value>
+  </data>
+  <data name="mnuTreeExpand.Text" xml:space="preserve">
+    <value>&amp;Expand</value>
+  </data>
+  <data name="mnuTreeExpandAll.Text" xml:space="preserve">
+    <value>E&amp;xpand All</value>
+  </data>
+  <data name="mnuTreeSep2.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="mnuTreeSep2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mnuTreeNewFolder.Text" xml:space="preserve">
+    <value>&amp;Folder</value>
+  </data>
+  <data name="mnuTreeNewMacro.Text" xml:space="preserve">
+    <value>&amp;Macro</value>
+  </data>
+  <data name="mnuTreeNew.Text" xml:space="preserve">
+    <value>&amp;New</value>
+  </data>
+  <data name="mnuTreeNew.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tvMacroTree.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tvMacroTree.ImageIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <metadata name="ilBrowserIcons.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>151, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ilBrowserIcons.ImageSize" type="System.Drawing.Size, System.Drawing">
+    <value>16, 16</value>
+  </data>
+  <data name="tvMacroTree.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tvMacroTree.SelectedImageIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tvMacroTree.Size" type="System.Drawing.Size, System.Drawing">
+    <value>394, 412</value>
+  </data>
+  <data name="tvMacroTree.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tvMacroTree.Name" xml:space="preserve">
+    <value>tvMacroTree</value>
+  </data>
+  <data name="&gt;&gt;tvMacroTree.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvMacroTree.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tvMacroTree.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="grpMacroCommands.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <metadata name="mnuTextContext.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>275, 17</value>
+  </metadata>
+  <data name="mnuTextClear.Text" xml:space="preserve">
+    <value>C&amp;lear</value>
+  </data>
+  <data name="mnuTextCopy.Text" xml:space="preserve">
+    <value>&amp;Copy</value>
+  </data>
+  <data name="mnuTextCut.Text" xml:space="preserve">
+    <value>Cu&amp;t</value>
+  </data>
+  <data name="mnuTextPaste.Text" xml:space="preserve">
+    <value>&amp;Paste</value>
+  </data>
+  <data name="txtCommand6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="txtCommand6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 180</value>
+  </data>
+  <data name="txtCommand6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>364, 26</value>
+  </data>
+  <data name="txtCommand6.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;txtCommand6.Name" xml:space="preserve">
+    <value>txtCommand6</value>
+  </data>
+  <data name="&gt;&gt;txtCommand6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtCommand6.Parent" xml:space="preserve">
+    <value>grpMacroCommands</value>
+  </data>
+  <data name="&gt;&gt;txtCommand6.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtCommand5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="txtCommand5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 148</value>
+  </data>
+  <data name="txtCommand5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>364, 26</value>
+  </data>
+  <data name="txtCommand5.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;txtCommand5.Name" xml:space="preserve">
+    <value>txtCommand5</value>
+  </data>
+  <data name="&gt;&gt;txtCommand5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtCommand5.Parent" xml:space="preserve">
+    <value>grpMacroCommands</value>
+  </data>
+  <data name="&gt;&gt;txtCommand5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtCommand4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="txtCommand4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 116</value>
+  </data>
+  <data name="txtCommand4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>364, 26</value>
+  </data>
+  <data name="txtCommand4.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;txtCommand4.Name" xml:space="preserve">
+    <value>txtCommand4</value>
+  </data>
+  <data name="&gt;&gt;txtCommand4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtCommand4.Parent" xml:space="preserve">
+    <value>grpMacroCommands</value>
+  </data>
+  <data name="&gt;&gt;txtCommand4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txtCommand3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="txtCommand3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 84</value>
+  </data>
+  <data name="txtCommand3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>364, 26</value>
+  </data>
+  <data name="txtCommand3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;txtCommand3.Name" xml:space="preserve">
+    <value>txtCommand3</value>
+  </data>
+  <data name="&gt;&gt;txtCommand3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtCommand3.Parent" xml:space="preserve">
+    <value>grpMacroCommands</value>
+  </data>
+  <data name="&gt;&gt;txtCommand3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txtCommand2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="txtCommand2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 52</value>
+  </data>
+  <data name="txtCommand2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>364, 26</value>
+  </data>
+  <data name="txtCommand2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtCommand2.Name" xml:space="preserve">
+    <value>txtCommand2</value>
+  </data>
+  <data name="&gt;&gt;txtCommand2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtCommand2.Parent" xml:space="preserve">
+    <value>grpMacroCommands</value>
+  </data>
+  <data name="&gt;&gt;txtCommand2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="txtCommand1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans Unicode, 9pt</value>
+  </data>
+  <data name="txtCommand1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 20</value>
+  </data>
+  <data name="txtCommand1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>364, 26</value>
+  </data>
+  <data name="txtCommand1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtCommand1.Name" xml:space="preserve">
+    <value>txtCommand1</value>
+  </data>
+  <data name="&gt;&gt;txtCommand1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtCommand1.Parent" xml:space="preserve">
+    <value>grpMacroCommands</value>
+  </data>
+  <data name="&gt;&gt;txtCommand1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="grpMacroCommands.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 4</value>
+  </data>
+  <data name="grpMacroCommands.Size" type="System.Drawing.Size, System.Drawing">
+    <value>380, 216</value>
+  </data>
+  <data name="grpMacroCommands.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="grpMacroCommands.Text" xml:space="preserve">
+    <value>Macro Commands</value>
+  </data>
+  <data name="&gt;&gt;grpMacroCommands.Name" xml:space="preserve">
+    <value>grpMacroCommands</value>
+  </data>
+  <data name="&gt;&gt;grpMacroCommands.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpMacroCommands.Parent" xml:space="preserve">
+    <value>pnlProperties</value>
+  </data>
+  <data name="&gt;&gt;grpMacroCommands.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnlProperties.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="pnlProperties.Location" type="System.Drawing.Point, System.Drawing">
+    <value>394, 0</value>
+  </data>
+  <data name="pnlProperties.Size" type="System.Drawing.Size, System.Drawing">
+    <value>396, 412</value>
+  </data>
+  <data name="pnlProperties.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pnlProperties.Name" xml:space="preserve">
+    <value>pnlProperties</value>
+  </data>
+  <data name="&gt;&gt;pnlProperties.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlProperties.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnlProperties.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>790, 412</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>FFXI Macro Manager</value>
+  </data>
+  <data name="&gt;&gt;mnuTreeContext.Name" xml:space="preserve">
+    <value>mnuTreeContext</value>
+  </data>
+  <data name="&gt;&gt;mnuTreeContext.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenu, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuTreeClear.Name" xml:space="preserve">
+    <value>mnuTreeClear</value>
+  </data>
+  <data name="&gt;&gt;mnuTreeClear.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuTreeDelete.Name" xml:space="preserve">
+    <value>mnuTreeDelete</value>
+  </data>
+  <data name="&gt;&gt;mnuTreeDelete.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuTreeRename.Name" xml:space="preserve">
+    <value>mnuTreeRename</value>
+  </data>
+  <data name="&gt;&gt;mnuTreeRename.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuTreeSave.Name" xml:space="preserve">
+    <value>mnuTreeSave</value>
+  </data>
+  <data name="&gt;&gt;mnuTreeSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuTreeSep.Name" xml:space="preserve">
+    <value>mnuTreeSep</value>
+  </data>
+  <data name="&gt;&gt;mnuTreeSep.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuTreeCollapse.Name" xml:space="preserve">
+    <value>mnuTreeCollapse</value>
+  </data>
+  <data name="&gt;&gt;mnuTreeCollapse.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuTreeExpand.Name" xml:space="preserve">
+    <value>mnuTreeExpand</value>
+  </data>
+  <data name="&gt;&gt;mnuTreeExpand.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuTreeExpandAll.Name" xml:space="preserve">
+    <value>mnuTreeExpandAll</value>
+  </data>
+  <data name="&gt;&gt;mnuTreeExpandAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuTreeSep2.Name" xml:space="preserve">
+    <value>mnuTreeSep2</value>
+  </data>
+  <data name="&gt;&gt;mnuTreeSep2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuTreeNew.Name" xml:space="preserve">
+    <value>mnuTreeNew</value>
+  </data>
+  <data name="&gt;&gt;mnuTreeNew.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuTreeNewFolder.Name" xml:space="preserve">
+    <value>mnuTreeNewFolder</value>
+  </data>
+  <data name="&gt;&gt;mnuTreeNewFolder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuTreeNewMacro.Name" xml:space="preserve">
+    <value>mnuTreeNewMacro</value>
+  </data>
+  <data name="&gt;&gt;mnuTreeNewMacro.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ilBrowserIcons.Name" xml:space="preserve">
+    <value>ilBrowserIcons</value>
+  </data>
+  <data name="&gt;&gt;ilBrowserIcons.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuTextContext.Name" xml:space="preserve">
+    <value>mnuTextContext</value>
+  </data>
+  <data name="&gt;&gt;mnuTextContext.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenu, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuTextClear.Name" xml:space="preserve">
+    <value>mnuTextClear</value>
+  </data>
+  <data name="&gt;&gt;mnuTextClear.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuTextCopy.Name" xml:space="preserve">
+    <value>mnuTextCopy</value>
+  </data>
+  <data name="&gt;&gt;mnuTextCopy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuTextCut.Name" xml:space="preserve">
+    <value>mnuTextCut</value>
+  </data>
+  <data name="&gt;&gt;mnuTextCut.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuTextPaste.Name" xml:space="preserve">
+    <value>mnuTextPaste</value>
+  </data>
+  <data name="&gt;&gt;mnuTextPaste.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainWindow</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

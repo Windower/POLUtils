@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BadResID" xml:space="preserve">
+    <value>Unbekannte String Ressource</value>
+  </data>
+  <data name="E:PictureBoxSizeMode.CenterImage" xml:space="preserve">
+    <value>Zentriert (Aktuelle Grösse)</value>
+  </data>
+  <data name="E:PictureBoxSizeMode.Normal" xml:space="preserve">
+    <value>Normal (Aktuelle Grösse, Ecke oben links)</value>
+  </data>
+  <data name="E:PictureBoxSizeMode.StretchImage" xml:space="preserve">
+    <value>Gestreckt</value>
+  </data>
+  <data name="E:PictureBoxSizeMode.Zoom" xml:space="preserve">
+    <value>Gezoomt (Ausgedehnt, Längenverhältnis beibehalten)</value>
+  </data>
+  <data name="F::activation-time" xml:space="preserve">
+    <value>Aktivierungszeit</value>
+  </data>
+  <data name="F::casting-time" xml:space="preserve">
+    <value>Zeit zum Casten</value>
+  </data>
+  <data name="F::damage" xml:space="preserve">
+    <value>Damage</value>
+  </data>
+  <data name="F::delay" xml:space="preserve">
+    <value>Delay</value>
+  </data>
+  <data name="F::description" xml:space="preserve">
+    <value>Beschreibung</value>
+  </data>
+  <data name="F::dps" xml:space="preserve">
+    <value>Damage pro Sekunde</value>
+  </data>
+  <data name="F::element" xml:space="preserve">
+    <value>Element</value>
+  </data>
+  <data name="F::english-name" xml:space="preserve">
+    <value>Englischer Name</value>
+  </data>
+  <data name="F::flags" xml:space="preserve">
+    <value>Flags</value>
+  </data>
+  <data name="F::icon" xml:space="preserve">
+    <value>Icon</value>
+  </data>
+  <data name="F::id" xml:space="preserve">
+    <value>Item ID</value>
+  </data>
+  <data name="F::japanese-name" xml:space="preserve">
+    <value>Japanischer Name</value>
+  </data>
+  <data name="F::jobs" xml:space="preserve">
+    <value>Jobs</value>
+  </data>
+  <data name="F::jug-size" xml:space="preserve">
+    <value>Jug Grösse</value>
+  </data>
+  <data name="F::level" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="F::log-name-plural" xml:space="preserve">
+    <value>Log Name (Plural)</value>
+  </data>
+  <data name="F::log-name-singular" xml:space="preserve">
+    <value>Log Name (Singular)</value>
+  </data>
+  <data name="F::max-charges" xml:space="preserve">
+    <value>Max. Aufladung</value>
+  </data>
+  <data name="F::races" xml:space="preserve">
+    <value>Races</value>
+  </data>
+  <data name="F::resource-id" xml:space="preserve">
+    <value>Resource ID</value>
+  </data>
+  <data name="F::reuse-delay" xml:space="preserve">
+    <value>Reuse Delay</value>
+  </data>
+  <data name="F::shield-size" xml:space="preserve">
+    <value>Shield Grösse</value>
+  </data>
+  <data name="F::skill" xml:space="preserve">
+    <value>Skill</value>
+  </data>
+  <data name="F::slots" xml:space="preserve">
+    <value>Slots</value>
+  </data>
+  <data name="F::stack-size" xml:space="preserve">
+    <value>Stack Grösse</value>
+  </data>
+  <data name="F::storage-slots" xml:space="preserve">
+    <value>Storage Slots</value>
+  </data>
+  <data name="F::type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="F::unknown-1" xml:space="preserve">
+    <value>Unbekannter Wert #1</value>
+  </data>
+  <data name="F::unknown-2" xml:space="preserve">
+    <value>Unbekannter Wert #2</value>
+  </data>
+  <data name="F::unknown-3" xml:space="preserve">
+    <value>Unbekannter Wert #3</value>
+  </data>
+  <data name="F::unknown-4" xml:space="preserve">
+    <value>Unbekannter Wert #4</value>
+  </data>
+  <data name="F::unknown-5" xml:space="preserve">
+    <value>Unbekannter Wert #5</value>
+  </data>
+  <data name="F::use-delay" xml:space="preserve">
+    <value>Use Delay</value>
+  </data>
+  <data name="F::valid-targets" xml:space="preserve">
+    <value>Mögliche Target(s)</value>
+  </data>
+  <data name="GraphicTypeBitmap" xml:space="preserve">
+    <value>{0}-bit Bitmap</value>
+  </data>
+  <data name="GraphicTypeDXT" xml:space="preserve">
+    <value>DirectX Textur ({0})</value>
+  </data>
+  <data name="ImageText" xml:space="preserve">
+    <value>&lt;image&gt;</value>
+  </data>
+  <data name="InvalidThingField" xml:space="preserve">
+    <value>Unbekanntes {0} Feld - konnte Element nicht finden.</value>
+  </data>
+  <data name="InvalidThingToLoad" xml:space="preserve">
+    <value>Versuche ein {0} von einem invaliden XML Element zu laden.</value>
+  </data>
+  <data name="MacroBarLabel" xml:space="preserve">
+    <value>Macro Bar #{0}</value>
+  </data>
+  <data name="WrongThingToLoad" xml:space="preserve">
+    <value>Versuch ein {0} von einem XML Element zu laden, welches ein {0} beinhaltet.</value>
+  </data>
+  <data name="PWD:StringResources" xml:space="preserve">
+    <value>Lade string resources (auto-übersetzer, item namen) aus DAT file...
+Dies könnte ein wenig dauern, liegt ganz an der Geschwindigkeit der Maschine.</value>
+  </data>
+</root>

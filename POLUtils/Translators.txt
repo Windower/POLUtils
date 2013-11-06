@@ -1,0 +1,11 @@
+The various translations of POLUtils are provided by the following people:
+
+Language   Installer Main Program Translator
+---------- --------- ------------ -------------------------------------
+Dutch      Yes       No           Pebbles
+French     Yes       Abandoned    Kapibara from Phoenix
+German     Yes       Partial      Andy Müller (Missingno from Fairy)
+Spanish    Yes       Abandoned    Kapibara from Phoenix
+
+If you want to contribute a translation not listed above, PM me on the
+POLUtils forums (http://polutils.forumer.com/).

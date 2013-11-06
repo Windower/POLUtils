@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- $Id: SFXInfo.xml 757 2010-07-04 13:05:45Z tim.vanholder $ -->
+<!--
+// Copyright © 2004-2010 Tim Van Holder
+// 
+// Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
+// 
+// Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS"
+// BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and limitations under the License.
+-->
+<pol-audio-data>
+  <application id="0001" name="FinalFantasy XI">
+    <data-path>sound/win/se</data-path>
+    <subdir name="se000">Main Sounds</subdir>
+    <track id="1"><title>Main Sounds - Menu Movement</title></track>
+    <track id="2"><title>Main Sounds - Menu Selection</title></track>
+    <track id="3"><title>Main Sounds - Dialog Confirmation</title></track>
+    <track id="4"><title>Main Sounds - Unavailable Action</title></track>
+    <track id="7"><title>Main Sounds - Level-Up</title></track>
+    <track id="8"><title>Main Sounds - Quest Completed</title></track>
+    <track id="9"><title>Main Sounds - Target Selection</title></track>
+    <track id="10"><title>Main Sounds - Target Switch</title></track>
+    <track id="11"><title>Main Sounds - Target Menu Open</title></track>
+    <track id="13"><title>Main Sounds - Main Menu Page Switch</title></track>
+    <track id="14"><title>Main Sounds - Main Menu Open</title></track>
+    <track id="15"><title>Main Sounds - Close Menu</title></track>
+    <track id="16"><title>Main Sounds - Take Screenshot</title></track>
+    <track id="17"><title>Main Sounds - &lt;call0&gt;</title></track>
+    <track id="18"><title>Main Sounds - &lt;call1&gt;</title></track>
+    <track id="19"><title>Main Sounds - &lt;call2&gt;</title></track>
+    <track id="20"><title>Main Sounds - &lt;call3&gt;</title></track>
+    <track id="21"><title>Main Sounds - &lt;call4&gt;</title></track>
+    <track id="22"><title>Main Sounds - &lt;call5&gt;</title></track>
+    <track id="23"><title>Main Sounds - &lt;call6&gt;</title></track>
+    <track id="24"><title>Main Sounds - &lt;call7&gt;</title></track>
+    <track id="25"><title>Main Sounds - &lt;call8&gt;</title></track>
+    <track id="26"><title>Main Sounds - &lt;call9&gt;</title></track>
+    <track id="27"><title>Main Sounds - &lt;call10&gt;</title></track>
+    <track id="28"><title>Main Sounds - &lt;call11&gt;</title></track>
+    <track id="29"><title>Main Sounds - &lt;call12&gt;</title></track>
+    <track id="30"><title>Main Sounds - &lt;call13&gt;</title></track>
+    <track id="31"><title>Main Sounds - &lt;call14&gt;</title></track>
+    <track id="32"><title>Main Sounds - &lt;call15&gt;</title></track>
+    <track id="33"><title>Main Sounds - &lt;call16&gt;</title></track>
+    <track id="34"><title>Main Sounds - &lt;call17&gt;</title></track>
+    <track id="35"><title>Main Sounds - &lt;call18&gt;</title></track>
+    <track id="36"><title>Main Sounds - &lt;call19&gt;</title></track>
+    <track id="37"><title>Main Sounds - &lt;call20&gt;</title></track>
+    <track id="38"><title>Main Sounds - &lt;call21&gt;</title></track>
+    <track id="39"><title>Main Sounds - Message Arrival</title></track>
+    <subdir name="se001">Ambient Sounds - Wind</subdir>
+    <subdir name="se002">Ambient Sounds - Environment</subdir>
+    <subdir name="se003">Spell Sounds</subdir>
+    <track id="3025"><title>Spell SFX - Holy</title></track>
+    <subdir name="se004">Emote Sounds</subdir>
+    <track id="4001"><title>Emote Sounds - Tarutaru Applause</title></track>
+    <track id="4002"><title>Emote Sounds - Male Hume Applause</title></track>
+    <track id="4003"><title>Emote Sounds - Female Hume Applause</title></track>
+    <track id="4004"><title>Emote Sounds - Male Elvaan Applause</title></track>
+    <track id="4005"><title>Emote Sounds - Female Elvaan Applause</title></track>
+    <track id="4006"><title>Emote Sounds - Mithra Applause</title></track>
+    <track id="4007"><title>Emote Sounds - Galka Applause</title></track>
+    <subdir name="se005">Combat Sounds</subdir>
+    <subdir name="se006">Weapon Sounds</subdir>
+    <subdir name="se007">Weapon Sounds</subdir>
+    <subdir name="se008">Area Sounds</subdir>
+    <track id="8233"><title>Fishing - Creaking Rod</title></track>
+    <subdir name="se009">Door/Portal Sounds</subdir>
+    <subdir name="se010">Various Effects</subdir>
+    <subdir name="se011">Various Effects</subdir>
+    <subdir name="se012">Various Effects</subdir>
+    <subdir name="se013">Various Effects</subdir>
+    <subdir name="se014">Various Effects</subdir>
+    <subdir name="se015">Various Effects</subdir>
+    <subdir name="se016">Various Effects</subdir>
+    <subdir name="se017">Various Effects</subdir>
+    <subdir name="se018">Various Effects</subdir>
+    <subdir name="se019">Skillchain Sounds</subdir>
+    <track id="19002"><title>SkillChain - Fragmentation</title></track>
+    <track id="19003"><title>SkillChain - Distortion</title></track>
+    <track id="19011"><title>SkillChain - Scission</title></track>
+    <subdir name="se020">Various Effects</subdir>
+    <subdir name="se021">Bard Sounds</subdir>
+    <track id="21001"><title>Bard Song - Wind Instrument</title></track>
+    <track id="21002"><title>Bard Song - String Instrument</title></track>
+    <track id="21003"><title>Bard Song - Tarutaru Voice</title></track>
+    <track id="21004"><title>Bard Song - Female Voice</title></track>
+    <track id="21005"><title>Bard Song - Male Voice</title></track>
+    <track id="21006"><title>Bard Song - Mithran Voice</title></track>
+    <track id="21007"><title>Bard Song - Galkan Voice</title></track>
+    <track id="21008"><title>Bard Song - Unknown Voice</title></track>
+    <subdir name="se022">Weapon Sounds</subdir>
+    <subdir name="se023">Various Effects</subdir>
+    <subdir name="se024">Various Short Effects</subdir>
+    <subdir name="se025">Various Short Effects</subdir>
+    <subdir name="se026">Various Short Effects</subdir>
+    <subdir name="se027">Various Short Effects</subdir>
+    <subdir name="se028">Various Short Effects</subdir>
+    <subdir name="se029">Various Short Effects</subdir>
+    <subdir name="se030">Various Effects</subdir>
+    <subdir name="se031">Various Short Effects</subdir>
+    <subdir name="se032">Weapon Skill Effects (?)</subdir>
+    <subdir name="se033">Weapon Skill Effects (?)</subdir>
+    <subdir name="se034">Various Effects</subdir>
+    <track id="34071"><title>Summerfest Fireworks - Main Bang</title></track>
+    <track id="34072"><title>Summerfest Fireworks - Afterburst</title></track>
+    <subdir name="se100">Footstep Effects (Specific Race/Gear/?)</subdir>
+    <subdir name="se101">Footstep Effects (Specific Race/Gear/?)</subdir>
+    <subdir name="se102">Footstep Effects (Specific Race/Gear/?)</subdir>
+    <subdir name="se103">Footstep Effects (Specific Race/Gear/?)</subdir>
+    <subdir name="se104">Footstep Effects (Specific Race/Gear/?)</subdir>
+    <subdir name="se105">Footstep Effects (Specific Race/Gear/?)</subdir>
+    <subdir name="se106">Footstep Effects (Specific Race/Gear/?)</subdir>
+    <subdir name="se107">Footstep Effects (Specific Race/Gear/?)</subdir>
+    <subdir name="se108">Footstep Effects (Specific Race/Gear/?)</subdir>
+    <subdir name="se109">Footstep Effects (Specific Race/Gear/?)</subdir>
+    <subdir name="se110">Footstep Effects (Specific Race/Gear/?)</subdir>
+    <subdir name="se111">Footstep Effects (Specific Race/Gear/?)</subdir>
+    <subdir name="se112">Footstep Effects (Specific Race/Gear/?)</subdir>
+    <subdir name="se113">Footstep Effects (Specific Race/Gear/?)</subdir>
+    <subdir name="se114">Footstep Effects (Specific Race/Gear/?)</subdir>
+    <subdir name="se115">Footstep Effects (Specific Race/Gear/?)</subdir>
+    <subdir name="se116">Footstep Effects (Specific Race/Gear/?)</subdir>
+    <subdir name="se117">Footstep Effects (Specific Race/Gear/?)</subdir>
+    <subdir name="se118">Footstep Effects (Specific Race/Gear/?)</subdir>
+    <subdir name="se119">Footstep Effects (Specific Race/Gear/?)</subdir>
+    <subdir name="se120">Footstep Effects (Specific Race/Gear/?)</subdir>
+    <subdir name="se121">Footstep Effects (Specific Race/Gear/?)</subdir>
+    <subdir name="se122">Footstep Effects (Specific Race/Gear/?)</subdir>
+    <subdir name="se123">Footstep Effects (Specific Race/Gear/?)</subdir>
+    <subdir name="se124">Footstep Effects (Specific Race/Gear/?)</subdir>
+    <subdir name="se125">Footstep Effects (Specific Race/Gear/?)</subdir>
+    <subdir name="se126">Footstep Effects (Specific Race/Gear/?)</subdir>
+    <subdir name="se127">Movement Sounds</subdir>
+    <subdir name="se128">Movement Sounds</subdir>
+    <track id="128001"><title>Insect Buzz</title></track>
+    <subdir name="129">Various Effects</subdir>
+    <subdir name="se201">Monster SFX - Bird</subdir>
+  </application>
+  <application id="0001" name="FinalFantasy XI - Rise of the Zilart">
+    <data-path>sound2/win/se</data-path>
+    <subdir name="se270">Monster SFX - Spider A</subdir>
+    <track id="270001"><title>Monster SFX - Spider A #01</title></track>
+    <track id="270002"><title>Monster SFX - Spider A #02</title></track>
+    <track id="270003"><title>Monster SFX - Spider A #03</title></track>
+    <track id="270004"><title>Monster SFX - Spider A #04</title></track>
+    <track id="270005"><title>Monster SFX - Spider A #05</title></track>
+    <track id="270006"><title>Monster SFX - Spider A #06</title></track>
+    <track id="270007"><title>Monster SFX - Spider A #07</title></track>
+    <track id="270008"><title>Monster SFX - Spider A #08</title></track>
+    <track id="270009"><title>Monster SFX - Spider A #09</title></track>
+    <track id="270010"><title>Monster SFX - Spider A #10</title></track>
+    <track id="270011"><title>Monster SFX - Spider A #11</title></track>
+    <track id="270012"><title>Monster SFX - Spider A #12</title></track>
+    <track id="270013"><title>Monster SFX - Spider A #13</title></track>
+    <track id="270014"><title>Monster SFX - Spider A #14</title></track>
+    <track id="270015"><title>Monster SFX - Spider A #15</title></track>
+    <track id="270016"><title>Monster SFX - Spider A #16</title></track>
+    <subdir name="se271">Monster SFX - Spider B</subdir>
+    <track id="271001"><title>Monster SFX - Spider B #01</title></track>
+    <track id="271002"><title>Monster SFX - Spider B #02</title></track>
+    <track id="271003"><title>Monster SFX - Spider B #03</title></track>
+    <track id="271004"><title>Monster SFX - Spider B #04</title></track>
+    <track id="271005"><title>Monster SFX - Spider B #05</title></track>
+    <track id="271006"><title>Monster SFX - Spider B #06</title></track>
+    <track id="271007"><title>Monster SFX - Spider B #07</title></track>
+    <track id="271008"><title>Monster SFX - Spider B #08</title></track>
+    <track id="271009"><title>Monster SFX - Spider B #09</title></track>
+    <track id="271010"><title>Monster SFX - Spider B #10</title></track>
+    <track id="271011"><title>Monster SFX - Spider B #11</title></track>
+    <track id="271012"><title>Monster SFX - Spider B #12</title></track>
+    <track id="271013"><title>Monster SFX - Spider B #13</title></track>
+    <track id="271014"><title>Monster SFX - Spider B #14</title></track>
+    <track id="271015"><title>Monster SFX - Spider B #15</title></track>
+    <track id="271016"><title>Monster SFX - Spider B #16</title></track>
+  </application>
+  <application id="0001" name="FinalFantasy XI - Chains of Promathia">
+    <data-path>sound3/win/se</data-path>
+  </application>
+  <application id="0001" name="Final Fantasy XI - Treasures of Aht Urhgan">
+    <data-path>sound4/win/se</data-path>
+  </application>
+  <application id="0001" name="Final Fantasy XI - Wings of the Goddess">
+    <data-path>sound5/win/se</data-path>
+  </application>
+  <application id="0001" name="Final Fantasy XI - Future Expansion (#5)">
+    <data-path>sound6/win/se</data-path>
+  </application>
+  <application id="0001" name="Final Fantasy XI - Future Expansion (#6)">
+    <data-path>sound7/win/se</data-path>
+  </application>
+  <application id="0001" name="Final Fantasy XI - Future Expansion (#7)">
+    <data-path>sound8/win/se</data-path>
+  </application>
+  <application id="0001" name="Final Fantasy XI - Future Expansion (#8)">
+    <data-path>sound9/win/se</data-path>
+  </application>
+  <application id="0002" name="Tetra Master">
+    <data-path>data/win/sound/se</data-path>
+    <track id="1007"><title>Play Order Selection Wheel</title></track>
+    <track id="2014"><title>Chance Block - Grim Reaper (Power Down)</title></track>
+    <track id="2015"><title>Chance Block - Oglops (Color Change)</title></track>
+    <track id="2016"><title>Chance Block - Garnet (Power Up)</title></track>
+    <track id="2064"><title>Chance Block - Aero (Scramble)</title></track>
+  </application>
+  <application id="1000" name="PlayOnline Viewer - Ambient Noise">
+    <data-path>viewer/data/system/bgm</data-path>
+    <track id="1001"><title>Gentle Winds Over Wild Plains</title></track>
+    <track id="1002"><title>A Walk In The Spring Woods</title></track>
+    <track id="1003"><title>Hill Of The Howling Winds</title></track>
+    <track id="1004"><title>Stream of Tranquility</title></track>
+    <track id="1005"><title>Waterfalls and Fall Foliage</title></track>
+    <track id="1006"><title>Summer Shores</title></track>
+    <track id="1007"><title>The Source Of Life</title></track>
+    <track id="1008"><title>City Streets</title></track>
+    <track id="1009"><title>The Shimomeguro Festival</title></track>
+    <track id="1010"><title>Submarine Wars</title></track>
+    <track id="1011"><title>Computer Room</title></track>
+    <track id="1012"><title>SATORI</title></track>
+    <track id="1013"><title>Standing Ovation</title></track>
+    <track id="1014"><title>Cathedral Overlooking Town</title></track>
+  </application>
+  <application id="1000" name="PlayOnline Viewer - Sound Effects">
+    <data-path>viewer/data/system/sound</data-path>
+  </application>
+</pol-audio-data>

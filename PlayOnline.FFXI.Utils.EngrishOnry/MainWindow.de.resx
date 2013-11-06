@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblActivityLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>605, 16</value>
+  </data>
+  <data name="lblActivityLog.Text" xml:space="preserve">
+    <value>Tätigkeitsfenster:</value>
+  </data>
+  <data name="rtbActivityLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>609, 126</value>
+  </data>
+  <data name="pnlLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>617, 150</value>
+  </data>
+  <data name="mnuTranslateSpellNames.Text" xml:space="preserve">
+    <value>Übersetze Spell &amp;Namen</value>
+  </data>
+  <data name="mnuTranslateSpellDescriptions.Text" xml:space="preserve">
+    <value>Übersetze Spell &amp;Beschreibungen</value>
+  </data>
+  <data name="mnuTranslateItemNames.Text" xml:space="preserve">
+    <value>Übersetze Item &amp;Namen</value>
+  </data>
+  <data name="mnuTranslateItemDescriptions.Text" xml:space="preserve">
+    <value>Übersetze Item &amp;Beschreibungen</value>
+  </data>
+  <data name="mnuPreserveJapaneseATCompletion.Text" xml:space="preserve">
+    <value>Erhalte &amp;Japanische Version</value>
+  </data>
+  <data name="mnuEnglishATCompletionOnly.Text" xml:space="preserve">
+    <value>&amp;Englische Version only</value>
+  </data>
+  <data name="pnlActions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>617, 72</value>
+  </data>
+  <data name="btnConfigAbilities.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 48</value>
+  </data>
+  <data name="btnConfigAbilities.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 20</value>
+  </data>
+  <data name="btnConfigAbilities.Text" xml:space="preserve">
+    <value>Optionen</value>
+  </data>
+  <data name="lblAbilities.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 16</value>
+  </data>
+  <data name="lblAbilities.Text" xml:space="preserve">
+    <value>Ability Daten:</value>
+  </data>
+  <data name="btnRestoreAbilities.Location" type="System.Drawing.Point, System.Drawing">
+    <value>145, 48</value>
+  </data>
+  <data name="btnRestoreAbilities.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 20</value>
+  </data>
+  <data name="btnRestoreAbilities.Text" xml:space="preserve">
+    <value>Wiederherstellen</value>
+  </data>
+  <data name="btnTranslateAbilities.Location" type="System.Drawing.Point, System.Drawing">
+    <value>81, 48</value>
+  </data>
+  <data name="btnTranslateAbilities.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 20</value>
+  </data>
+  <data name="btnTranslateAbilities.Text" xml:space="preserve">
+    <value>Übersetzen</value>
+  </data>
+  <data name="btnConfigDialogTables.Location" type="System.Drawing.Point, System.Drawing">
+    <value>560, 8</value>
+  </data>
+  <data name="btnConfigDialogTables.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 20</value>
+  </data>
+  <data name="btnConfigDialogTables.Text" xml:space="preserve">
+    <value>Optionen</value>
+  </data>
+  <data name="btnConfigStringTables.Location" type="System.Drawing.Point, System.Drawing">
+    <value>560, 28</value>
+  </data>
+  <data name="btnConfigStringTables.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 20</value>
+  </data>
+  <data name="btnConfigStringTables.Text" xml:space="preserve">
+    <value>Optionen</value>
+  </data>
+  <data name="btnConfigAutoTrans.Location" type="System.Drawing.Point, System.Drawing">
+    <value>560, 48</value>
+  </data>
+  <data name="btnConfigAutoTrans.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 20</value>
+  </data>
+  <data name="btnConfigAutoTrans.Text" xml:space="preserve">
+    <value>Optionen</value>
+  </data>
+  <data name="btnConfigItemData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 28</value>
+  </data>
+  <data name="btnConfigItemData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 20</value>
+  </data>
+  <data name="btnConfigItemData.Text" xml:space="preserve">
+    <value>Optionen</value>
+  </data>
+  <data name="btnConfigSpellData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 8</value>
+  </data>
+  <data name="btnConfigSpellData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 20</value>
+  </data>
+  <data name="btnConfigSpellData.Text" xml:space="preserve">
+    <value>Optionen</value>
+  </data>
+  <data name="lblItemData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 16</value>
+  </data>
+  <data name="lblItemData.Text" xml:space="preserve">
+    <value>Item Daten:</value>
+  </data>
+  <data name="lblAutoTranslator.Location" type="System.Drawing.Point, System.Drawing">
+    <value>287, 52</value>
+  </data>
+  <data name="lblAutoTranslator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 16</value>
+  </data>
+  <data name="lblAutoTranslator.Text" xml:space="preserve">
+    <value>Auto-Übersetzer:</value>
+  </data>
+  <data name="lblSpellData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 16</value>
+  </data>
+  <data name="lblSpellData.Text" xml:space="preserve">
+    <value>Spell Daten:</value>
+  </data>
+  <data name="lblStringTables.Location" type="System.Drawing.Point, System.Drawing">
+    <value>287, 32</value>
+  </data>
+  <data name="lblStringTables.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 16</value>
+  </data>
+  <data name="lblStringTables.Text" xml:space="preserve">
+    <value>Andere String Tabellen:</value>
+  </data>
+  <data name="lblDialogTables.Location" type="System.Drawing.Point, System.Drawing">
+    <value>287, 12</value>
+  </data>
+  <data name="lblDialogTables.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 16</value>
+  </data>
+  <data name="lblDialogTables.Text" xml:space="preserve">
+    <value>Zone Dialog Tabelle:</value>
+  </data>
+  <data name="btnRestoreSpellData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>145, 8</value>
+  </data>
+  <data name="btnRestoreSpellData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 20</value>
+  </data>
+  <data name="btnRestoreSpellData.Text" xml:space="preserve">
+    <value>Wiederherstellen</value>
+  </data>
+  <data name="btnTranslateSpellData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>81, 8</value>
+  </data>
+  <data name="btnTranslateSpellData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 20</value>
+  </data>
+  <data name="btnTranslateSpellData.Text" xml:space="preserve">
+    <value>Übersetzen</value>
+  </data>
+  <data name="btnRestoreStringTables.Location" type="System.Drawing.Point, System.Drawing">
+    <value>473, 28</value>
+  </data>
+  <data name="btnRestoreStringTables.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 20</value>
+  </data>
+  <data name="btnRestoreStringTables.Text" xml:space="preserve">
+    <value>Wiederherstellen</value>
+  </data>
+  <data name="btnTranslateStringTables.Location" type="System.Drawing.Point, System.Drawing">
+    <value>410, 28</value>
+  </data>
+  <data name="btnTranslateStringTables.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 20</value>
+  </data>
+  <data name="btnTranslateStringTables.Text" xml:space="preserve">
+    <value>Übersetzen</value>
+  </data>
+  <data name="btnRestoreDialogTables.Location" type="System.Drawing.Point, System.Drawing">
+    <value>473, 8</value>
+  </data>
+  <data name="btnRestoreDialogTables.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 20</value>
+  </data>
+  <data name="btnRestoreDialogTables.Text" xml:space="preserve">
+    <value>Wiederherstellen</value>
+  </data>
+  <data name="btnTranslateDialogTables.Location" type="System.Drawing.Point, System.Drawing">
+    <value>410, 8</value>
+  </data>
+  <data name="btnTranslateDialogTables.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 20</value>
+  </data>
+  <data name="btnTranslateDialogTables.Text" xml:space="preserve">
+    <value>Übersetzen</value>
+  </data>
+  <data name="btnRestoreAutoTrans.Location" type="System.Drawing.Point, System.Drawing">
+    <value>473, 48</value>
+  </data>
+  <data name="btnRestoreAutoTrans.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 20</value>
+  </data>
+  <data name="btnRestoreAutoTrans.Text" xml:space="preserve">
+    <value>Wiederherstellen</value>
+  </data>
+  <data name="btnTranslateAutoTrans.Location" type="System.Drawing.Point, System.Drawing">
+    <value>410, 48</value>
+  </data>
+  <data name="btnTranslateAutoTrans.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 20</value>
+  </data>
+  <data name="btnTranslateAutoTrans.Text" xml:space="preserve">
+    <value>Übersetzen</value>
+  </data>
+  <data name="btnRestoreItemData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>145, 28</value>
+  </data>
+  <data name="btnRestoreItemData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 20</value>
+  </data>
+  <data name="btnRestoreItemData.Text" xml:space="preserve">
+    <value>Wiederherstellen</value>
+  </data>
+  <data name="btnTranslateItemData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>81, 28</value>
+  </data>
+  <data name="btnTranslateItemData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 20</value>
+  </data>
+  <data name="btnTranslateItemData.Text" xml:space="preserve">
+    <value>Übersetzen</value>
+  </data>
+  <data name="mnuTranslateAbilityNames.Text" xml:space="preserve">
+    <value>Übersetze Ability &amp;Namen</value>
+  </data>
+  <data name="mnuTranslateAbilityDescriptions.Text" xml:space="preserve">
+    <value>Übersetze Ability &amp;Beschreibungen</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>617, 222</value>
+  </data>
+</root>

@@ -1,0 +1,1140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&gt;&gt;txtGUIWidth.Name" xml:space="preserve">
+    <value>txtGUIWidth</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblColor9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>218, 72</value>
+  </data>
+  <data name="&gt;&gt;lblColor17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txt3DHeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>312, 97</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblColor7.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lblColor13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 20</value>
+  </data>
+  <data name="txtGUIHeight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 97</value>
+  </data>
+  <data name="grpCharConfig.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 160</value>
+  </data>
+  <data name="&gt;&gt;lblColor3.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="lblGUIResolution.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblColor1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lblColor7.Parent" xml:space="preserve">
+    <value>grpCharConfig</value>
+  </data>
+  <data name="txtGUIWidth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 20</value>
+  </data>
+  <data name="lblColor8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 20</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="txt3DWidth.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;lblGUIX.Parent" xml:space="preserve">
+    <value>grpGlobalConfig</value>
+  </data>
+  <data name="&gt;&gt;grpGlobalConfig.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="grpGlobalConfig.Size" type="System.Drawing.Size, System.Drawing">
+    <value>360, 150</value>
+  </data>
+  <data name="&gt;&gt;lblColor14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt3DWidth.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl3DResolution.Parent" xml:space="preserve">
+    <value>grpGlobalConfig</value>
+  </data>
+  <data name="&gt;&gt;btnClose.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblWarning.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;cmbCharacters.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblColor12.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;btnApply.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblColor18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblColor3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblColor18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>148, 120</value>
+  </data>
+  <data name="lblSoundEffects.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="lblColor14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>218, 96</value>
+  </data>
+  <data name="lblColor12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 20</value>
+  </data>
+  <data name="lblColor10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 72</value>
+  </data>
+  <data name="&gt;&gt;lblColor22.Parent" xml:space="preserve">
+    <value>grpCharConfig</value>
+  </data>
+  <data name="&gt;&gt;lblColor9.Parent" xml:space="preserve">
+    <value>grpCharConfig</value>
+  </data>
+  <data name="&gt;&gt;lblColor18.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="lblColor21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 20</value>
+  </data>
+  <data name="lblColor18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 20</value>
+  </data>
+  <data name="&gt;&gt;lblColor13.Parent" xml:space="preserve">
+    <value>grpCharConfig</value>
+  </data>
+  <data name="&gt;&gt;txtGUIHeight.Name" xml:space="preserve">
+    <value>txtGUIHeight</value>
+  </data>
+  <data name="&gt;&gt;lblColor14.Name" xml:space="preserve">
+    <value>lblColor14</value>
+  </data>
+  <data name="&gt;&gt;grpCharConfig.Name" xml:space="preserve">
+    <value>grpCharConfig</value>
+  </data>
+  <data name="&gt;&gt;txt3DHeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblWarning.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 16</value>
+  </data>
+  <data name="lblColor11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 20</value>
+  </data>
+  <data name="&gt;&gt;lblColor22.Name" xml:space="preserve">
+    <value>lblColor22</value>
+  </data>
+  <data name="lblColor23.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;lblColor1.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="lblColor20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 120</value>
+  </data>
+  <data name="&gt;&gt;txtSample.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblColor1.Name" xml:space="preserve">
+    <value>lblColor1</value>
+  </data>
+  <data name="lbl3DX.Text" xml:space="preserve">
+    <value>x</value>
+  </data>
+  <data name="lblWarning.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 68</value>
+  </data>
+  <data name="lblColor18.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;lblColor1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblColor14.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="txtSample.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;lblColor20.Parent" xml:space="preserve">
+    <value>grpCharConfig</value>
+  </data>
+  <data name="lblColor2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 20</value>
+  </data>
+  <data name="&gt;&gt;lblColor3.Name" xml:space="preserve">
+    <value>lblColor3</value>
+  </data>
+  <data name="txtGUIWidth.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="txtSample.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 21</value>
+  </data>
+  <data name="&gt;&gt;lblColor15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnApply.Text" xml:space="preserve">
+    <value>&amp;Apply</value>
+  </data>
+  <data name="&gt;&gt;lblColor19.Name" xml:space="preserve">
+    <value>lblColor19</value>
+  </data>
+  <data name="lblSoundEffects.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblGUIResolution.Text" xml:space="preserve">
+    <value>GUI Resolution:</value>
+  </data>
+  <data name="&gt;&gt;lblColor15.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 24</value>
+  </data>
+  <data name="&gt;&gt;btnApply.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt3DWidth.Name" xml:space="preserve">
+    <value>txt3DWidth</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txt3DHeight.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;lblColor4.Parent" xml:space="preserve">
+    <value>grpCharConfig</value>
+  </data>
+  <data name="btnCancel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="lblColor16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 20</value>
+  </data>
+  <data name="txtSample.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainWindow</value>
+  </data>
+  <data name="lblSoundEffects.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 126</value>
+  </data>
+  <data name="&gt;&gt;lblColor14.Parent" xml:space="preserve">
+    <value>grpCharConfig</value>
+  </data>
+  <data name="lbl3DX.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;txt3DWidth.Parent" xml:space="preserve">
+    <value>grpGlobalConfig</value>
+  </data>
+  <data name="&gt;&gt;lblColor11.Name" xml:space="preserve">
+    <value>lblColor11</value>
+  </data>
+  <data name="txtSample.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblColor19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>218, 120</value>
+  </data>
+  <data name="&gt;&gt;btnApply.Name" xml:space="preserve">
+    <value>btnApply</value>
+  </data>
+  <data name="lblColor15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 96</value>
+  </data>
+  <data name="lblColor11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 96</value>
+  </data>
+  <data name="btnClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>175, 361</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>FFXI Configuration Editor</value>
+  </data>
+  <data name="&gt;&gt;cmbCharacters.Name" xml:space="preserve">
+    <value>cmbCharacters</value>
+  </data>
+  <data name="&gt;&gt;txtSoundEffects.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dlgChooseColor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColorDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblColor20.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;txtSample.Name" xml:space="preserve">
+    <value>txtSample</value>
+  </data>
+  <data name="lblColor1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 48</value>
+  </data>
+  <data name="&gt;&gt;lblColor8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblColor1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 20</value>
+  </data>
+  <data name="lblColor4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 20</value>
+  </data>
+  <data name="&gt;&gt;lblColor5.Name" xml:space="preserve">
+    <value>lblColor5</value>
+  </data>
+  <data name="&gt;&gt;lbl3DResolution.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;txt3DHeight.Name" xml:space="preserve">
+    <value>txt3DHeight</value>
+  </data>
+  <data name="&gt;&gt;txtGUIWidth.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblColor2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>239, 361</value>
+  </data>
+  <data name="&gt;&gt;lblColor16.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtSoundEffects.Location" type="System.Drawing.Point, System.Drawing">
+    <value>150, 123</value>
+  </data>
+  <data name="lblGUIX.Size" type="System.Drawing.Size, System.Drawing">
+    <value>12, 13</value>
+  </data>
+  <data name="lblGUIResolution.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 100</value>
+  </data>
+  <data name="&gt;&gt;lblColor21.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;lblColor19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtSample.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblColor22.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;lblColor17.Parent" xml:space="preserve">
+    <value>grpCharConfig</value>
+  </data>
+  <data name="&gt;&gt;lblGUIResolution.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbCharacters.Parent" xml:space="preserve">
+    <value>grpCharConfig</value>
+  </data>
+  <data name="&gt;&gt;lblColor23.Name" xml:space="preserve">
+    <value>lblColor23</value>
+  </data>
+  <data name="cmbCharacters.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 21</value>
+  </data>
+  <data name="lblColor19.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;lbl3DX.Parent" xml:space="preserve">
+    <value>grpGlobalConfig</value>
+  </data>
+  <data name="lblColor15.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="lbl3DX.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lblColor2.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;picWarning.Parent" xml:space="preserve">
+    <value>grpGlobalConfig</value>
+  </data>
+  <data name="grpCharConfig.Text" xml:space="preserve">
+    <value>Per-Character Settings</value>
+  </data>
+  <data name="&gt;&gt;lblColor6.Parent" xml:space="preserve">
+    <value>grpCharConfig</value>
+  </data>
+  <data name="&gt;&gt;txtGUIHeight.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lblColor21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txtSample.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 169</value>
+  </data>
+  <data name="txtSoundEffects.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 20</value>
+  </data>
+  <data name="txtSample.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblColor13.Name" xml:space="preserve">
+    <value>lblColor13</value>
+  </data>
+  <data name="lbl3DResolution.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lblColor6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 72</value>
+  </data>
+  <data name="&gt;&gt;txtGUIHeight.Parent" xml:space="preserve">
+    <value>grpGlobalConfig</value>
+  </data>
+  <data name="txt3DWidth.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="btnApply.Location" type="System.Drawing.Point, System.Drawing">
+    <value>303, 361</value>
+  </data>
+  <data name="&gt;&gt;lblGUIResolution.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;txtSample.Parent" xml:space="preserve">
+    <value>grpCharConfig</value>
+  </data>
+  <data name="lblColor4.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lblColor2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>78, 48</value>
+  </data>
+  <data name="lblColor20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 20</value>
+  </data>
+  <data name="txt3DHeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 20</value>
+  </data>
+  <data name="&gt;&gt;lblColor19.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="grpGlobalConfig.Text" xml:space="preserve">
+    <value>Global Settings</value>
+  </data>
+  <data name="btnClose.TabIndex" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="lbl3DResolution.Text" xml:space="preserve">
+    <value>3D Resolution:</value>
+  </data>
+  <data name="lbl3DX.Size" type="System.Drawing.Size, System.Drawing">
+    <value>12, 13</value>
+  </data>
+  <data name="&gt;&gt;lblColor7.Name" xml:space="preserve">
+    <value>lblColor7</value>
+  </data>
+  <data name="&gt;&gt;lblColor11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblColor22.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="lblColor10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 20</value>
+  </data>
+  <data name="&gt;&gt;lblColor4.Name" xml:space="preserve">
+    <value>lblColor4</value>
+  </data>
+  <data name="lblColor9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 20</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="&gt;&gt;lblColor2.Name" xml:space="preserve">
+    <value>lblColor2</value>
+  </data>
+  <data name="&gt;&gt;lblWarning.Parent" xml:space="preserve">
+    <value>grpGlobalConfig</value>
+  </data>
+  <data name="&gt;&gt;txtSoundEffects.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblColor11.Parent" xml:space="preserve">
+    <value>grpCharConfig</value>
+  </data>
+  <data name="txtSample.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 10pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;lblColor9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txt3DWidth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>261, 97</value>
+  </data>
+  <data name="grpCharConfig.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblColor8.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lblWarning.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblGUIResolution.Name" xml:space="preserve">
+    <value>lblGUIResolution</value>
+  </data>
+  <data name="&gt;&gt;lblColor4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnApply.TabIndex" type="System.Int32, mscorlib">
+    <value>102</value>
+  </data>
+  <data name="lblColor17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 20</value>
+  </data>
+  <data name="&gt;&gt;picWarning.Name" xml:space="preserve">
+    <value>picWarning</value>
+  </data>
+  <data name="&gt;&gt;lblColor7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt3DWidth.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lblColor16.Name" xml:space="preserve">
+    <value>lblColor16</value>
+  </data>
+  <data name="&gt;&gt;lblColor12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpGlobalConfig.Name" xml:space="preserve">
+    <value>grpGlobalConfig</value>
+  </data>
+  <data name="lblWarning.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lbl3DResolution.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 13</value>
+  </data>
+  <data name="lblColor10.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="btnApply.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="btnClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 24</value>
+  </data>
+  <data name="lblGUIResolution.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 13</value>
+  </data>
+  <data name="&gt;&gt;txtSoundEffects.Parent" xml:space="preserve">
+    <value>grpGlobalConfig</value>
+  </data>
+  <data name="&gt;&gt;lblColor12.Name" xml:space="preserve">
+    <value>lblColor12</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Name" xml:space="preserve">
+    <value>btnClose</value>
+  </data>
+  <data name="&gt;&gt;lblColor23.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpCharConfig.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblColor4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>218, 48</value>
+  </data>
+  <data name="&gt;&gt;lblSoundEffects.Name" xml:space="preserve">
+    <value>lblSoundEffects</value>
+  </data>
+  <data name="lblColor17.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;lblColor5.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="lblGUIResolution.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lblColor3.Parent" xml:space="preserve">
+    <value>grpCharConfig</value>
+  </data>
+  <data name="lblColor3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>148, 48</value>
+  </data>
+  <data name="lbl3DResolution.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lblColor12.Parent" xml:space="preserve">
+    <value>grpCharConfig</value>
+  </data>
+  <data name="lblColor8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>148, 72</value>
+  </data>
+  <data name="btnCancel.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="lblColor17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>78, 120</value>
+  </data>
+  <data name="lblColor13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>148, 96</value>
+  </data>
+  <data name="&gt;&gt;lblColor8.Parent" xml:space="preserve">
+    <value>grpCharConfig</value>
+  </data>
+  <data name="&gt;&gt;grpCharConfig.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblColor13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblColor7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 20</value>
+  </data>
+  <data name="&gt;&gt;txt3DHeight.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblColor15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 20</value>
+  </data>
+  <data name="&gt;&gt;lblColor4.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="lblColor21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 144</value>
+  </data>
+  <data name="&gt;&gt;lblSoundEffects.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbl3DResolution.Name" xml:space="preserve">
+    <value>lbl3DResolution</value>
+  </data>
+  <data name="&gt;&gt;lbl3DResolution.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt3DHeight.Parent" xml:space="preserve">
+    <value>grpGlobalConfig</value>
+  </data>
+  <data name="&gt;&gt;lblColor20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="grpCharConfig.Size" type="System.Drawing.Size, System.Drawing">
+    <value>360, 195</value>
+  </data>
+  <data name="&gt;&gt;lblColor2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="picWarning.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtGUIWidth.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lblWarning.Name" xml:space="preserve">
+    <value>lblWarning</value>
+  </data>
+  <data name="lblColor23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>148, 144</value>
+  </data>
+  <data name="&gt;&gt;lblColor21.Parent" xml:space="preserve">
+    <value>grpCharConfig</value>
+  </data>
+  <data name="btnApply.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="&gt;&gt;grpCharConfig.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblColor11.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="btnApply.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lblColor6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 20</value>
+  </data>
+  <data name="&gt;&gt;lblSoundEffects.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lblColor14.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="lbl3DResolution.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 100</value>
+  </data>
+  <data name="&gt;&gt;grpGlobalConfig.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lbl3DX.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;lblColor1.Parent" xml:space="preserve">
+    <value>grpCharConfig</value>
+  </data>
+  <data name="&gt;&gt;lblColor20.Name" xml:space="preserve">
+    <value>lblColor20</value>
+  </data>
+  <data name="&gt;&gt;lblWarning.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="btnClose.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="lblColor12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>78, 96</value>
+  </data>
+  <data name="&gt;&gt;lblColor10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblColor6.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="txtGUIHeight.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lblColor16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 120</value>
+  </data>
+  <data name="&gt;&gt;lblSoundEffects.Parent" xml:space="preserve">
+    <value>grpGlobalConfig</value>
+  </data>
+  <data name="&gt;&gt;lblColor15.Parent" xml:space="preserve">
+    <value>grpCharConfig</value>
+  </data>
+  <data name="&gt;&gt;dlgChooseColor.Name" xml:space="preserve">
+    <value>dlgChooseColor</value>
+  </data>
+  <data name="&gt;&gt;picWarning.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="lblColor3.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lblColor5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 20</value>
+  </data>
+  <data name="txtGUIWidth.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;lblColor22.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblColor9.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnApply.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblColor10.Name" xml:space="preserve">
+    <value>lblColor10</value>
+  </data>
+  <data name="&gt;&gt;lblColor6.Name" xml:space="preserve">
+    <value>lblColor6</value>
+  </data>
+  <data name="txtGUIWidth.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 97</value>
+  </data>
+  <data name="lblColor19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 20</value>
+  </data>
+  <data name="&gt;&gt;lblColor7.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblColor5.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;txtGUIHeight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblColor21.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="lbl3DX.Location" type="System.Drawing.Point, System.Drawing">
+    <value>299, 100</value>
+  </data>
+  <data name="lblColor22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>78, 144</value>
+  </data>
+  <data name="lblGUIX.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 100</value>
+  </data>
+  <data name="&gt;&gt;lblColor9.Name" xml:space="preserve">
+    <value>lblColor9</value>
+  </data>
+  <data name="picWarning.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="cmbCharacters.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblWarning.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtSoundEffects.Name" xml:space="preserve">
+    <value>txtSoundEffects</value>
+  </data>
+  <data name="&gt;&gt;lblColor18.Parent" xml:space="preserve">
+    <value>grpCharConfig</value>
+  </data>
+  <data name="lblSoundEffects.Text" xml:space="preserve">
+    <value>Simultaneous Sound Effects:</value>
+  </data>
+  <data name="&gt;&gt;lblColor21.Name" xml:space="preserve">
+    <value>lblColor21</value>
+  </data>
+  <data name="&gt;&gt;txtGUIWidth.Parent" xml:space="preserve">
+    <value>grpGlobalConfig</value>
+  </data>
+  <data name="&gt;&gt;lblColor19.Parent" xml:space="preserve">
+    <value>grpCharConfig</value>
+  </data>
+  <data name="txt3DWidth.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 20</value>
+  </data>
+  <data name="&gt;&gt;lblColor8.Name" xml:space="preserve">
+    <value>lblColor8</value>
+  </data>
+  <data name="&gt;&gt;lblColor17.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="lblColor22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 20</value>
+  </data>
+  <data name="&gt;&gt;grpGlobalConfig.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
+    <value>btnCancel</value>
+  </data>
+  <data name="txtGUIHeight.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;lblColor10.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="grpGlobalConfig.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 4</value>
+  </data>
+  <data name="&gt;&gt;lblGUIResolution.Parent" xml:space="preserve">
+    <value>grpGlobalConfig</value>
+  </data>
+  <data name="txt3DHeight.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="txtGUIHeight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 20</value>
+  </data>
+  <data name="btnClose.Text" xml:space="preserve">
+    <value>&amp;Close</value>
+  </data>
+  <data name="btnApply.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 24</value>
+  </data>
+  <data name="lblColor3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 20</value>
+  </data>
+  <data name="&gt;&gt;lblColor16.Parent" xml:space="preserve">
+    <value>grpCharConfig</value>
+  </data>
+  <data name="lblColor7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>78, 72</value>
+  </data>
+  <data name="grpCharConfig.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;picWarning.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblColor5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblColor8.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lblGUIX.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblColor16.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="cmbCharacters.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 20</value>
+  </data>
+  <data name="&gt;&gt;lblColor6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblColor9.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;lblColor15.Name" xml:space="preserve">
+    <value>lblColor15</value>
+  </data>
+  <data name="txtSoundEffects.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>368, 389</value>
+  </data>
+  <data name="&gt;&gt;lbl3DX.Name" xml:space="preserve">
+    <value>lbl3DX</value>
+  </data>
+  <data name="lblSoundEffects.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 13</value>
+  </data>
+  <data name="&gt;&gt;lblColor16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblColor18.Name" xml:space="preserve">
+    <value>lblColor18</value>
+  </data>
+  <data name="picWarning.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 32</value>
+  </data>
+  <data name="grpGlobalConfig.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="txtSoundEffects.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="btnClose.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="&gt;&gt;lblGUIX.Name" xml:space="preserve">
+    <value>lblGUIX</value>
+  </data>
+  <data name="lblGUIX.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblGUIX.Text" xml:space="preserve">
+    <value>x</value>
+  </data>
+  <data name="&gt;&gt;lblColor17.Name" xml:space="preserve">
+    <value>lblColor17</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="lblColor5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>288, 48</value>
+  </data>
+  <data name="&gt;&gt;lblColor11.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="lblColor6.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;lblColor2.Parent" xml:space="preserve">
+    <value>grpCharConfig</value>
+  </data>
+  <data name="lblColor20.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="lblColor13.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;lblColor13.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblGUIX.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lblGUIX.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblColor12.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;cmbCharacters.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="lblColor14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 20</value>
+  </data>
+  <data name="&gt;&gt;lbl3DX.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblColor23.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lblColor23.Parent" xml:space="preserve">
+    <value>grpCharConfig</value>
+  </data>
+  <data name="&gt;&gt;lblColor10.Parent" xml:space="preserve">
+    <value>grpCharConfig</value>
+  </data>
+  <data name="lblColor23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 20</value>
+  </data>
+  <data name="&gt;&gt;lblColor5.Parent" xml:space="preserve">
+    <value>grpCharConfig</value>
+  </data>
+  <data name="grpGlobalConfig.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="picWarning.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 32</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="dlgChooseColor.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+</root>

@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F98E06E7-A9BF-4E8A-9059-96DF4DD2BEEC}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyName>PlayOnline.FFXI</AssemblyName>
+    <AssemblyOriginatorKeyFile>..\POLUtils.snk</AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <SignAssembly>true</SignAssembly>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <NoWarn>1607</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <NoWarn>1607</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <NoWarn>1607</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <NoWarn>1607</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\PlayOnline.Core\PlayOnline.Core.csproj">
+      <Name>PlayOnline.Core</Name>
+      <Project>{84C42502-1564-4617-B80C-ACE781051CE8}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Character.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FFXI.cs" />
+    <Compile Include="FileTypes\MonsterSpellInfo.cs" />
+    <Compile Include="FileTypes\SpellAndAbilityInfo.cs" />
+    <Compile Include="FileTypes\DMSGStringTable2.cs" />
+    <Compile Include="FileTypes\DMSGStringTable3.cs" />
+    <Compile Include="FileTypes\MobList.cs" />
+    <Compile Include="FileTypes\DMSGStringTable.cs" />
+    <Compile Include="Game.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IThings\AbilityInfo.cs" />
+    <Compile Include="IThings\AbilityInfo2.cs" />
+    <Compile Include="IThings\SpellInfo2.cs" />
+    <Compile Include="IThings\DMSGStringBlock.cs" />
+    <Compile Include="IThings\MobListEntry.cs" />
+    <Compile Include="IThings\DMSGStringTableEntry.cs" />
+    <Compile Include="IThings\DialogTableEntry.cs" />
+    <Compile Include="IThings\Graphic.cs" />
+    <Compile Include="IThings\Item.cs" />
+    <Compile Include="IThings\QuestInfo.cs" />
+    <Compile Include="IThings\SimpleStringTableEntry.cs" />
+    <Compile Include="IThings\SpellInfo.cs" />
+    <Compile Include="IThings\StatusInfo.cs" />
+    <Compile Include="IThings\Thing.cs" />
+    <Compile Include="IThings\XIStringTableEntry.cs" />
+    <Compile Include="FileTypes\SpellInfo.cs" />
+    <Compile Include="FileTypes\SimpleStringTable.cs" />
+    <Compile Include="FileTypes\DialogTable.cs" />
+    <Compile Include="FileTypes\XIStringTable.cs" />
+    <Compile Include="FileTypes\QuestInfo.cs" />
+    <Compile Include="FileTypes\AbilityInfo.cs" />
+    <Compile Include="FileTypes\StatusInfo.cs" />
+    <Compile Include="FileTypes\Images.cs" />
+    <Compile Include="ItemEditor.Designer.cs">
+      <DependentUpon>ItemEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileType.cs" />
+    <Compile Include="FileTypes\ItemData.cs" />
+    <Compile Include="PropertyPages\IThing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\IThing.Designer.cs">
+      <DependentUpon>IThing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThingList.cs" />
+    <Compile Include="IThing.cs" />
+    <Compile Include="PleaseWaitDialog.Designer.cs">
+      <DependentUpon>PleaseWaitDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="AutoTranslator.cs">
+      <SubType>Code</SubType>
+    </None>
+    <Compile Include="Enums.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FFXIEncoding.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FFXIEncryption.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ItemEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FFXIResourceManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PleaseWaitDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\Item.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\Item.Designer.cs">
+      <DependentUpon>Item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\Thing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\Thing.Designer.cs">
+      <DependentUpon>Thing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPages\Graphic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyPages\Graphic.Designer.cs">
+      <DependentUpon>Graphic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThingPropertyPages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThingPropertyPages.Designer.cs">
+      <DependentUpon>ThingPropertyPages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VanadielDate.cs" />
+    <EmbeddedResource Include="ConversionTables\00xx.dat" />
+    <EmbeddedResource Include="ConversionTables\81xx.dat" />
+    <EmbeddedResource Include="ConversionTables\82xx.dat" />
+    <EmbeddedResource Include="ConversionTables\83xx.dat" />
+    <EmbeddedResource Include="ConversionTables\84xx.dat" />
+    <EmbeddedResource Include="ConversionTables\85xx.dat" />
+    <EmbeddedResource Include="ConversionTables\86xx.dat" />
+    <EmbeddedResource Include="ConversionTables\87xx.dat" />
+    <EmbeddedResource Include="ConversionTables\88xx.dat" />
+    <EmbeddedResource Include="ConversionTables\89xx.dat" />
+    <EmbeddedResource Include="ConversionTables\8Axx.dat" />
+    <EmbeddedResource Include="ConversionTables\8Bxx.dat" />
+    <EmbeddedResource Include="ConversionTables\8Cxx.dat" />
+    <EmbeddedResource Include="ConversionTables\8Dxx.dat" />
+    <EmbeddedResource Include="ConversionTables\8Exx.dat" />
+    <EmbeddedResource Include="ConversionTables\8Fxx.dat" />
+    <EmbeddedResource Include="ConversionTables\90xx.dat" />
+    <EmbeddedResource Include="ConversionTables\91xx.dat" />
+    <EmbeddedResource Include="ConversionTables\92xx.dat" />
+    <EmbeddedResource Include="ConversionTables\93xx.dat" />
+    <EmbeddedResource Include="ConversionTables\94xx.dat" />
+    <EmbeddedResource Include="ConversionTables\95xx.dat" />
+    <EmbeddedResource Include="ConversionTables\96xx.dat" />
+    <EmbeddedResource Include="ConversionTables\97xx.dat" />
+    <EmbeddedResource Include="ConversionTables\98xx.dat" />
+    <EmbeddedResource Include="ConversionTables\99xx.dat" />
+    <EmbeddedResource Include="ConversionTables\9Axx.dat" />
+    <EmbeddedResource Include="ConversionTables\9Bxx.dat" />
+    <EmbeddedResource Include="ConversionTables\9Cxx.dat" />
+    <EmbeddedResource Include="ConversionTables\9Dxx.dat" />
+    <EmbeddedResource Include="ConversionTables\9Exx.dat" />
+    <EmbeddedResource Include="ConversionTables\9Fxx.dat" />
+    <EmbeddedResource Include="ConversionTables\E0xx.dat" />
+    <EmbeddedResource Include="ConversionTables\E1xx.dat" />
+    <EmbeddedResource Include="ConversionTables\E2xx.dat" />
+    <EmbeddedResource Include="ConversionTables\E3xx.dat" />
+    <EmbeddedResource Include="ConversionTables\E4xx.dat" />
+    <EmbeddedResource Include="ConversionTables\E5xx.dat" />
+    <EmbeddedResource Include="ConversionTables\E6xx.dat" />
+    <EmbeddedResource Include="ConversionTables\E7xx.dat" />
+    <EmbeddedResource Include="ConversionTables\E8xx.dat" />
+    <EmbeddedResource Include="ConversionTables\E9xx.dat" />
+    <EmbeddedResource Include="ConversionTables\EAxx.dat" />
+    <EmbeddedResource Include="ConversionTables\EBxx.dat" />
+    <EmbeddedResource Include="ConversionTables\ECxx.dat" />
+    <EmbeddedResource Include="ConversionTables\EDxx.dat" />
+    <EmbeddedResource Include="ConversionTables\EExx.dat" />
+    <EmbeddedResource Include="ConversionTables\EFxx.dat" />
+    <EmbeddedResource Include="ConversionTables\F0xx.dat" />
+    <EmbeddedResource Include="ConversionTables\F1xx.dat" />
+    <EmbeddedResource Include="ConversionTables\F2xx.dat" />
+    <EmbeddedResource Include="ConversionTables\F3xx.dat" />
+    <EmbeddedResource Include="ConversionTables\F4xx.dat" />
+    <EmbeddedResource Include="ConversionTables\F5xx.dat" />
+    <EmbeddedResource Include="ConversionTables\F6xx.dat" />
+    <EmbeddedResource Include="ConversionTables\F7xx.dat" />
+    <EmbeddedResource Include="ConversionTables\F8xx.dat" />
+    <EmbeddedResource Include="ConversionTables\F9xx.dat" />
+    <EmbeddedResource Include="ConversionTables\FAxx.dat" />
+    <EmbeddedResource Include="ConversionTables\FBxx.dat" />
+    <EmbeddedResource Include="ConversionTables\FCxx.dat" />
+    <EmbeddedResource Include="ItemEditor.de.resx">
+      <DependentUpon>ItemEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemEditor.resx">
+      <DependentUpon>ItemEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Messages.de.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Messages.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PleaseWaitDialog.de.resx">
+      <DependentUpon>PleaseWaitDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PleaseWaitDialog.resx">
+      <DependentUpon>PleaseWaitDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\Item.resx">
+      <DependentUpon>Item.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\IThing.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>IThing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\Thing.resx">
+      <DependentUpon>Thing.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyPages\Graphic.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Graphic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThingPropertyPages.de.resx">
+      <DependentUpon>ThingPropertyPages.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThingPropertyPages.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ThingPropertyPages.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

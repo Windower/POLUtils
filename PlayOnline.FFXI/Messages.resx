@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BadResID" xml:space="preserve">
+    <value>Unknown String Resource</value>
+  </data>
+  <data name="E:MoonPhase.NewMoon" xml:space="preserve">
+    <value>New Moon</value>
+  </data>
+  <data name="E:MoonPhase.WaxingCrescent" xml:space="preserve">
+    <value>Waxing Crescent</value>
+  </data>
+  <data name="E:MoonPhase.FirstQuarterMoon" xml:space="preserve">
+    <value>First Quarter Moon</value>
+  </data>
+  <data name="E:MoonPhase.WaxingGibbous" xml:space="preserve">
+    <value>Waxing Gibbous</value>
+  </data>
+  <data name="E:MoonPhase.FullMoon" xml:space="preserve">
+    <value>Full Moon</value>
+  </data>
+  <data name="E:MoonPhase.WaningGibbous" xml:space="preserve">
+    <value>Waning Gibbous</value>
+  </data>
+  <data name="E:MoonPhase.LastQuarterMoon" xml:space="preserve">
+    <value>Last Quarter Moon</value>
+  </data>
+  <data name="E:MoonPhase.WaningCrescent" xml:space="preserve">
+    <value>Waning Crescent</value>
+  </data>
+  <data name="E:Race.All" xml:space="preserve">
+    <value>All Races</value>
+  </data>
+  <data name="E:Race.Elvaan" xml:space="preserve">
+    <value>Elvaan</value>
+  </data>
+  <data name="E:Race.ElvaanFemale" xml:space="preserve">
+    <value>Elvaan ♀</value>
+  </data>
+  <data name="E:Race.ElvaanMale" xml:space="preserve">
+    <value>Elvaan ♂</value>
+  </data>
+  <data name="E:Race.Female" xml:space="preserve">
+    <value>♀ Only</value>
+  </data>
+  <data name="E:Race.Galka" xml:space="preserve">
+    <value>Galka</value>
+  </data>
+  <data name="E:Race.Hume" xml:space="preserve">
+    <value>Hume</value>
+  </data>
+  <data name="E:Race.HumeFemale" xml:space="preserve">
+    <value>Hume ♀</value>
+  </data>
+  <data name="E:Race.HumeMale" xml:space="preserve">
+    <value>Hume ♂</value>
+  </data>
+  <data name="E:Race.Male" xml:space="preserve">
+    <value>♂ Only</value>
+  </data>
+  <data name="E:Race.Mithra" xml:space="preserve">
+    <value>Mithra</value>
+  </data>
+  <data name="E:Race.None" xml:space="preserve">
+    <value>No Races</value>
+  </data>
+  <data name="E:Race.Tarutaru" xml:space="preserve">
+    <value>Tarutaru</value>
+  </data>
+  <data name="E:Race.TarutaruFemale" xml:space="preserve">
+    <value>Tarutaru ♀</value>
+  </data>
+  <data name="E:Race.TarutaruMale" xml:space="preserve">
+    <value>Tarutaru ♂</value>
+  </data>
+  <data name="E:PictureBoxSizeMode.CenterImage" xml:space="preserve">
+    <value>Centered (Actual Size)</value>
+  </data>
+  <data name="E:PictureBoxSizeMode.Normal" xml:space="preserve">
+    <value>Normal (Actual Size, Top Left Corner)</value>
+  </data>
+  <data name="E:PictureBoxSizeMode.StretchImage" xml:space="preserve">
+    <value>Stretched</value>
+  </data>
+  <data name="E:PictureBoxSizeMode.Zoom" xml:space="preserve">
+    <value>Zoomed (Stretched Preserving Aspect Ratio)</value>
+  </data>
+  <data name="F::activation-time" xml:space="preserve">
+    <value>Activation Time</value>
+  </data>
+  <data name="F::bits" xml:space="preserve">
+    <value>Bit Depth</value>
+  </data>
+  <data name="F::casting-time" xml:space="preserve">
+    <value>Casting Time</value>
+  </data>
+  <data name="F::category" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="F::category-id" xml:space="preserve">
+    <value>Category ID</value>
+  </data>
+  <data name="F::compression" xml:space="preserve">
+    <value>Compression</value>
+  </data>
+  <data name="F::damage" xml:space="preserve">
+    <value>Damage</value>
+  </data>
+  <data name="F::delay" xml:space="preserve">
+    <value>Delay</value>
+  </data>
+  <data name="F::description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="F::dps" xml:space="preserve">
+    <value>Damage Per Second</value>
+  </data>
+  <data name="F::element" xml:space="preserve">
+    <value>Element</value>
+  </data>
+  <data name="F::element-charge" xml:space="preserve">
+    <value>Element Charge</value>
+  </data>
+  <data name="F::english-description" xml:space="preserve">
+    <value>English Description</value>
+  </data>
+  <data name="F::english-name" xml:space="preserve">
+    <value>English Name</value>
+  </data>
+  <data name="F::extra" xml:space="preserve">
+    <value>Extra Text</value>
+  </data>
+  <data name="F::flag" xml:space="preserve">
+    <value>Flag</value>
+  </data>
+  <data name="F::flags" xml:space="preserve">
+    <value>Flags</value>
+  </data>
+  <data name="F::format" xml:space="preserve">
+    <value>Format</value>
+  </data>
+  <data name="F::height" xml:space="preserve">
+    <value>Height</value>
+  </data>
+  <data name="F::horizontal-resolution" xml:space="preserve">
+    <value>Horizontal Resolution</value>
+  </data>
+  <data name="F::icon" xml:space="preserve">
+    <value>Icon</value>
+  </data>
+  <data name="F::id" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="F::image" xml:space="preserve">
+    <value>Image</value>
+  </data>
+  <data name="F::important-colors" xml:space="preserve">
+    <value>Important Colors</value>
+  </data>
+  <data name="F::index" xml:space="preserve">
+    <value>Index</value>
+  </data>
+  <data name="F::japanese-description" xml:space="preserve">
+    <value>Japanese Description</value>
+  </data>
+  <data name="F::japanese-name" xml:space="preserve">
+    <value>Japanese Name</value>
+  </data>
+  <data name="F::jobs" xml:space="preserve">
+    <value>Jobs</value>
+  </data>
+  <data name="F::jug-size" xml:space="preserve">
+    <value>Jug Size</value>
+  </data>
+  <data name="F::level" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="F::level-required" xml:space="preserve">
+    <value>Level Required</value>
+  </data>
+  <data name="F::list-icon-id" xml:space="preserve">
+    <value>List Icon ID</value>
+  </data>
+  <data name="F::log-name-plural" xml:space="preserve">
+    <value>Log Name (Plural)</value>
+  </data>
+  <data name="F::log-name-singular" xml:space="preserve">
+    <value>Log Name (Singular)</value>
+  </data>
+  <data name="F::max-charges" xml:space="preserve">
+    <value>Max. Charges</value>
+  </data>
+  <data name="F::magic-type" xml:space="preserve">
+    <value>Magic Type</value>
+  </data>
+  <data name="F::mp-cost" xml:space="preserve">
+    <value>MP Cost</value>
+  </data>
+  <data name="F::name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="F::name-1" xml:space="preserve">
+    <value>Name (Part 1)</value>
+  </data>
+  <data name="F::name-2" xml:space="preserve">
+    <value>Name (Part 2)</value>
+  </data>
+  <data name="F::planes" xml:space="preserve">
+    <value>Planes</value>
+  </data>
+  <data name="F::puppet-slot" xml:space="preserve">
+    <value>Puppet Slot</value>
+  </data>
+  <data name="F::races" xml:space="preserve">
+    <value>Races</value>
+  </data>
+  <data name="F::recast-delay" xml:space="preserve">
+    <value>Recast Delay</value>
+  </data>
+  <data name="F::resource-id" xml:space="preserve">
+    <value>Resource ID</value>
+  </data>
+  <data name="F::reuse-delay" xml:space="preserve">
+    <value>Reuse Delay</value>
+  </data>
+  <data name="F::shared-timer-id" xml:space="preserve">
+    <value>Shared Timer ID</value>
+  </data>
+  <data name="F::shield-size" xml:space="preserve">
+    <value>Shield Size</value>
+  </data>
+  <data name="F::size" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="F::skill" xml:space="preserve">
+    <value>Skill</value>
+  </data>
+  <data name="F::slots" xml:space="preserve">
+    <value>Slots</value>
+  </data>
+  <data name="F::stack-size" xml:space="preserve">
+    <value>Stack Size</value>
+  </data>
+  <data name="F::status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="F::storage-slots" xml:space="preserve">
+    <value>Storage Slots</value>
+  </data>
+  <data name="F::string-count" xml:space="preserve">
+    <value># of Strings</value>
+  </data>
+  <data name="F::string-1" xml:space="preserve">
+    <value>String 1</value>
+  </data>
+  <data name="F::string-2" xml:space="preserve">
+    <value>String 2</value>
+  </data>
+  <data name="F::string-3" xml:space="preserve">
+    <value>String 3</value>
+  </data>
+  <data name="F::string-4" xml:space="preserve">
+    <value>String 4</value>
+  </data>
+  <data name="F::string-5" xml:space="preserve">
+    <value>String 5</value>
+  </data>
+  <data name="F::string-6" xml:space="preserve">
+    <value>String 6</value>
+  </data>
+  <data name="F::string-7" xml:space="preserve">
+    <value>String 7</value>
+  </data>
+  <data name="F::string-8" xml:space="preserve">
+    <value>String 8</value>
+  </data>
+  <data name="F::string-9" xml:space="preserve">
+    <value>String 9</value>
+  </data>
+  <data name="F::string-10" xml:space="preserve">
+    <value>String 10</value>
+  </data>
+  <data name="F::string-11" xml:space="preserve">
+    <value>String 11</value>
+  </data>
+  <data name="F::string-12" xml:space="preserve">
+    <value>String 12</value>
+  </data>
+  <data name="F::string-13" xml:space="preserve">
+    <value>String 13</value>
+  </data>
+  <data name="F::string-14" xml:space="preserve">
+    <value>String 14</value>
+  </data>
+  <data name="F::string-15" xml:space="preserve">
+    <value>String 15</value>
+  </data>
+  <data name="F::text" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="F::tp-cost" xml:space="preserve">
+    <value>TP Cost</value>
+  </data>
+  <data name="F::type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="F::unknown-1" xml:space="preserve">
+    <value>Unknown Value #1</value>
+  </data>
+  <data name="F::unknown-2" xml:space="preserve">
+    <value>Unknown Value #2</value>
+  </data>
+  <data name="F::unknown-3" xml:space="preserve">
+    <value>Unknown Value #3</value>
+  </data>
+  <data name="F::unknown-4" xml:space="preserve">
+    <value>Unknown Value #4</value>
+  </data>
+  <data name="F::unknown-5" xml:space="preserve">
+    <value>Unknown Value #5</value>
+  </data>
+  <data name="F::unknown-6" xml:space="preserve">
+    <value>Unknown Value #6</value>
+  </data>
+  <data name="F::unknown-7" xml:space="preserve">
+    <value>Unknown Value #7</value>
+  </data>
+  <data name="F::unknown-8" xml:space="preserve">
+    <value>Unknown Value #8</value>
+  </data>
+  <data name="F::unknown-9" xml:space="preserve">
+    <value>Unknown Value #9</value>
+  </data>
+  <data name="F::iLevel" xml:space="preserve">
+    <value>iLevel</value>
+  </data>
+  <data name="F::use-delay" xml:space="preserve">
+    <value>Use Delay</value>
+  </data>
+  <data name="F::used-colors" xml:space="preserve">
+    <value>Used Colors</value>
+  </data>
+  <data name="F::valid-targets" xml:space="preserve">
+    <value>Valid Target(s)</value>
+  </data>
+  <data name="F::vertical-resolution" xml:space="preserve">
+    <value>Vertical Resolution</value>
+  </data>
+  <data name="F::width" xml:space="preserve">
+    <value>Width</value>
+  </data>
+  <data name="FT:AbilityInfo" xml:space="preserve">
+    <value>Ability Info</value>
+  </data>
+  <data name="FT:DialogTable" xml:space="preserve">
+    <value>Dialog Table</value>
+  </data>
+  <data name="FT:DMSGStringTable" xml:space="preserve">
+    <value>String Table</value>
+  </data>
+  <data name="FT:DMSGStringTable2" xml:space="preserve">
+    <value>String Table</value>
+  </data>
+  <data name="FT:DMSGStringTable3" xml:space="preserve">
+    <value>String Table</value>
+  </data>
+  <data name="FT:Images" xml:space="preserve">
+    <value>Images</value>
+  </data>
+  <data name="FT:ItemData" xml:space="preserve">
+    <value>Item Data</value>
+  </data>
+  <data name="FT:MobList" xml:space="preserve">
+    <value>NPC/Monster List</value>
+  </data>
+  <data name="FT:QuestInfo" xml:space="preserve">
+    <value>Quest Info</value>
+  </data>
+  <data name="FT:SimpleStringTable" xml:space="preserve">
+    <value>String Table</value>
+  </data>
+  <data name="FT:SpellInfo" xml:space="preserve">
+    <value>Spell Info</value>
+  </data>
+  <data name="FT:SpellAndAbilityInfo" xml:space="preserve">
+    <value>Spell &amp; Ability Info</value>
+  </data>
+  <data name="FT:StatusInfo" xml:space="preserve">
+    <value>Status Info</value>
+  </data>
+  <data name="FT:XIStringTable" xml:space="preserve">
+    <value>String Table</value>
+  </data>
+  <data name="FTM:CheckingFile" xml:space="preserve">
+    <value>Checking whether or not the file is in a supported format...</value>
+  </data>
+  <data name="FTM:LoadingData" xml:space="preserve">
+    <value>Loading data from the file...</value>
+  </data>
+  <data name="FTM:OpeningFile" xml:space="preserve">
+    <value>Opening the file...</value>
+  </data>
+  <data name="FTM:ScanningFile" xml:space="preserve">
+    <value>Scanning file...</value>
+  </data>
+  <data name="GraphicTypeBitmap" xml:space="preserve">
+    <value>{0}-bit Bitmap</value>
+  </data>
+  <data name="GraphicTypeDXT" xml:space="preserve">
+    <value>DirectX Texture ({0})</value>
+  </data>
+  <data name="ImageText" xml:space="preserve">
+    <value>&lt;image&gt;</value>
+  </data>
+  <data name="InvalidThingField" xml:space="preserve">
+    <value>Invalid "{0}" field - could not find root element.</value>
+  </data>
+  <data name="InvalidThingToLoad" xml:space="preserve">
+    <value>Attempt to load "{0}" data from an invalid XML element.</value>
+  </data>
+  <data name="MacroBarLabel" xml:space="preserve">
+    <value>Macro Bar #{0}</value>
+  </data>
+  <data name="T:AbilityInfo" xml:space="preserve">
+    <value>Ability Info</value>
+  </data>
+  <data name="T:AbilityInfo2" xml:space="preserve">
+    <value>Ability Info</value>
+  </data>
+  <data name="T:DialogTableEntry" xml:space="preserve">
+    <value>Dialog Table Entry</value>
+  </data>
+  <data name="T:DMSGStringTableEntry" xml:space="preserve">
+    <value>String Table Entry</value>
+  </data>
+  <data name="T:DMSGStringBlock" xml:space="preserve">
+    <value>String Table Entry</value>
+  </data>
+  <data name="T:Graphic" xml:space="preserve">
+    <value>FFXI Image</value>
+  </data>
+  <data name="T:Item" xml:space="preserve">
+    <value>FFXI Item</value>
+  </data>
+  <data name="T:MobListEntry" xml:space="preserve">
+    <value>NPC/Monster List Entry</value>
+  </data>
+  <data name="T:QuestInfo" xml:space="preserve">
+    <value>Quest Info</value>
+  </data>
+  <data name="T:SimpleStringTableEntry" xml:space="preserve">
+    <value>String Table Entry</value>
+  </data>
+  <data name="T:SpellInfo" xml:space="preserve">
+    <value>Spell Info</value>
+  </data>
+  <data name="T:SpellInfo2" xml:space="preserve">
+    <value>Spell Info</value>
+  </data>
+  <data name="T:StatusInfo" xml:space="preserve">
+    <value>Status Info</value>
+  </data>
+  <data name="T:XIStringTableEntry" xml:space="preserve">
+    <value>String Table Entry</value>
+  </data>
+  <data name="WrongThingToLoad" xml:space="preserve">
+    <value>Attempt to load "{0}" data from an XML element that contains a different kind of data.</value>
+  </data>
+  <data name="T:MonsterSpellInfo2" xml:space="preserve">
+    <value>Monster Spell Info</value>
+  </data>
+</root>

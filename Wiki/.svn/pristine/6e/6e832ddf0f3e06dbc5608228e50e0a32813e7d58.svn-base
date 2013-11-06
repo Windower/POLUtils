@@ -1,0 +1,22 @@
+#summary Describes the format of the FFXI NPC/Monster List DATs.
+#labels Phase-Implementation
+
+This is the most recently supported DAT format; it's also quite simple.
+
+Files in this format will always be a multiple of 0x1C (28) bytes.
+
+A single entry consists of:
+{{{
+byte[18] Name
+int32_t  ID
+}}}
+
+The name is in the standard encoding, but seems to always be in the ASCII range (because monster names are the same in all FFXI versions, and the name font probably does not support kanji). It is padded with `NUL`s.
+
+The ID is of the form `0x010nnmmm`, with `nn` being the zone ID (cfr. the zone list string table; e.g. "Crawler's Nest" is zone #197 (`0xC5` in hex)), and `mmm` being the monster ID.
+This has 2 consequences:
+  # there's a max of 4096 monsters/npcs per zone (which seems plenty), and
+  # no 2 monsters in a zone are alike: each has its own ID code.
+IDs tend to be in sequence; I haven't noticed cases where IDs are out of order, but occasionally there are gaps in the monster ID.
+
+Note that the first entry in the file does not follow the rules for ID - it always has ID 0 and name "none" (and therefore can be used to detect this format, ideally with further sanity checks on ID).

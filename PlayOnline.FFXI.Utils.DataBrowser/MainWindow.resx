@@ -1,0 +1,1137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tvDataFiles.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tvDataFiles.ImageIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <metadata name="ilBrowserIcons.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ilBrowserIcons.ImageSize" type="System.Drawing.Size, System.Drawing">
+    <value>16, 16</value>
+  </data>
+  <data name="tvDataFiles.Indent" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="tvDataFiles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tvDataFiles.SelectedImageIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tvDataFiles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>324, 457</value>
+  </data>
+  <data name="tvDataFiles.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tvDataFiles.Name" xml:space="preserve">
+    <value>tvDataFiles</value>
+  </data>
+  <data name="&gt;&gt;tvDataFiles.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvDataFiles.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tvDataFiles.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="splSplitter.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="splSplitter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>324, 0</value>
+  </data>
+  <data name="splSplitter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>4, 457</value>
+  </data>
+  <data name="splSplitter.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;splSplitter.Name" xml:space="preserve">
+    <value>splSplitter</value>
+  </data>
+  <data name="&gt;&gt;splSplitter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Splitter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splSplitter.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;splSplitter.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="mnuPictureContext.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>141, 17</value>
+  </metadata>
+  <data name="mnuPCMode.Text" xml:space="preserve">
+    <value>&amp;Mode</value>
+  </data>
+  <data name="mnuPCModeNormal.Text" xml:space="preserve">
+    <value>&amp;Normal</value>
+  </data>
+  <data name="mnuPCModeCentered.Text" xml:space="preserve">
+    <value>&amp;Centered</value>
+  </data>
+  <data name="mnuPCModeStretched.Text" xml:space="preserve">
+    <value>&amp;Stretched</value>
+  </data>
+  <data name="mnuPCModeZoomed.Text" xml:space="preserve">
+    <value>&amp;Zoomed</value>
+  </data>
+  <data name="mnuPCBackground.Text" xml:space="preserve">
+    <value>&amp;Background</value>
+  </data>
+  <data name="mnuPCBackgroundBlack.Text" xml:space="preserve">
+    <value>&amp;Black</value>
+  </data>
+  <data name="mnuPCBackgroundWhite.Text" xml:space="preserve">
+    <value>&amp;White</value>
+  </data>
+  <data name="mnuPCBackgroundTransparent.Text" xml:space="preserve">
+    <value>&amp;Transparent</value>
+  </data>
+  <data name="mnuPCSaveAs.Text" xml:space="preserve">
+    <value>&amp;Save As...</value>
+  </data>
+  <metadata name="dlgSavePicture.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>287, 17</value>
+  </metadata>
+  <data name="dlgSavePicture.Filter" xml:space="preserve">
+    <value>Windows Bitmap (*.bmp)|*.bmp|Portable Network Graphic (*.png)|*.png</value>
+  </data>
+  <data name="dlgSavePicture.Title" xml:space="preserve">
+    <value>Save Picture As...</value>
+  </data>
+  <metadata name="mnuEntryListContext.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>411, 17</value>
+  </metadata>
+  <data name="mnuELCProperties.Text" xml:space="preserve">
+    <value>&amp;Properties...</value>
+  </data>
+  <data name="mnuELCSep.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="mnuELCCopyRow.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms">
+    <value>CtrlC</value>
+  </data>
+  <data name="mnuELCCopyRow.Text" xml:space="preserve">
+    <value>Copy &amp;Row</value>
+  </data>
+  <data name="mnuELCCopyField.Text" xml:space="preserve">
+    <value>Copy &amp;Field</value>
+  </data>
+  <data name="mnuELCSep2.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="mnuELCExport.Text" xml:space="preserve">
+    <value>&amp;Export</value>
+  </data>
+  <data name="mnuELCEAll.Text" xml:space="preserve">
+    <value>&amp;All Entries...</value>
+  </data>
+  <data name="mnuELCESelected.Text" xml:space="preserve">
+    <value>&amp;Selected Entries...</value>
+  </data>
+  <metadata name="mnuMain.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>579, 17</value>
+  </metadata>
+  <data name="&gt;&gt;ieItemViewer.Name" xml:space="preserve">
+    <value>ieItemViewer</value>
+  </data>
+  <data name="&gt;&gt;ieItemViewer.Type" xml:space="preserve">
+    <value>PlayOnline.FFXI.ItemEditor, PlayOnline.FFXI, Version=0.9.8.0, Culture=neutral, PublicKeyToken=8ac349c25b70e1ce</value>
+  </data>
+  <data name="&gt;&gt;ieItemViewer.Parent" xml:space="preserve">
+    <value>tabViewerItems</value>
+  </data>
+  <data name="&gt;&gt;ieItemViewer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;grpMainItemActions.Name" xml:space="preserve">
+    <value>grpMainItemActions</value>
+  </data>
+  <data name="&gt;&gt;grpMainItemActions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpMainItemActions.Parent" xml:space="preserve">
+    <value>tabViewerItems</value>
+  </data>
+  <data name="&gt;&gt;grpMainItemActions.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabViewerItems.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabViewerItems.Size" type="System.Drawing.Size, System.Drawing">
+    <value>432, 401</value>
+  </data>
+  <data name="tabViewerItems.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tabViewerItems.Text" xml:space="preserve">
+    <value>Item Data</value>
+  </data>
+  <data name="&gt;&gt;tabViewerItems.Name" xml:space="preserve">
+    <value>tabViewerItems</value>
+  </data>
+  <data name="&gt;&gt;tabViewerItems.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ThemedTabPage, PlayOnline.Core, Version=0.9.7.0, Culture=neutral, PublicKeyToken=8ac349c25b70e1ce</value>
+  </data>
+  <data name="&gt;&gt;tabViewerItems.Parent" xml:space="preserve">
+    <value>tabViewers</value>
+  </data>
+  <data name="&gt;&gt;tabViewerItems.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;picImageViewer.Name" xml:space="preserve">
+    <value>picImageViewer</value>
+  </data>
+  <data name="&gt;&gt;picImageViewer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;picImageViewer.Parent" xml:space="preserve">
+    <value>tabViewerImages</value>
+  </data>
+  <data name="&gt;&gt;picImageViewer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pnlImageChooser.Name" xml:space="preserve">
+    <value>pnlImageChooser</value>
+  </data>
+  <data name="&gt;&gt;pnlImageChooser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlImageChooser.Parent" xml:space="preserve">
+    <value>tabViewerImages</value>
+  </data>
+  <data name="&gt;&gt;pnlImageChooser.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabViewerImages.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabViewerImages.Size" type="System.Drawing.Size, System.Drawing">
+    <value>432, 401</value>
+  </data>
+  <data name="tabViewerImages.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tabViewerImages.Text" xml:space="preserve">
+    <value>Image(s)</value>
+  </data>
+  <data name="tabViewerImages.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;tabViewerImages.Name" xml:space="preserve">
+    <value>tabViewerImages</value>
+  </data>
+  <data name="&gt;&gt;tabViewerImages.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ThemedTabPage, PlayOnline.Core, Version=0.9.7.0, Culture=neutral, PublicKeyToken=8ac349c25b70e1ce</value>
+  </data>
+  <data name="&gt;&gt;tabViewerImages.Parent" xml:space="preserve">
+    <value>tabViewers</value>
+  </data>
+  <data name="&gt;&gt;tabViewerImages.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pnlGeneralContents.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pnlGeneralContents.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 28</value>
+  </data>
+  <data name="pnlGeneralContents.Size" type="System.Drawing.Size, System.Drawing">
+    <value>432, 373</value>
+  </data>
+  <data name="pnlGeneralContents.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;pnlGeneralContents.Name" xml:space="preserve">
+    <value>pnlGeneralContents</value>
+  </data>
+  <data name="&gt;&gt;pnlGeneralContents.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlGeneralContents.Parent" xml:space="preserve">
+    <value>tabViewerGeneral</value>
+  </data>
+  <data name="&gt;&gt;pnlGeneralContents.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;chkShowIcons.Name" xml:space="preserve">
+    <value>chkShowIcons</value>
+  </data>
+  <data name="&gt;&gt;chkShowIcons.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkShowIcons.Parent" xml:space="preserve">
+    <value>pnlThingListActions</value>
+  </data>
+  <data name="&gt;&gt;chkShowIcons.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnThingListSaveImages.Name" xml:space="preserve">
+    <value>btnThingListSaveImages</value>
+  </data>
+  <data name="&gt;&gt;btnThingListSaveImages.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnThingListSaveImages.Parent" xml:space="preserve">
+    <value>pnlThingListActions</value>
+  </data>
+  <data name="&gt;&gt;btnThingListSaveImages.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnThingListExportXML.Name" xml:space="preserve">
+    <value>btnThingListExportXML</value>
+  </data>
+  <data name="&gt;&gt;btnThingListExportXML.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnThingListExportXML.Parent" xml:space="preserve">
+    <value>pnlThingListActions</value>
+  </data>
+  <data name="&gt;&gt;btnThingListExportXML.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pnlThingListActions.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="pnlThingListActions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pnlThingListActions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>432, 28</value>
+  </data>
+  <data name="pnlThingListActions.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;pnlThingListActions.Name" xml:space="preserve">
+    <value>pnlThingListActions</value>
+  </data>
+  <data name="&gt;&gt;pnlThingListActions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlThingListActions.Parent" xml:space="preserve">
+    <value>tabViewerGeneral</value>
+  </data>
+  <data name="&gt;&gt;pnlThingListActions.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabViewerGeneral.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabViewerGeneral.Size" type="System.Drawing.Size, System.Drawing">
+    <value>432, 401</value>
+  </data>
+  <data name="tabViewerGeneral.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabViewerGeneral.Text" xml:space="preserve">
+    <value>General Contents</value>
+  </data>
+  <data name="&gt;&gt;tabViewerGeneral.Name" xml:space="preserve">
+    <value>tabViewerGeneral</value>
+  </data>
+  <data name="&gt;&gt;tabViewerGeneral.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ThemedTabPage, PlayOnline.Core, Version=0.9.7.0, Culture=neutral, PublicKeyToken=8ac349c25b70e1ce</value>
+  </data>
+  <data name="&gt;&gt;tabViewerGeneral.Parent" xml:space="preserve">
+    <value>tabViewers</value>
+  </data>
+  <data name="&gt;&gt;tabViewerGeneral.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tabViewers.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tabViewers.ItemSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 18</value>
+  </data>
+  <data name="tabViewers.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 30</value>
+  </data>
+  <data name="tabViewers.Size" type="System.Drawing.Size, System.Drawing">
+    <value>440, 427</value>
+  </data>
+  <data name="tabViewers.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;tabViewers.Name" xml:space="preserve">
+    <value>tabViewers</value>
+  </data>
+  <data name="&gt;&gt;tabViewers.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabViewers.Parent" xml:space="preserve">
+    <value>pnlViewerArea</value>
+  </data>
+  <data name="&gt;&gt;tabViewers.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnReloadFile.Name" xml:space="preserve">
+    <value>btnReloadFile</value>
+  </data>
+  <data name="&gt;&gt;btnReloadFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnReloadFile.Parent" xml:space="preserve">
+    <value>pnlNoViewers</value>
+  </data>
+  <data name="&gt;&gt;btnReloadFile.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblNoViewers.Name" xml:space="preserve">
+    <value>lblNoViewers</value>
+  </data>
+  <data name="&gt;&gt;lblNoViewers.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblNoViewers.Parent" xml:space="preserve">
+    <value>pnlNoViewers</value>
+  </data>
+  <data name="&gt;&gt;lblNoViewers.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pnlNoViewers.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="pnlNoViewers.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pnlNoViewers.Size" type="System.Drawing.Size, System.Drawing">
+    <value>440, 30</value>
+  </data>
+  <data name="pnlNoViewers.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pnlNoViewers.Name" xml:space="preserve">
+    <value>pnlNoViewers</value>
+  </data>
+  <data name="&gt;&gt;pnlNoViewers.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlNoViewers.Parent" xml:space="preserve">
+    <value>pnlViewerArea</value>
+  </data>
+  <data name="&gt;&gt;pnlNoViewers.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pnlViewerArea.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pnlViewerArea.Location" type="System.Drawing.Point, System.Drawing">
+    <value>328, 0</value>
+  </data>
+  <data name="pnlViewerArea.Size" type="System.Drawing.Size, System.Drawing">
+    <value>440, 457</value>
+  </data>
+  <data name="pnlViewerArea.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;pnlViewerArea.Name" xml:space="preserve">
+    <value>pnlViewerArea</value>
+  </data>
+  <data name="&gt;&gt;pnlViewerArea.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlViewerArea.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnlViewerArea.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ieItemViewer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 44</value>
+  </data>
+  <data name="ieItemViewer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>424, 260</value>
+  </data>
+  <data name="ieItemViewer.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ieItemViewer.Name" xml:space="preserve">
+    <value>ieItemViewer</value>
+  </data>
+  <data name="&gt;&gt;ieItemViewer.Type" xml:space="preserve">
+    <value>PlayOnline.FFXI.ItemEditor, PlayOnline.FFXI, Version=0.9.8.0, Culture=neutral, PublicKeyToken=8ac349c25b70e1ce</value>
+  </data>
+  <data name="&gt;&gt;ieItemViewer.Parent" xml:space="preserve">
+    <value>tabViewerItems</value>
+  </data>
+  <data name="&gt;&gt;ieItemViewer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cmbItems.Name" xml:space="preserve">
+    <value>cmbItems</value>
+  </data>
+  <data name="&gt;&gt;cmbItems.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbItems.Parent" xml:space="preserve">
+    <value>grpMainItemActions</value>
+  </data>
+  <data name="&gt;&gt;cmbItems.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnFindItems.Name" xml:space="preserve">
+    <value>btnFindItems</value>
+  </data>
+  <data name="&gt;&gt;btnFindItems.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnFindItems.Parent" xml:space="preserve">
+    <value>grpMainItemActions</value>
+  </data>
+  <data name="&gt;&gt;btnFindItems.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="grpMainItemActions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 4</value>
+  </data>
+  <data name="grpMainItemActions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>424, 40</value>
+  </data>
+  <data name="grpMainItemActions.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;grpMainItemActions.Name" xml:space="preserve">
+    <value>grpMainItemActions</value>
+  </data>
+  <data name="&gt;&gt;grpMainItemActions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpMainItemActions.Parent" xml:space="preserve">
+    <value>tabViewerItems</value>
+  </data>
+  <data name="&gt;&gt;grpMainItemActions.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cmbItems.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="cmbItems.ItemHeight" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="cmbItems.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 12</value>
+  </data>
+  <data name="cmbItems.MaxDropDownItems" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="cmbItems.Size" type="System.Drawing.Size, System.Drawing">
+    <value>322, 21</value>
+  </data>
+  <data name="cmbItems.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cmbItems.Name" xml:space="preserve">
+    <value>cmbItems</value>
+  </data>
+  <data name="&gt;&gt;cmbItems.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbItems.Parent" xml:space="preserve">
+    <value>grpMainItemActions</value>
+  </data>
+  <data name="&gt;&gt;cmbItems.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnFindItems.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnFindItems.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>System</value>
+  </data>
+  <data name="btnFindItems.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnFindItems.Location" type="System.Drawing.Point, System.Drawing">
+    <value>336, 11</value>
+  </data>
+  <data name="btnFindItems.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 22</value>
+  </data>
+  <data name="btnFindItems.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnFindItems.Text" xml:space="preserve">
+    <value>&amp;Find Item(s)...</value>
+  </data>
+  <data name="&gt;&gt;btnFindItems.Name" xml:space="preserve">
+    <value>btnFindItems</value>
+  </data>
+  <data name="&gt;&gt;btnFindItems.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnFindItems.Parent" xml:space="preserve">
+    <value>grpMainItemActions</value>
+  </data>
+  <data name="&gt;&gt;btnFindItems.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="picImageViewer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="picImageViewer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="picImageViewer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 36</value>
+  </data>
+  <data name="picImageViewer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>432, 365</value>
+  </data>
+  <data name="picImageViewer.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;picImageViewer.Name" xml:space="preserve">
+    <value>picImageViewer</value>
+  </data>
+  <data name="&gt;&gt;picImageViewer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;picImageViewer.Parent" xml:space="preserve">
+    <value>tabViewerImages</value>
+  </data>
+  <data name="&gt;&gt;picImageViewer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cmbImageChooser.Name" xml:space="preserve">
+    <value>cmbImageChooser</value>
+  </data>
+  <data name="&gt;&gt;cmbImageChooser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbImageChooser.Parent" xml:space="preserve">
+    <value>pnlImageChooser</value>
+  </data>
+  <data name="&gt;&gt;cmbImageChooser.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lblImageChooser.Name" xml:space="preserve">
+    <value>lblImageChooser</value>
+  </data>
+  <data name="&gt;&gt;lblImageChooser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblImageChooser.Parent" xml:space="preserve">
+    <value>pnlImageChooser</value>
+  </data>
+  <data name="&gt;&gt;lblImageChooser.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pnlImageChooser.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="pnlImageChooser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pnlImageChooser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>432, 36</value>
+  </data>
+  <data name="pnlImageChooser.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;pnlImageChooser.Name" xml:space="preserve">
+    <value>pnlImageChooser</value>
+  </data>
+  <data name="&gt;&gt;pnlImageChooser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlImageChooser.Parent" xml:space="preserve">
+    <value>tabViewerImages</value>
+  </data>
+  <data name="&gt;&gt;pnlImageChooser.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cmbImageChooser.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="cmbImageChooser.ItemHeight" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="cmbImageChooser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 8</value>
+  </data>
+  <data name="cmbImageChooser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 21</value>
+  </data>
+  <data name="cmbImageChooser.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cmbImageChooser.Name" xml:space="preserve">
+    <value>cmbImageChooser</value>
+  </data>
+  <data name="&gt;&gt;cmbImageChooser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbImageChooser.Parent" xml:space="preserve">
+    <value>pnlImageChooser</value>
+  </data>
+  <data name="&gt;&gt;cmbImageChooser.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblImageChooser.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblImageChooser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 12</value>
+  </data>
+  <data name="lblImageChooser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 16</value>
+  </data>
+  <data name="lblImageChooser.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblImageChooser.Text" xml:space="preserve">
+    <value>Choose an image to view:</value>
+  </data>
+  <data name="lblImageChooser.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;lblImageChooser.Name" xml:space="preserve">
+    <value>lblImageChooser</value>
+  </data>
+  <data name="&gt;&gt;lblImageChooser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblImageChooser.Parent" xml:space="preserve">
+    <value>pnlImageChooser</value>
+  </data>
+  <data name="&gt;&gt;lblImageChooser.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="chkShowIcons.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkShowIcons.Location" type="System.Drawing.Point, System.Drawing">
+    <value>253, 7</value>
+  </data>
+  <data name="chkShowIcons.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 17</value>
+  </data>
+  <data name="chkShowIcons.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="chkShowIcons.Text" xml:space="preserve">
+    <value>&amp;Show Icons</value>
+  </data>
+  <data name="&gt;&gt;chkShowIcons.Name" xml:space="preserve">
+    <value>chkShowIcons</value>
+  </data>
+  <data name="&gt;&gt;chkShowIcons.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkShowIcons.Parent" xml:space="preserve">
+    <value>pnlThingListActions</value>
+  </data>
+  <data name="&gt;&gt;chkShowIcons.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnThingListSaveImages.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnThingListSaveImages.Location" type="System.Drawing.Point, System.Drawing">
+    <value>134, 3</value>
+  </data>
+  <data name="btnThingListSaveImages.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 23</value>
+  </data>
+  <data name="btnThingListSaveImages.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnThingListSaveImages.Text" xml:space="preserve">
+    <value>&amp;Save All Images...</value>
+  </data>
+  <data name="&gt;&gt;btnThingListSaveImages.Name" xml:space="preserve">
+    <value>btnThingListSaveImages</value>
+  </data>
+  <data name="&gt;&gt;btnThingListSaveImages.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnThingListSaveImages.Parent" xml:space="preserve">
+    <value>pnlThingListActions</value>
+  </data>
+  <data name="&gt;&gt;btnThingListSaveImages.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnThingListExportXML.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="btnThingListExportXML.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 23</value>
+  </data>
+  <data name="btnThingListExportXML.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnThingListExportXML.Text" xml:space="preserve">
+    <value>&amp;Export List As XML...</value>
+  </data>
+  <data name="&gt;&gt;btnThingListExportXML.Name" xml:space="preserve">
+    <value>btnThingListExportXML</value>
+  </data>
+  <data name="&gt;&gt;btnThingListExportXML.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnThingListExportXML.Parent" xml:space="preserve">
+    <value>pnlThingListActions</value>
+  </data>
+  <data name="&gt;&gt;btnThingListExportXML.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnReloadFile.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnReloadFile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>362, 3</value>
+  </data>
+  <data name="btnReloadFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnReloadFile.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnReloadFile.Text" xml:space="preserve">
+    <value>&amp;Reload File</value>
+  </data>
+  <data name="&gt;&gt;btnReloadFile.Name" xml:space="preserve">
+    <value>btnReloadFile</value>
+  </data>
+  <data name="&gt;&gt;btnReloadFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnReloadFile.Parent" xml:space="preserve">
+    <value>pnlNoViewers</value>
+  </data>
+  <data name="&gt;&gt;btnReloadFile.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblNoViewers.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblNoViewers.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblNoViewers.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 6</value>
+  </data>
+  <data name="lblNoViewers.Size" type="System.Drawing.Size, System.Drawing">
+    <value>353, 16</value>
+  </data>
+  <data name="lblNoViewers.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblNoViewers.Text" xml:space="preserve">
+    <value>There are no viewers available for this file.</value>
+  </data>
+  <data name="lblNoViewers.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblNoViewers.Name" xml:space="preserve">
+    <value>lblNoViewers</value>
+  </data>
+  <data name="&gt;&gt;lblNoViewers.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblNoViewers.Parent" xml:space="preserve">
+    <value>pnlNoViewers</value>
+  </data>
+  <data name="&gt;&gt;lblNoViewers.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="dlgExportFile.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>676, 17</value>
+  </metadata>
+  <data name="dlgExportFile.Filter" xml:space="preserve">
+    <value>XML Files (*.xml)|*.xml|All Files|*.*</value>
+  </data>
+  <data name="dlgExportFile.Title" xml:space="preserve">
+    <value>Select File To Export To</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>768, 457</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>FFXI Data Browser</value>
+  </data>
+  <data name="&gt;&gt;ilBrowserIcons.Name" xml:space="preserve">
+    <value>ilBrowserIcons</value>
+  </data>
+  <data name="&gt;&gt;ilBrowserIcons.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuPictureContext.Name" xml:space="preserve">
+    <value>mnuPictureContext</value>
+  </data>
+  <data name="&gt;&gt;mnuPictureContext.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenu, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuPCMode.Name" xml:space="preserve">
+    <value>mnuPCMode</value>
+  </data>
+  <data name="&gt;&gt;mnuPCMode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuPCModeNormal.Name" xml:space="preserve">
+    <value>mnuPCModeNormal</value>
+  </data>
+  <data name="&gt;&gt;mnuPCModeNormal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuPCModeCentered.Name" xml:space="preserve">
+    <value>mnuPCModeCentered</value>
+  </data>
+  <data name="&gt;&gt;mnuPCModeCentered.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuPCModeStretched.Name" xml:space="preserve">
+    <value>mnuPCModeStretched</value>
+  </data>
+  <data name="&gt;&gt;mnuPCModeStretched.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuPCModeZoomed.Name" xml:space="preserve">
+    <value>mnuPCModeZoomed</value>
+  </data>
+  <data name="&gt;&gt;mnuPCModeZoomed.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuPCBackground.Name" xml:space="preserve">
+    <value>mnuPCBackground</value>
+  </data>
+  <data name="&gt;&gt;mnuPCBackground.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuPCBackgroundBlack.Name" xml:space="preserve">
+    <value>mnuPCBackgroundBlack</value>
+  </data>
+  <data name="&gt;&gt;mnuPCBackgroundBlack.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuPCBackgroundWhite.Name" xml:space="preserve">
+    <value>mnuPCBackgroundWhite</value>
+  </data>
+  <data name="&gt;&gt;mnuPCBackgroundWhite.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuPCBackgroundTransparent.Name" xml:space="preserve">
+    <value>mnuPCBackgroundTransparent</value>
+  </data>
+  <data name="&gt;&gt;mnuPCBackgroundTransparent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuPCSaveAs.Name" xml:space="preserve">
+    <value>mnuPCSaveAs</value>
+  </data>
+  <data name="&gt;&gt;mnuPCSaveAs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dlgSavePicture.Name" xml:space="preserve">
+    <value>dlgSavePicture</value>
+  </data>
+  <data name="&gt;&gt;dlgSavePicture.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuEntryListContext.Name" xml:space="preserve">
+    <value>mnuEntryListContext</value>
+  </data>
+  <data name="&gt;&gt;mnuEntryListContext.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenu, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuELCProperties.Name" xml:space="preserve">
+    <value>mnuELCProperties</value>
+  </data>
+  <data name="&gt;&gt;mnuELCProperties.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuELCSep.Name" xml:space="preserve">
+    <value>mnuELCSep</value>
+  </data>
+  <data name="&gt;&gt;mnuELCSep.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuELCCopyRow.Name" xml:space="preserve">
+    <value>mnuELCCopyRow</value>
+  </data>
+  <data name="&gt;&gt;mnuELCCopyRow.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuELCCopyField.Name" xml:space="preserve">
+    <value>mnuELCCopyField</value>
+  </data>
+  <data name="&gt;&gt;mnuELCCopyField.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuELCSep2.Name" xml:space="preserve">
+    <value>mnuELCSep2</value>
+  </data>
+  <data name="&gt;&gt;mnuELCSep2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuELCExport.Name" xml:space="preserve">
+    <value>mnuELCExport</value>
+  </data>
+  <data name="&gt;&gt;mnuELCExport.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuELCEAll.Name" xml:space="preserve">
+    <value>mnuELCEAll</value>
+  </data>
+  <data name="&gt;&gt;mnuELCEAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuELCESelected.Name" xml:space="preserve">
+    <value>mnuELCESelected</value>
+  </data>
+  <data name="&gt;&gt;mnuELCESelected.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnuMain.Name" xml:space="preserve">
+    <value>mnuMain</value>
+  </data>
+  <data name="&gt;&gt;mnuMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MainMenu, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dlgExportFile.Name" xml:space="preserve">
+    <value>dlgExportFile</value>
+  </data>
+  <data name="&gt;&gt;dlgExportFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainWindow</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

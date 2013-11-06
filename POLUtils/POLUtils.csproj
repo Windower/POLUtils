@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AF3C3123-0BD1-4AD4-9AF4-FD0C33871901}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyName>POLUtils</AssemblyName>
+    <AssemblyOriginatorKeyFile>..\POLUtils.snk</AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>POLUtils.POLUtils</StartupObject>
+    <SignAssembly>true</SignAssembly>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Binaries\$(Configuration)\$(Platform)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>275212672</BaseAddress>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <NoWarn>1607</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Binaries\$(Configuration)\$(Platform)\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>275212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <NoWarn>1607</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Binaries\$(Configuration)\$(Platform)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>275212672</BaseAddress>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <NoWarn>1607</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Binaries\$(Configuration)\$(Platform)\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>275212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <NoWarn>1607</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\PlayOnline.Core\PlayOnline.Core.csproj">
+      <Name>PlayOnline.Core</Name>
+      <Project>{84C42502-1564-4617-B80C-ACE781051CE8}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\PlayOnline.FFXI.Utils.ConfigEditor\PlayOnline.FFXI.Utils.ConfigEditor.csproj">
+      <Name>PlayOnline.FFXI.Utils.ConfigEditor</Name>
+      <Project>{BB3E6667-1B22-4465-98DA-821815A4BA93}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\PlayOnline.FFXI.Utils.DataBrowser\PlayOnline.FFXI.Utils.DataBrowser.csproj">
+      <Name>PlayOnline.FFXI.Utils.DataBrowser</Name>
+      <Project>{0E5DF1A6-9060-4E56-BCFC-6928AC4DB179}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\PlayOnline.FFXI.Utils.EngrishOnry\PlayOnline.FFXI.Utils.EngrishOnry.csproj">
+      <Project>{CBB91A27-923B-4853-9C7F-46B1955D436A}</Project>
+      <Name>PlayOnline.FFXI.Utils.EngrishOnry</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlayOnline.FFXI.Utils.ItemComparison\PlayOnline.FFXI.Utils.ItemComparison.csproj">
+      <Name>PlayOnline.FFXI.Utils.ItemComparison</Name>
+      <Project>{CA57295D-4CF1-4FE9-AB40-A2A1F8432BCA}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\PlayOnline.FFXI.Utils.MacroManager\PlayOnline.FFXI.Utils.MacroManager.csproj">
+      <Name>PlayOnline.FFXI.Utils.MacroManager</Name>
+      <Project>{966ACE61-C745-4B5E-AFFA-31A50E24341B}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\PlayOnline.FFXI.Utils.NPCRenamer\PlayOnline.FFXI.Utils.NPCRenamer.csproj">
+      <Project>{7A167973-DB45-472B-8983-F06B98CE1E70}</Project>
+      <Name>PlayOnline.FFXI.Utils.NPCRenamer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlayOnline.FFXI.Utils.StrangeApparatus\PlayOnline.FFXI.Utils.StrangeApparatus.csproj">
+      <Project>{3B4721B1-F1AD-4F44-88C8-7AE5B25FEDDF}</Project>
+      <Name>PlayOnline.FFXI.Utils.StrangeApparatus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlayOnline.FFXI\PlayOnline.FFXI.csproj">
+      <Name>PlayOnline.FFXI</Name>
+      <Project>{F98E06E7-A9BF-4E8A-9059-96DF4DD2BEEC}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\PlayOnline.Utils.AudioManager\PlayOnline.Utils.AudioManager.csproj">
+      <Name>PlayOnline.Utils.AudioManager</Name>
+      <Project>{C75FF527-FF4A-4F2B-8F86-69AA30E33C3A}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\PlayOnline.Utils.TetraViewer\PlayOnline.Utils.TetraViewer.csproj">
+      <Name>PlayOnline.Utils.TetraViewer</Name>
+      <Project>{5AE19CFB-270A-4CFA-A89A-E2EDB57CDA3A}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="POLUtilsUI.Designer.cs">
+      <DependentUpon>POLUtilsUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="POLUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POLUtilsUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SVNRevision.cs" />
+    <EmbeddedResource Include="Messages.de.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Messages.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POLUtilsUI.de.resx">
+      <DependentUpon>POLUtilsUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POLUtilsUI.resx">
+      <DependentUpon>POLUtilsUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Translators.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>cd $(SolutionDir)</PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

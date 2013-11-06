@@ -1,0 +1,131 @@
+#summary The POLUtils Release History.
+#labels Featured
+
+== POLUtils 0.9.9.2 - July 3rd, 2012 ==
+  * Added Vouchers and Slip
+  * Enabled file table to see folders beyond 255, ROM# beyond 9
+  * Updated ROMFilemappings to cover Mini-Expansion, Heroes of Abyssea, Voidwatch-Finale, Legion
+  * Updated decoding of spell+abil common files for the changes made in the May 15th, 2012 patch
+  * Added new files to known data in MassExtractor
+  * Added Test Client Data Browser Support
+
+== POLUtils 0.9.9.1 - October 5th, 2010 ==
+  * Bugfix release - XML exporting was messed up in the data browser
+
+== POLUtils 0.9.9 - October 3rd, 2010 ==
+  * Added the current Spells+Abilities string table to the data browser (String Tables>Common).
+  * Restructured the area-related menus of the data browser to produce shorter lists, and added the Abyssea areas.
+  * Development swithed to VS2008 (should not produce user-visible changes, since we still target .NET v2.0)
+
+== POLUtils 0.9.8 - September 11th, 2010 ==
+  * Fixed loading of the armor DAT (S/E prepended a block of 1024 items to it).
+  * Adjusted item comparison to deal with the comparison between the new armor DAT and older exports.
+
+== POLUtils 0.9.7 - July 8th, 2008 ==
+  * Only minor tweaks
+  * "Final" release (Pebbles quit FFXI around this time)
+
+== POLUtils 0.9.6 - March 11th, 2010 ==
+  * Fixed DAT loading for the March update
+
+== POLUtils 0.9.5 - December 8th, 2007 ==
+  * Improves Wings of the Goddess support
+  * Adds macro book support
+
+== POLUtils 0.9.4 - November 20th, 2007 ==
+  * Fixes armor DAT loading
+  * Adds a few more field values
+
+== POLUtils 0.9.3 - June 11th, 2007 ==
+  * NPC/Monster List Editor added
+  * Added support for the French and German DATs
+
+== POLUtils 0.9.2 - January 7th, 2007 ==
+  * EngrishOnry fix (autotranslator data)
+  * German translation updated
+
+== POLUtils 0.9.1 - December 20th, 2006 ==
+  * Compatibility update for the 20061218 patch
+  * Parts of EngrishOnry broken (and disabled)
+
+== POLUtils 0.9.0 - July 25th, 2006 ==
+  * Support added for Mob/NPC lists
+  * Various bugfixes
+  * Added native x64 build
+
+== POLUtils 0.8.3 - April 25th, 2006 ==
+  * Compatibility update for Treasures of Aht Urhgan
+
+== POLUtils 0.8.2 - March 21st, 2006 ==
+  * Fixed passcode generator for Strange Apparatus
+
+== POLUtils 0.8.1 - March 20th, 2006 ==
+  * Added passcode generator for Strange Apparatus
+  * (Re)added buffer playback to the audio manager
+
+== POLUtils 0.8.0 - February 23rd, 2006 ==
+  * Rewrite of DAT reading core
+  * German translation added
+  * Support for 64bit systems
+
+== POLUtils 0.7.0 - December 24th, 2005 ==
+  * Built against .NET v2
+  * EngrishOnry integrated in main UI
+  * Added simple utility to "upgrade" old item list exports
+  * Tweaks to CSV item export
+  * Translator kit added
+
+== POLUtils 0.6.4 - December 15th, 2005 ==
+  * Another compatibility update for the December patch (auto-translator data format changed)
+
+== POLUtils 0.6.3 - December 13th, 2005 ==
+  * Compatibility update for the December patch (item and spell data formats changed)
+  * Ability translation fixed in EngrishOnry
+  * Fixed layout issues in item viewer control
+
+== POLUtils 0.6.2 - November 20th, 2005 ==
+  * Fixes auto-translator translation in EngrishOnry
+  * EngrishOnry made more configurable
+  * More fields in item data (thanks to Stephen Newby)
+  * Added support for quest/mission/key item data
+
+== POLUtils 0.6.1 - August 2nd, 2005 ==
+  * Fixes dialog and string table translation in EngrishOnry
+  * Corrects/extends dialog table list in the data browser
+
+== POLUtils 0.6.0 - July 31st, 2005 ==
+  * EngrishOnry added (as separate utility)
+  * Item Comparison added
+  * Improvements to various types of data
+  * Item browser GUI change: autosizing list views
+
+== POLUtils 0.5.1 - May 6th, 2005 ==
+  * Fixes broken loading of Managed DirectSound
+
+== POLUtils 0.5.0 - May 1st, 2005 ==
+  * Improved installer
+  * Implemented full character set conversion (no more reliance on Windows codepages)
+  * Big overhaul of data browser
+  * Config Editor added
+
+== POLUtils 0.4.0 - January 16th, 2005 ==
+  * Installer added
+  * Bug fixed in data browser
+
+== POLUtils 0.3.5 - January 15th, 2005 ==
+  * New Features (Data Browser):
+    * Menu added for easy DAT finding
+    * Support for item data in the data browser
+    * All DATs will be scanned for known image formats
+
+== POLUtils 0.3 - January 4th, 2005 ==
+  * New Features:
+    * Interface language is selectable (depends on volunteer translators).
+    * FFXI Data Browser - allows browsing the contents of the .DAT files of FFXI.
+
+== POLUtils 0.2 - December 26th, 2004 ==
+  * First real release.
+  * Features:
+    * Audio Browser - allows playing & decoding of all PlayOnline-related audio files.
+    * Macro Manager - allows editing of character macro bars (with auto-translator support).
+    * TetraMaster image viewer - allows viewing (and extracting) of the image files of Tetra Master.

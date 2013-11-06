@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActionFailed" xml:space="preserve">
+    <value>*** {0}() FAILED ***</value>
+  </data>
+  <data name="AutoTransRestoreDone" xml:space="preserve">
+    <value>=== Auto-Translator Restoration Completed ===</value>
+  </data>
+  <data name="AutoTransTranslateDone" xml:space="preserve">
+    <value>=== Auto-Translator Translation Completed ===</value>
+  </data>
+  <data name="BackingUp" xml:space="preserve">
+    <value>Backing up: {0}</value>
+  </data>
+  <data name="CreateBackupDir" xml:space="preserve">
+    <value>Creating backup folder: {0}</value>
+  </data>
+  <data name="ErrorCaption" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="ItemFileSizeBad" xml:space="preserve">
+    <value>*** File size suggests this isn't item data - Translation Aborted ***</value>
+  </data>
+  <data name="ReplaceJPROM" xml:space="preserve">
+    <value>Replacing Japanese ROM file {0}</value>
+  </data>
+  <data name="Restoring" xml:space="preserve">
+    <value>Restoring: {0}</value>
+  </data>
+  <data name="SourceENROM" xml:space="preserve">
+    <value>Source: English ROM file {0}</value>
+  </data>
+  <data name="SpellFileSizeBad" xml:space="preserve">
+    <value>*** File size suggests this isn't spell data - Translation Aborted ***</value>
+  </data>
+  <data name="StringTableRestoreDone" xml:space="preserve">
+    <value>=== String Table Restoration Completed ===</value>
+  </data>
+  <data name="StringTableTranslateDone" xml:space="preserve">
+    <value>=== String Table Translation Completed ===</value>
+  </data>
+  <data name="DialogTableRestoreDone" xml:space="preserve">
+    <value>=== Dialog Table Restoration Completed ===</value>
+  </data>
+  <data name="DialogTableTranslateDone" xml:space="preserve">
+    <value>=== Dialog Table Translation Completed ===</value>
+  </data>
+  <data name="SpellRestoreDone" xml:space="preserve">
+    <value>=== Spell Data Restoration Completed ===</value>
+  </data>
+  <data name="SpellTranslateDone" xml:space="preserve">
+    <value>=== Spell Data Translation Completed ===</value>
+  </data>
+  <data name="AbilityRestoreDone" xml:space="preserve">
+    <value>=== Ability Data Restoration Completed ===</value>
+  </data>
+  <data name="AbilityTranslateDone" xml:space="preserve">
+    <value>=== Ability Data Translation Completed ===</value>
+  </data>
+  <data name="ItemRestoreDone" xml:space="preserve">
+    <value>=== Item Data Restoration Completed ===</value>
+  </data>
+  <data name="ItemTranslateDone" xml:space="preserve">
+    <value>=== Item Data Translation Completed ===</value>
+  </data>
+  <data name="TranslatingItems" xml:space="preserve">
+    <value>Translating item data file: {0}</value>
+  </data>
+  <data name="TranslatingSpells" xml:space="preserve">
+    <value>Translating spell data file: {0}</value>
+  </data>
+  <data name="AutoTransTooLarge" xml:space="preserve">
+    <value>*** AutoTranslator file seems too large - translation aborted ***</value>
+  </data>
+  <data name="TranslatingAutoTrans" xml:space="preserve">
+    <value>Translating auto-translator file: {0}</value>
+  </data>
+  <data name="AbilityFileSizeBad" xml:space="preserve">
+    <value>*** File size suggests this isn't ability data - Translation Aborted ***</value>
+  </data>
+  <data name="FileSizeMismatch" xml:space="preserve">
+    <value>*** File sizes of Japanese and English files do not match - Translation Aborted ***</value>
+  </data>
+  <data name="ItemTypeBad" xml:space="preserve">
+    <value>*** Unsupported item type - Translation Aborted ***</value>
+  </data>
+  <data name="ItemTypeMismatch" xml:space="preserve">
+    <value>*** Item type of Japanese and English files do not match - Translation Aborted ***</value>
+  </data>
+  <data name="TranslatingAbilities" xml:space="preserve">
+    <value>Translating ability data file: {0}</value>
+  </data>
+  <data name="UsingEnglishFile" xml:space="preserve">
+    <value>Using English data file: {0}</value>
+  </data>
+  <data name="ATBadENID" xml:space="preserve">
+    <value>*** Bad English ID ({0:X8}) - Translation Aborted ***</value>
+  </data>
+  <data name="ATBadJPID" xml:space="preserve">
+    <value>*** Bad Japanese ID ({0:X8}) - Translation Aborted ***</value>
+  </data>
+  <data name="ATCountMismatch" xml:space="preserve">
+    <value>*** Group Entry Count Mismatch (Japanese: {0}, English: {1}) - Translation Aborted ***</value>
+  </data>
+  <data name="ATIDMismatch" xml:space="preserve">
+    <value>*** ID Mismatch (Japanese: {0:X8}, English: {1:X8}) - Translation Aborted ***</value>
+  </data>
+  <data name="ATLowercaseProblem" xml:space="preserve">
+    <value>*** Lowercase string changed length (32 =&gt; {0})  - Translation Aborted ***</value>
+  </data>
+</root>

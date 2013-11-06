@@ -1,0 +1,25 @@
+The steps for translating the installer file (Languages.nsh) are:
+
+- copy all LangStrings for LANG_ENGLISH and put them at the end of the
+  file (but before the ";; Local Variables" line), leaving an empty line
+  between languages
+- Adjust the copied lines to use the correct language (e.g. ${LANG_GERMAN})
+- Translate the string contents.  Embedded quotes are escaped as $\"; if
+  you want to force a line break, put $\r$\n in the string.
+  $(xxx) or ${xxx} should not be changed (they refer to installer
+  variables)
+
+The DESC_* strings are the descriptions used for the install components.
+The LOG_* strings are written to the install log (also shown if Show
+Details is used in the installer).
+The NAME_* strings are the names used for the install components.
+The MB_* strings are used in message boxes.
+The other strings should have self-explanatory names.
+
+
+NOTE: You may also want to check
+      http://cvs.sourceforge.net/viewcvs.py/nsis/NSIS/Contrib/Language%20files/
+      to make sure than the common parts of the installer are available in
+      the language you're translating to.
+      If not, there's not much point in translating the POLUtils installer
+      messages.

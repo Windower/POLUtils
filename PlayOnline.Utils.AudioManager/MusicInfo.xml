@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: MusicInfo.xml 757 2010-07-04 13:05:45Z tim.vanholder $ -->
+<!--
+// Copyright © 2004-2010 Tim Van Holder
+// 
+// Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
+// 
+// Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS"
+// BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and limitations under the License.
+-->
+<pol-audio-data>
+  <application id="0001" name="Final Fantasy XI">
+    <!-- Note: "mov" looks like it should be here as a data path, but music999.bgw is actually a .wav file -->
+    <data-path>sound/win/music/data</data-path>
+    <track id="101"><title>Battle Theme (Solo)</title></track>
+    <track id="102"><title>Dungeon Battle Theme (Party)</title></track>
+    <track id="103"><title>Battle Theme (Party)</title></track>
+    <track id="104"><title>Yughott Grotto</title></track>
+    <track id="105"><title>Mhaura</title></track>
+    <track id="106"><title>Voyager (Ferry Music)</title></track>
+    <track id="107"><title>The Kingdom of San d'Oria</title></track>
+    <track id="108"><title>Vana'diel March (Title Screen Music)</title></track>
+    <track id="109"><title>Ronfaure</title></track>
+    <track id="110"><title>The Grand Duchy of Jueno</title></track>
+    <track id="111"><title>Blackout (Death Music)</title></track>
+    <track id="112"><title>Selbina</title></track>
+    <track id="113"><title>Sarutabaruta</title></track>
+    <track id="114"><title>Batallia Downs</title></track>
+    <track id="115"><title>Dungeon Battle Theme (Solo)</title></track>
+    <track id="116"><title>Gustaberg</title></track>
+    <track id="117"><title>Ru'Lude Gardens</title></track>
+    <track id="118"><title>Rolanberry Fields</title></track>
+    <track id="119"><title>Awakening (Final Boss Music)</title></track>
+    <track id="120"><title>Vana'diel March #2 (Nation Selection Music)</title></track>
+    <track id="121"><title>Shadow Lord</title></track>
+    <track id="122"><title>Delkfutt's Tower</title></track>
+    <track id="123"><title>Hopelessness</title></track>
+    <track id="124"><title>Recollection</title></track>
+    <track id="125"><title>Boss Battle Theme</title></track>
+    <track id="126"><title>Mog House</title></track>
+    <track id="127"><title>Anxiety</title></track>
+    <track id="128"><title>Airship</title></track>
+    <track id="129"><title>Unknown</title></track>
+    <track id="130"><title>[Character Creation] Tarutaru Female</title></track>
+    <track id="131"><title>[Character Creation] Elvaan Female</title></track>
+    <track id="132"><title>[Character Creation] Elvaan Male</title></track>
+    <track id="133"><title>[Character Creation] Hume Male</title></track>
+    <track id="136"><title>[Fishing] Fish On The Hook</title></track>
+    <track id="137"><title>Chains of Promathia - Final Boss Battle</title></track>
+    <track id="151"><title>The Federation of Windurst</title></track>
+    <track id="152"><title>The Republic of Bastok</title></track>
+    <track id="153"><title>Crystal Prelude</title></track>
+    <track id="154"><title>Metalworks</title></track>
+    <track id="155"><title>Castle Zvahl</title></track>
+    <track id="156"><title>Charteau d'Oraguille</title></track>
+    <track id="157"><title>Fury</title></track>
+    <track id="158"><title>Sauromugue Champaign</title></track>
+    <track id="159"><title>Sorrow</title></track>
+    <track id="160"><title>Repression</title></track>
+    <track id="161"><title>Despair</title></track>
+    <track id="162"><title>Heavens Tower</title></track>
+    <track id="163"><title>Sometime, Somewhere</title></track>
+    <track id="164"><title>Xarcabard</title></track>
+    <track id="165"><title>[Character Creation] Galka</title></track>
+    <track id="166"><title>[Character Creation] Mithra</title></track>
+    <track id="167"><title>[Character Creation] Tarutaru Male</title></track>
+    <track id="168"><title>[Character Creation] Hume Female</title></track>
+    <track id="169"><title>Regeneracy</title></track>
+    <track id="170"><title>Buccaneers</title></track>
+    <!-- ID 227 is bugged - the file has ID 256 set -->
+    <track id="256" filename="music227.bgw"><title>Summerfest Theme</title></track>
+    <track id="900"><title>Chains of Promathia - End Theme (Vocal)</title></track>
+  </application>
+  <application id="0001" name="Final Fantasy XI - Rise of the Zilart">
+    <data-path>sound2/win/music/data</data-path>
+    <track id="134"><title>Yuhtunga Jungle</title></track>
+    <!-- ID 135 is bugged - the file has ID 256 set -->
+    <track id="256" filename="music135.bgw"><title>Kazham</title></track>
+    <track id="171"><title>Altepa Desert</title></track>
+    <track id="181"><title>Chocobo (Short, Low-Quality)</title></track>
+    <track id="190"><title>The Sanctuary of Zi'Tah</title></track>
+    <track id="191"><title>Zilart Battle Theme</title></track>
+    <track id="192"><title>Zilart Dungeon Battle Theme</title></track>
+    <track id="193"><title>Zilart Boss Battle Theme</title></track>
+    <track id="194"><title>Raogrimm's Theme</title></track>
+    <track id="195"><title>Belief</title></track>
+    <track id="196"><title>Fighters of the Crystal</title></track>
+    <track id="197"><title>Tu'Lia Restoration</title></track>
+    <track id="198"><title>Eald'narche (Final Dungeon)</title></track>
+    <track id="199"><title>Grav'iton</title></track>
+    <track id="200"><title>Kam'lanaut's Theme</title></track>
+    <track id="201"><title>End Theme</title></track>
+    <track id="202"><title>Quest Theme #1</title></track>
+    <track id="203"><title>Quest Theme #2</title></track>
+    <track id="204"><title>Quest Theme #3</title></track>
+    <track id="205"><title>Quest Completion</title></track>
+    <track id="206"><title>Yve'noile's Theme</title></track>
+    <track id="207"><title>Ve'Lugannon Palace</title></track>
+    <track id="208"><title>Rabao</title></track>
+    <track id="209"><title>Norg</title></track>
+    <track id="210"><title>Tu'Lia</title></track>
+    <track id="211"><title>Ro'Maeve</title></track>
+    <track id="212"><title>Dash de Chocobo</title></track>
+    <track id="213"><title>Hall of the Gods</title></track>
+    <track id="214"><title>Wedding Music (Maybe)</title></track>
+  </application>
+  <application id="0001" name="Final Fantasy XI - Chains of Promathia">
+    <data-path>sound3/win/music/data</data-path>
+    <track id="218"><title>Promathia Battle Theme (Solo)</title></track>
+    <track id="219"><title>Promathia Battle Theme (Party)</title></track>
+    <track id="220"><title>Promathia Boss Battle Theme</title></track>
+    <track id="221"><title>Movalpolos</title></track>
+    <track id="222"><title>Emptyness</title></track>
+    <track id="223"><title>Conflict - March of the Hero</title></track>
+    <track id="224"><title>Dusk and Dawn</title></track>
+    <track id="225"><title>Pso'Xja</title></track>
+    <track id="226"><title>Ballista</title></track>
+    <track id="228"><title>The Garden of Ru'Hmet</title></track>
+    <track id="229"><title>Carpenter's Landing Raft</title></track>
+    <track id="230"><title>Tavnazian Archipelago</title></track>
+    <track id="232"><title>The Ruler of the Skies</title></track>
+    <track id="233"><title>The Celestial Capital – Al'Taieu</title></track>
+    <track id="234"><title>Happily Ever After</title></track>
+    <track id="235"><title>First Ode - Nocturne of the Gods</title></track>
+    <track id="236"><title>Fourth Ode - Clouded Dawn</title></track>
+    <track id="237"><title>Third Ode - Memoria de la Stona</title></track>
+    <track id="238"><title>A New Morning</title></track>
+    <track id="239"><title>Jeuno (Christmas Mix)</title></track>
+    <track id="240"><title>Second Ode - Distant Promises</title></track>
+    <track id="241"><title>Fifth Ode - A Time for Prayer</title></track>
+    <track id="242"><title>Promathia Title Screen Music</title></track>
+    <track id="199"><title>Grav'iton</title></track>
+    <track id="206"><title>Yve'noile's Theme</title></track>
+    <track id="245"><title>Tavnazian Safehold</title></track>
+  </application>
+  <application id="0001" name="Final Fantasy XI - Treasures of Aht Urhgan">
+    <data-path>sound4/win/music/data</data-path>
+    <track id="138"><title>Aht Urhgan Battle Theme</title></track>
+    <track id="139"><title>Aht Urhgan Dungeon Battle Theme</title></track>
+    <track id="142"><title>Aht Urhgan Title Screen Music</title></track>
+    <track id="143"><title>Aht Urhgan Boss Battle Theme (?)</title></track>
+    <track id="144"><title>Aht Urhgan Assault Battle Theme</title></track>
+    <track id="146"><title>Aht Urhgan Besieged Battle Theme (?)</title></track>
+    <track id="147"><title>Aht Urhgan Boat Ride</title></track>
+    <track id="148"><title>Aht Urhgan ???</title></track>
+    <track id="149"><title>Bafhlau Thickets - Wajaom Woodlands</title></track>
+    <track id="150"><title>Arrapago Reef</title></track>
+    <track id="172"><title>Aht Urhgan ???</title></track>
+    <track id="173"><title>Caedarva Mire</title></track>
+    <track id="174"><title>Aydeewa Subterrane</title></track>
+    <track id="175"><title>Nashmau</title></track>
+    <track id="176"><title>Aht Urhgan ???</title></track>
+    <track id="177"><title>Aht Urhgan ???</title></track>
+    <track id="178"><title>Al Zahbi - Aht Urhgan Whitegate</title></track>
+    <track id="179"><title>Aht Urhgan Title Screen Music</title></track>
+    <track id="183"><title>Aht Urhgan ???</title></track>
+    <track id="184"><title>Aht Urhgan ???</title></track>
+    <track id="185"><title>Aht Urhgan ???</title></track>
+    <track id="186"><title>(empty track)</title></track>
+    <track id="187"><title>(empty track)</title></track>
+  </application>
+  <application id="0001" name="Final Fantasy XI - Wings of the Goddess">
+    <data-path>sound5/win/music/data</data-path>
+  </application>
+  <application id="0001" name="Final Fantasy XI - Future Expansion (#5)">
+    <data-path>sound6/win/music/data</data-path>
+  </application>
+  <application id="0001" name="Final Fantasy XI - Future Expansion (#6)">
+    <data-path>sound7/win/music/data</data-path>
+  </application>
+  <application id="0001" name="Final Fantasy XI - Future Expansion (#7)">
+    <data-path>sound8/win/music/data</data-path>
+  </application>
+  <application id="0001" name="Final Fantasy XI - Future Expansion (#8)">
+    <data-path>sound9/win/music/data</data-path>
+  </application>
+  <application id="0002" name="Tetra Master">
+    <data-path>data/win/sound/music</data-path>
+    <composer>Naoshi Mizuta</composer>
+    <track id="200"><title>Game Lobby</title></track>
+    <track id="201"><title>Unknown</title></track>
+    <track id="202"><title>Card Selection</title></track>
+    <track id="203"><title>Match</title></track>
+    <track id="204"><title>Match End - Draw or Second Place</title></track>
+    <track id="205"><title>Card Auction</title></track>
+    <track id="206"><title>Card Shop</title></track>
+    <track id="207"><title>Unknown</title></track>
+    <track id="208"><title>Player Data</title></track>
+    <track id="209"><title>Options</title></track>
+    <track id="210"><title>Ranking</title></track>
+    <track id="212"><title>Match End - Win</title></track>
+    <track id="213"><title>Match End - Lose</title></track>
+    <track id="215"><title>Title Screen</title></track>
+    <track id="216"><title>Unknown</title></track>
+  </application>
+  <application id="1000" name="PlayOnline Viewer">
+    <composer>Noriko Matsueda</composer>
+    <!-- Opening Movie -->
+    <data-path>viewer/data/system/movie</data-path>
+    <track id="112"><title>Opening Movie Music</title></track>
+    <!-- Main Viewer Music -->
+    <data-path>viewer/data/system/bgm</data-path>
+    <track id="102"><title>Space</title></track>
+    <track id="103"><title>Jazz 1</title></track>
+    <track id="104"><title>Gin no Kaichudokei</title></track>
+    <track id="105"><title>Yousei no Odori</title></track>
+    <track id="106"><title>Yasuragi</title></track>
+    <track id="107"><title>Jungle</title></track>
+    <track id="108"><title>Henbyoushi</title></track>
+    <track id="109"><title>Dance</title></track>
+    <track id="110"><title>Honobono (ほのぼの - Heartwarming)</title></track>
+    <track id="111"><title>Jazz 2</title></track>
+    <track id="113"><title>Dolphin</title></track>
+    <track id="114"><title>Daikoukai</title></track>
+    <track id="115"><title>Fuwafuwa (ふわふわ - Fluffy)</title></track>
+    <track id="116"><title>Funky Monkey</title></track>
+    <track id="117"><title>Solid Wax</title></track>
+    <track id="118"><title>Filter Branch</title></track>
+    <track id="119"><title>Baby Herbie</title></track>
+    <track id="120"><title>Technorider</title></track>
+    <track id="121"><title>P'z</title></track>
+    <track id="122"><title>Foster Family</title></track>
+    <track id="123"><title>Kemushi</title></track>
+    <track id="124"><title>Oka no Mukouni (丘の向こうに - On The Other Side of the Hill)</title></track>
+    <track id="125"><title>Payload Pasific</title></track>
+    <track id="126"><title>Tsuioku (追憶 - Recollection)</title></track>
+  </application>
+  <!-- Add-On Package Music (different directory per region) -->
+  <application id="1000" name="PlayOnline Viewer - Additional Content">
+    <data-path>viewer/data/pml/bgm</data-path>   <!-- JP Version -->
+    <data-path>viewer/data/pmlus/bgm</data-path> <!-- NA Version -->
+    <data-path>viewer/data/pmleu/bgm</data-path> <!-- EU Version (?) -->
+    <!-- This is duplicated from the standard music set -->
+    <track id="114">
+      <title>Daikoukai</title>
+      <composer>Noriko Matsueda</composer>
+    </track>
+    <!-- Add-On Package Music - Final Fantasy XI -->
+    <track id="150"><title>[FFXI] Vanadiel Census + Rules &amp; Policies</title></track>
+    <track id="151"><title>[FFXI] Announcements + Update History + Compendium</title></track>
+    <track id="152"><title>[FFXI] Game Manual + Wedding Ceremonies Information</title></track>
+    <track id="153"><title>[FFXI] Title Screen</title></track>
+    <track id="155"><title>[FFXI] Staff List</title></track>
+    <!-- file suggests ID 157, header says ID 256 -->
+    <track id="256" filename="music157.bgw"><title>[FFXI] Compendium - Chains of Promathia Intro</title></track>
+    <track id="160"><title>[FFXI] Compendium - Chains of Promathia Information</title></track>
+    <!-- Add-On Package Music - Final Fantasy XI -->
+    <track id="018">
+      <title>[FFXII] Main Area</title>
+    </track>
+    <track id="020">
+      <title>[FFXII] Various Sub-Areas</title>
+    </track>
+    <!-- Add-On Package Music - Front Mission Online -->
+    <track id="156">
+      <title>[Front Mission Online] Intro</title>
+    </track>
+    <track id="158">
+      <title>[Front Mission Online] Main Area</title>
+    </track>
+    <!-- Add-On Package Music - Tetra Master -->
+    <track id="200"> <!-- file suggests ID 100, header says ID 200 -->
+      <title>[Tetra Master] Unknown</title>
+      <composer>Naoshi Mizuta</composer>
+    </track>
+    <track id="214"> <!-- file suggests ID 101, header says ID 214 -->
+      <title>[Tetra Master] Title Screen</title>
+      <composer>Naoshi Mizuta</composer>
+    </track>
+    <track id="202">
+      <title>[Tetra Master] Compendium</title>
+      <composer>Naoshi Mizuta</composer>
+    </track>
+    <track id="203">
+      <title>[Tetra Master] Empty</title>
+      <composer>Naoshi Mizuta</composer>
+    </track>
+    <track id="207">
+      <title>[Tetra Master] Strategy Guide</title>
+      <composer>Naoshi Mizuta</composer>
+    </track>
+    <track id="208">
+      <title>[Tetra Master] Credits</title>
+      <composer>Naoshi Mizuta</composer>
+    </track>
+  </application>
+</pol-audio-data>
