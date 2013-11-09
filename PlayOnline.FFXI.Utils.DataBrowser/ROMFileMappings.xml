@@ -336,6 +336,32 @@
 	<category><name><region-name id="045"/></name>
 	</category>
       </category>
+      <category><name>&amp;<i18n-string id="FFXI9"/></name>
+	<category><name><region-name id="049"/></name>
+	  <rom-file id="85591"><area-name id="256"/></rom-file>
+	  <rom-file id="85592"><area-name id="257"/></rom-file>
+	  <rom-file id="85593"><area-name id="258"/></rom-file>
+	  <rom-file id="85594"><area-name id="259"/></rom-file>
+	  <rom-file id="85615"><area-name id="280"/></rom-file>
+	  <rom-file id="85619"><area-name id="284"/></rom-file>
+	</category>
+	<category><name><region-name id="050"/></name>
+	  <rom-file id="85595"><area-name id="260"/></rom-file>
+	  <rom-file id="85596"><area-name id="261"/></rom-file>
+	  <rom-file id="85597"><area-name id="262"/></rom-file>
+	  <rom-file id="85598"><area-name id="263"/></rom-file>
+	  <rom-file id="85599"><area-name id="264"/></rom-file>
+	  <rom-file id="85600"><area-name id="265"/></rom-file>
+	  <rom-file id="85601"><area-name id="266"/></rom-file>
+	  <rom-file id="85602"><area-name id="267"/></rom-file>
+	  <rom-file id="85603"><area-name id="268"/></rom-file>
+	  <rom-file id="85604"><area-name id="269"/></rom-file>
+	  <rom-file id="85605"><area-name id="270"/></rom-file>
+	  <rom-file id="85606"><area-name id="271"/></rom-file>
+	  <rom-file id="85607"><area-name id="272"/></rom-file>
+	  <rom-file id="85608"><area-name id="273"/></rom-file>
+	</category>
+      </category>
       <category><name><i18n-string id="Menu:Abyssea"/></name>
 	<rom-file id="06635"><area-name id="215"/></rom-file>
 	<rom-file id="06435"><area-name id="015"/></rom-file>
@@ -370,6 +396,7 @@
 	<rom-file id="06603"><area-name id="183"/></rom-file>
 	<separator/>
 	<rom-file id="06642"><area-name id="222"/></rom-file>
+	<rom-file id="85619"><area-name id="285"/></rom-file>
 	<separator/>
 	<!-- These are not area-related -->
 	<rom-file id="07025"><i18n-string id="Menu:EmoteMessages"/></rom-file>
@@ -2741,23 +2768,30 @@
       <rom-file id="06902"><area-name id="182"/></rom-file>
     </category>
     <category><name>&amp;<i18n-string id="FFXI9"/></name>
+     <category><name><region-name id="049"/></name>
       <rom-file id="86491"><area-name id="256"/></rom-file>
       <rom-file id="86492"><area-name id="257"/></rom-file>
       <rom-file id="86493"><area-name id="258"/></rom-file>
       <rom-file id="86494"><area-name id="259"/></rom-file>
+     </category> 
+     <category><name><region-name id="050"/></name>
       <rom-file id="86495"><area-name id="260"/></rom-file>
       <rom-file id="86496"><area-name id="261"/></rom-file>
       <rom-file id="86497"><area-name id="262"/></rom-file>
       <rom-file id="86498"><area-name id="263"/></rom-file>
       <rom-file id="86499"><area-name id="264"/></rom-file>
       <rom-file id="86500"><area-name id="265"/></rom-file>
+      <rom-file id="86501"><area-name id="266"/></rom-file>
+      <rom-file id="86502"><area-name id="267"/></rom-file>
       <rom-file id="86503"><area-name id="268"/></rom-file>
       <rom-file id="86504"><area-name id="269"/></rom-file>
       <rom-file id="86505"><area-name id="270"/></rom-file>
       <rom-file id="86506"><area-name id="271"/></rom-file>
       <rom-file id="86507"><area-name id="272"/></rom-file>
+      <rom-file id="86508"><area-name id="273"/></rom-file>
       <rom-file id="86519"><area-name id="284"/></rom-file>
       <rom-file id="86515"><area-name id="280"/></rom-file>
+     </category>
     </category>
     <category><name><i18n-string id="Menu:Other"/></name>
       <category><name><i18n-string id="Menu:MoblinMaze"/></name>

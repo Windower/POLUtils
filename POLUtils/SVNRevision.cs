@@ -2,5 +2,5 @@
 using System; 
 namespace POLUtils { 
 internal class SVN { 
-public static uint Revision = 811;
+public static uint Revision = 812;
 }}
