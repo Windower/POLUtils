@@ -457,6 +457,7 @@ namespace PlayOnline.FFXI.Things {
       this.ResourceID_   =               BR.ReadUInt16();
       this.ValidTargets_ = (ValidTarget) BR.ReadUInt16();
       // Extra Fields (22/30/10/6/2 bytes for Armor/Weapon/Puppet/Item/UsableItem)
+
       if (T == Type.Armor || T == Type.Weapon) {
 	this.Level_ =                 BR.ReadUInt16();
 	this.Slots_ = (EquipmentSlot) BR.ReadUInt16();

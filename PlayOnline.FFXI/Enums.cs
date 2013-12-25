@@ -235,6 +235,9 @@ namespace PlayOnline.FFXI {
     GreatKatana      = 0x0a,
     Club             = 0x0b,
     Staff            = 0x0c,
+    AutomatonMelee   = 0x16,
+    AutomatonRange   = 0x17,
+    AutomatonMagic   = 0x18,
     Ranged           = 0x19,
     Marksmanship     = 0x1a,
     Thrown           = 0x1b,
@@ -276,6 +279,7 @@ namespace PlayOnline.FFXI {
     NPC         = 0x10,
     Enemy       = 0x20,
     Unknown     = 0x40,
+    Object	= 0x60,
     CorpseOnly  = 0x80,
     Corpse      = 0x9D // CorpseOnly + NPC + Ally + Partymember + Self
   }
