@@ -422,7 +422,7 @@ namespace PlayOnline.FFXI.Things {
         else if (ID < 0x4000) T = Type.Armor;
         else if (ID < 0x6000) T = Type.Weapon;
         else if (ID < 0x7000) T = Type.Armor;
-	else if (ID < 0x7600) T = Type.Slip;
+	else if (ID < 0x7400) T = Type.Slip;
         else if (ID < 0x7800) T = Type.Instinct;
 	else if (ID < 0xF200) T = Type.Monipulator;
 	  }
@@ -488,24 +488,15 @@ namespace PlayOnline.FFXI.Things {
 	this.Unknown3_      = BR.ReadUInt32();
 	
       }
-      else if (T == Type.Monipulator) {
-	this.Level_	    = BR.ReadUInt16();
-	this.Slots_	    = (EquipmentSlot) BR.ReadUInt16();
-	this.Jobs_	    = (Job)           BR.ReadUInt32();
-	this.InstinctCost_  = BR.ReadUInt16();
-	this.Unknown2_	    = BR.ReadUInt16();
-	this.Unknown3_      = BR.ReadUInt32();
-      }
       else if (T == Type.Instinct) {
-	this.Level_	    = BR.ReadUInt16();
-	this.Slots_	    = (EquipmentSlot) BR.ReadUInt16();
-	this.Races_	    = (Race)          BR.ReadUInt16();
-	this.Jobs_	    = (Job)           BR.ReadUInt32();
+	BR.ReadUInt32();
+	BR.ReadUInt32();
+	BR.ReadUInt16();
 	this.InstinctCost_  = BR.ReadUInt16();
-	this.Unknown2_	    = BR.ReadUInt16();
-	this.Unknown3_      = BR.ReadUInt32();
-	this.Unknown3_      = BR.ReadUInt32();
-	this.Unknown3_      = BR.ReadUInt32();
+	BR.ReadUInt16();
+	BR.ReadUInt32();
+	BR.ReadUInt32();
+	BR.ReadUInt32();
 
       }
       else if (T == Type.Item) {
@@ -535,6 +526,11 @@ namespace PlayOnline.FFXI.Things {
 	this.Unknown1_ = BR.ReadUInt16();
     for (int counter = 0; counter < 17; counter++)
         BR.ReadUInt32();
+      }
+      else if (T == Type.Monipulator) {
+	this.Unknown1_ = BR.ReadUInt16();
+    for (int counter = 0; counter < 24; counter++)
+        BR.ReadInt32();
       }
       // Next Up: Strings (variable size)
     long StringBase  = BR.BaseStream.Position;
@@ -566,6 +562,9 @@ namespace PlayOnline.FFXI.Things {
       }
       // Assign the strings to the proper fields
       switch (StringCount) {
+	case 1:
+	  this.Name_            = Strings[0];
+	  break;
 	case 2: // Japanese
 	  this.Name_            = Strings[0];
 	  this.Description_     = Strings[1];
