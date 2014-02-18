@@ -102,12 +102,12 @@ namespace PlayOnline.FFXI.Things {
       this.Clear();
       try {
       FFXIEncoding E = new FFXIEncoding();
-	this.Name_ = E.GetString(BR.ReadBytes(0x18)).TrimEnd('\0');
+	this.Name_ = E.GetString(BR.ReadBytes(0x1C)).TrimEnd('\0');
 	this.ID_   = BR.ReadUInt32();
 	// ID seems to be 010 + zone id + mob id (=> there's a hard max of 0xFFF (= 4095) mobs per zone, which seems plenty :))
     // Special 'instanced' zones like MMM or Meebles use 013 + 'zone id' + mob id.
     if ((this.ID_ != 0 && (this.ID_ & 0xFFF00000) != 0x01000000) && (this.ID_ != 0 && (this.ID_ & 0xFFF00000) != 0x01300000) && (this.ID_ != 0 && (this.ID_ & 0xFFF00000) != 0x01100000))
-	  return false;
+	  return true;
 	return true;
       } catch { return false; }
     }

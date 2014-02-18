@@ -23,9 +23,9 @@ namespace PlayOnline.FFXI.FileTypes {
     ThingList TL = new ThingList();
       if (ProgressCallback != null)
 	ProgressCallback(I18N.GetText("FTM:CheckingFile"), 0);
-      if ((BR.BaseStream.Length % 0x1C) != 0 || BR.BaseStream.Position != 0)
+      if ((BR.BaseStream.Length % 0x20) != 0 || BR.BaseStream.Position != 0)
 	return TL;
-    long EntryCount = BR.BaseStream.Length / 0x1C;
+    long EntryCount = BR.BaseStream.Length / 0x20;
       if (ProgressCallback != null)
 	ProgressCallback(I18N.GetText("FTM:LoadingData"), 0);
       try {
