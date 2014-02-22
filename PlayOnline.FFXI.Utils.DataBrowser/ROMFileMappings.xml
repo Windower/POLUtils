@@ -360,6 +360,9 @@
 	  <rom-file id="85606"><area-name id="271"/></rom-file>
 	  <rom-file id="85607"><area-name id="272"/></rom-file>
 	  <rom-file id="85608"><area-name id="273"/></rom-file>
+      <rom-file id="85609"><area-name id="274"/></rom-file>
+	  <rom-file id="85610"><area-name id="275"/></rom-file>
+    
 	</category>
       </category>
       <category><name><i18n-string id="Menu:Abyssea"/></name>
