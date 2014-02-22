@@ -2309,6 +2309,28 @@
       <rom-file id="53632"><i18n-string id="Menu:MapN"/>1</rom-file>
       <rom-file id="53633"><i18n-string id="Menu:MapN"/>2</rom-file>
     </category>
+    <category><name><area-name id="274"/></name> 
+      <rom-file id="53635"><i18n-string id="Menu:MapN"/>1</rom-file>
+      <rom-file id="53636"><i18n-string id="Menu:MapN"/>2</rom-file>
+    </category>
+    <category><name><area-name id="275"/></name> 
+      <rom-file id="53637"><i18n-string id="Menu:MapN"/>1</rom-file>
+      <rom-file id="53638"><i18n-string id="Menu:MapN"/>2</rom-file>
+      <rom-file id="53639"><i18n-string id="Menu:MapN"/>3</rom-file>
+      <rom-file id="53640"><i18n-string id="Menu:MapN"/>4</rom-file>
+      <rom-file id="53641"><i18n-string id="Menu:MapN"/>5</rom-file>
+      <rom-file id="53642"><i18n-string id="Menu:MapN"/>6</rom-file>
+      <rom-file id="53643"><i18n-string id="Menu:MapN"/>7</rom-file>
+      <rom-file id="53644"><i18n-string id="Menu:MapN"/>8</rom-file>
+      <rom-file id="53645"><i18n-string id="Menu:MapN"/>9</rom-file>
+      <rom-file id="53646"><i18n-string id="Menu:MapN"/>10</rom-file>
+      <rom-file id="53647"><i18n-string id="Menu:MapN"/>11</rom-file>
+      <rom-file id="53648"><i18n-string id="Menu:MapN"/>12</rom-file>
+      <rom-file id="53649"><i18n-string id="Menu:MapN"/>13</rom-file>
+      <rom-file id="53650"><i18n-string id="Menu:MapN"/>14</rom-file>
+      <rom-file id="53651"><i18n-string id="Menu:MapN"/>15</rom-file>
+      <rom-file id="53652"><i18n-string id="Menu:MapN"/>16</rom-file>
+    </category>
   </category>
       </category>
       <category><name><i18n-string id="Menu:Abyssea"/></name>
@@ -2789,6 +2811,8 @@
       <rom-file id="86506"><area-name id="271"/></rom-file>
       <rom-file id="86507"><area-name id="272"/></rom-file>
       <rom-file id="86508"><area-name id="273"/></rom-file>
+      <rom-file id="86509"><area-name id="274"/></rom-file>
+      <rom-file id="86510"><area-name id="275"/></rom-file>
       <rom-file id="86519"><area-name id="284"/></rom-file>
       <rom-file id="86515"><area-name id="280"/></rom-file>
      </category>
