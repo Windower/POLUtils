@@ -71,7 +71,7 @@ namespace PlayOnline.FFXI.Utils.NPCRenamer {
 	BinaryReader BR = new BinaryReader(DATFile, Encoding.ASCII);
 	bool Found = false;
 	  while (DATFile.Position < DATFile.Length) {
-	  string Name = new string(BR.ReadChars(0x18)).TrimEnd('\0');
+	  string Name = new string(BR.ReadChars(0x1C)).TrimEnd('\0');
 	  uint ID = BR.ReadUInt32();
 	    if (ID == NC.ID_) {
 	      Found = true;
@@ -86,9 +86,9 @@ namespace PlayOnline.FFXI.Utils.NPCRenamer {
 	    MessageBox.Show(String.Format(I18N.GetText("Message:EntryNotFound"), NC.ID_, NC.Old_, NC.New_, DATFileName), I18N.GetText("Title:EntryNotFound"), MessageBoxButtons.OK, MessageBoxIcon.Error);
 	    return;
 	  }
-	string NewName = NC.New_.PadRight(0x18, '\0');
+	string NewName = NC.New_.PadRight(0x1C, '\0');
 	  DATFile.Position -= 0x1C;
-	  DATFile.Write(Encoding.ASCII.GetBytes(NewName), 0, 0x18);
+	  DATFile.Write(Encoding.ASCII.GetBytes(NewName), 0, 0x1C);
 	  DATFile.Close();
 	}
       }

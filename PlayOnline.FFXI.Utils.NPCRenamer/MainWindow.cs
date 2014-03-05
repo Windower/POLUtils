@@ -41,7 +41,7 @@ namespace PlayOnline.FFXI.Utils.NPCRenamer {
 	    try {
 	      BinaryReader BR = new BinaryReader(new FileStream(DATFileName, FileMode.Open, FileAccess.Read), Encoding.ASCII);
 	      while (BR.BaseStream.Position != BR.BaseStream.Length) {
-	      string Name = new string(BR.ReadChars(0x18)).TrimEnd('\0');
+	      string Name = new string(BR.ReadChars(0x1C)).TrimEnd('\0');
 		Result.Add(new NPCInfo(BR.ReadUInt32(), Name));
 	      }
 	      BR.Close();
@@ -102,8 +102,8 @@ namespace PlayOnline.FFXI.Utils.NPCRenamer {
     NPCInfo NI = this.lstNPCNames.Items[e.Item].Tag as NPCInfo;
       if (NI != null) {
       string NewName = e.Label;
-	if (NewName.Length > 0x18) {
-	  NewName = NewName.Substring(0, 0x18);
+	if (NewName.Length > 0x1C) {
+	  NewName = NewName.Substring(0, 0x1C);
 	  this.lstNPCNames.Items[e.Item].Text = NewName;
 	}
 	NameChange.Add(NI.ID, NI.Name, NewName);
