@@ -410,9 +410,9 @@ namespace PlayOnline.FFXI.Things {
     }
 
     private static Color DecodeRGB565(ushort C) {
-    short R = (short) ((C & 0xf800) >> 8);
-    short G = (short) ((C & 0x07e0) >> 3);
-    short B = (short) ((C & 0x001f) << 3);
+    short R = (short) (((C & 0xf800) >> 8) | ((C & 0xf800) >> 13));
+    short G = (short) (((C & 0x07e0) >> 3) | ((C & 0x07e0) >> 9));
+    short B = (short) (((C & 0x001f) << 3) | ((C & 0x001f) >> 2));
       return Color.FromArgb(R, G, B);
     }
 
