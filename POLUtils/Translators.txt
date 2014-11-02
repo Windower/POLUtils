@@ -1,5 +1,0 @@
-The various translations of POLUtils are provided by the following people:
-
-Language   Status    Translator
----------- --------- -------------------------------------
-German     Partial   Andy Müller (Missingno from Fairy)

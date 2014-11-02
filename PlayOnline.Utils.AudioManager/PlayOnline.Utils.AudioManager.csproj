@@ -103,16 +103,8 @@
     <Compile Include="WaveWriter.Designer.cs">
       <DependentUpon>WaveWriter.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="InfoBuilder.de.resx">
-      <DependentUpon>InfoBuilder.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="InfoBuilder.resx">
       <DependentUpon>InfoBuilder.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainWindow.de.resx">
-      <DependentUpon>MainWindow.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="MainWindow.resx">
@@ -121,10 +113,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MusicInfo.xml" />
     <EmbeddedResource Include="SFXInfo.xml" />
-    <EmbeddedResource Include="WaveWriter.de.resx">
-      <DependentUpon>WaveWriter.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="WaveWriter.resx">
       <DependentUpon>WaveWriter.cs</DependentUpon>
       <SubType>Designer</SubType>
