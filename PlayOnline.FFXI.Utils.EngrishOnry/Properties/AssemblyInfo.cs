@@ -1,6 +1,4 @@
-// $Id: AssemblyInfo.cs 792 2012-07-03 18:39:58Z radecforever@gmail.com $
-
-// Copyright © 2004-2012 Tim Van Holder, Nevin Stepan
+// Copyright © 2004-2014 Tim Van Holder, Nevin Stepan, Windower Team
 // 
 // Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
@@ -18,10 +16,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle        ("PlayOnline.FFXI.Utils.EngrishOnry")]
 [assembly: AssemblyDescription  ("A utility that swaps and/or modifies FFXI files to provide an English-language interface for the JP version of the game.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany      ("")]
+[assembly: AssemblyCompany      ("Windower")]
 [assembly: AssemblyProduct      ("POLUtils")]
-[assembly: AssemblyCopyright    ("Copyright © 2004-2012 Tim Van Holder, Nevin Stepan")]
+[assembly: AssemblyCopyright    ("Copyright © 2004-2014 Tim Van Holder, Nevin Stepan, Windower Team")]
 [assembly: AssemblyTrademark    ("PlayOnline, Final Fantasy and Vanadiel are registered trademarks of Square Enix Co., Ltd.")]
 [assembly: AssemblyCulture      ("")]
-
-[assembly: AssemblyVersion      ("0.9.9.2")]

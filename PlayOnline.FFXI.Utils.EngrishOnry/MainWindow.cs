@@ -1,6 +1,4 @@
-// $Id: MainWindow.cs 792 2012-07-03 18:39:58Z radecforever@gmail.com $
-
-// Copyright © 2004-2012 Tim Van Holder, Nevin Stepan
+// Copyright © 2004-2014 Tim Van Holder, Nevin Stepan, Windower Team
 // 
 // Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0

@@ -1,6 +1,4 @@
-// $Id: AssemblyInfo.cs 787 2010-10-03 14:12:06Z tim.vanholder $
-
-// Copyright © 2004-2010 Tim Van Holder
+// Copyright © 2004-2014 Tim Van Holder, Windower Team
 // 
 // Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
@@ -18,10 +16,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle        ("PlayOnline.FFXI.Utils.ConfigEditor")]
 [assembly: AssemblyDescription  ("Components for editing Final Fantasy XI configuration")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany      ("")]
+[assembly: AssemblyCompany      ("Windower")]
 [assembly: AssemblyProduct      ("POLUtils")]
-[assembly: AssemblyCopyright    ("Copyright © 2004-2010 Tim Van Holder")]
+[assembly: AssemblyCopyright    ("Copyright © 2004-2014 Tim Van Holder, Windower Team")]
 [assembly: AssemblyTrademark    ("PlayOnline, Final Fantasy and Vanadiel are registered trademarks of Square Enix Co., Ltd.")]
 [assembly: AssemblyCulture      ("")]
-
-[assembly: AssemblyVersion      ("0.9.9.0")]

@@ -1,6 +1,4 @@
-// $Id: MainWindow.cs 775 2010-09-26 17:10:21Z tim.vanholder $
-
-// Copyright © 2004-2010 Tim Van Holder
+// Copyright © 2004-2014 Tim Van Holder, Windower Team
 // 
 // Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0

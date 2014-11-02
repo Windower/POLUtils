@@ -1,6 +1,4 @@
-// $Id: AssemblyInfo.cs 811 2013-03-30 15:37:08Z radecforever@gmail.com $
-
-// Copyright © 2004-2013 Tim Van Holder, Nevin Stepan
+// Copyright © 2004-2014 Tim Van Holder, Nevin Stepan, Windower Team
 // 
 // Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
@@ -18,10 +16,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle        ("PlayOnline.FFXI.Utils.DataBrowser")]
 [assembly: AssemblyDescription  ("Components for browsing Final Fantasy XI data files")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany      ("")]
+[assembly: AssemblyCompany      ("Windower")]
 [assembly: AssemblyProduct      ("POLUtils")]
-[assembly: AssemblyCopyright    ("Copyright © 2004-2012 Tim Van Holder, Nevin Stepan")]
+[assembly: AssemblyCopyright    ("Copyright © 2004-2014 Tim Van Holder, Nevin Stepan, Windower Team")]
 [assembly: AssemblyTrademark    ("PlayOnline, Final Fantasy and Vanadiel are registered trademarks of Square Enix Co., Ltd.")]
 [assembly: AssemblyCulture      ("")]
-
-[assembly: AssemblyVersion      ("1.0.1.0")]

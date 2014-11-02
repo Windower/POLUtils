@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright © 2014 Windower Dev Team
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.
+You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS"
+BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and limitations under the License.
+-->
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:netfx="http://schemas.microsoft.com/wix/NetFxExtension">
+	<Product Id="*" Name="POLUtils" Version="!(bind.FileVersion.$(var.POLUtils.TargetFileName))" Manufacturer="Windower" Language="1033" UpgradeCode="2c019e9d-15cc-4089-b419-a2e8b915362b">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+    <PropertyRef Id="NETFRAMEWORK20"/>
+
+    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+    <Condition Message="This application requires .NET Framework 2.0. Please install the .NET Framework then run this installer again.">
+      <![CDATA[Installed OR NETFRAMEWORK20]]>
+    </Condition>
+    
+		<MediaTemplate CompressionLevel="high" EmbedCab="yes" />
+    
+    <UIRef Id="WixUI_InstallDir" />
+    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
+
+    <WixVariable Id="WixUILicenseRtf" Value="license.rtf" />
+
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLFOLDER" Name="POLUtils" />
+      </Directory>
+      <Directory Id="ProgramMenuFolder" Name="Programs"/>
+    </Directory>
+
+    <Feature Id="Complete" Title="POLUtils">
+			<ComponentGroupRef Id="AllComponents" />
+		</Feature>
+	</Product>
+
+	<Fragment>
+		<ComponentGroup Id="AllComponents" Directory="INSTALLFOLDER">
+			<Component>
+        <File Source="$(var.POLUtils.TargetPath)" KeyPath="yes">
+          <Shortcut Id="POLUtilsStartMenuShortcut" Directory="ProgramMenuFolder" Name="POLUtils" Advertise="yes" />
+        </File>
+			</Component>
+      <Component>
+        <File Source="$(var.MassExtractor.TargetPath)" />
+      </Component>
+      <Component>
+        <File Source="$(var.ItemListUpgrade.TargetPath)" />
+      </Component>
+      <Component>
+        <File Source="$(var.PlayOnline.Core.TargetPath)" />
+      </Component>
+      <Component>
+        <File Source="$(var.PlayOnline.FFXI.TargetPath)" />
+      </Component>
+      <Component>
+        <File Source="$(var.PlayOnline.FFXI.Utils.ConfigEditor.TargetPath)" />
+      </Component>
+      <Component>
+        <File Source="$(var.PlayOnline.FFXI.Utils.DataBrowser.TargetPath)" />
+      </Component>
+      <Component>
+        <File Source="$(var.PlayOnline.FFXI.Utils.EngrishOnry.TargetPath)" />
+      </Component>
+      <Component>
+        <File Source="$(var.PlayOnline.FFXI.Utils.ItemComparison.TargetPath)" />
+      </Component>
+      <Component>
+        <File Source="$(var.PlayOnline.FFXI.Utils.MacroManager.TargetPath)" />
+      </Component>
+      <Component>
+        <File Source="$(var.PlayOnline.FFXI.Utils.NPCRenamer.TargetPath)" />
+      </Component>
+      <Component>
+        <File Source="$(var.PlayOnline.FFXI.Utils.StrangeApparatus.TargetPath)" />
+      </Component>
+      <Component>
+        <File Source="$(var.PlayOnline.Utils.AudioManager.TargetPath)" />
+      </Component>
+      <Component>
+        <File Source="$(var.PlayOnline.Utils.TetraViewer.TargetPath)" />
+      </Component>
+      <Component>
+        <File Source="..\LICENSE.txt" />
+      </Component>
+		</ComponentGroup>
+	</Fragment>
+</Wix>

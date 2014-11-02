@@ -1,5 +1,3 @@
-// $Id: AbilityInfo2.cs 794 2012-07-03 19:00:24Z radecforever@gmail.com $
-
 // Copyright © 2010-2012 Chris Baggett, Tim Van Holder, Nevin Stepan
 // 
 // Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.

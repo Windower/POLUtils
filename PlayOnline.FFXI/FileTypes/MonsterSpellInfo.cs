@@ -1,6 +1,4 @@
-﻿// $Id: MonsterSpellInfo2.cs 794 2012-07-03 19:00:24Z radecforever@gmail.com $
-
-// Copyright © 2012 Nevin Stepan
+﻿// Copyright © 2012 Nevin Stepan
 // 
 // Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
