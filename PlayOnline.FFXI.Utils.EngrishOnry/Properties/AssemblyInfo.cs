@@ -12,12 +12,11 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 [assembly: ComVisible(false)]
-
-[assembly: AssemblyTitle        ("PlayOnline.FFXI.Utils.EngrishOnry")]
-[assembly: AssemblyDescription  ("A utility that swaps and/or modifies FFXI files to provide an English-language interface for the JP version of the game.")]
+[assembly: AssemblyTitle("PlayOnline.FFXI.Utils.EngrishOnry")]
+[assembly: AssemblyDescription("A utility that swaps and/or modifies FFXI files to provide an English-language interface for the JP version of the game.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany      ("Windower")]
-[assembly: AssemblyProduct      ("POLUtils")]
-[assembly: AssemblyCopyright    ("Copyright © 2004-2014 Tim Van Holder, Nevin Stepan, Windower Team")]
-[assembly: AssemblyTrademark    ("PlayOnline, Final Fantasy and Vanadiel are registered trademarks of Square Enix Co., Ltd.")]
-[assembly: AssemblyCulture      ("")]
+[assembly: AssemblyCompany("Windower")]
+[assembly: AssemblyProduct("POLUtils")]
+[assembly: AssemblyCopyright("Copyright © 2004-2014 Tim Van Holder, Nevin Stepan, Windower Team")]
+[assembly: AssemblyTrademark("PlayOnline, Final Fantasy and Vanadiel are registered trademarks of Square Enix Co., Ltd.")]
+[assembly: AssemblyCulture("")]

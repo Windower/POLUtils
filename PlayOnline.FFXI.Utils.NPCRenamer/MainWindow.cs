@@ -12,119 +12,138 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Windows.Forms;
-
 using PlayOnline.Core;
 
-namespace PlayOnline.FFXI.Utils.NPCRenamer {
+namespace PlayOnline.FFXI.Utils.NPCRenamer
+{
+    public partial class MainWindow : Form
+    {
+        private class Area
+        {
+            public ushort ID;
 
-  public partial class MainWindow : Form {
+            public Area(ushort ID) { this.ID = ID; }
 
-    private class Area {
+            public override string ToString() { return FFXIResourceManager.GetAreaName(this.ID); }
 
-      public ushort ID;
+            public List<NPCInfo> Contents
+            {
+                get
+                {
+                    List<NPCInfo> Result = new List<NPCInfo>();
+                    string DATFileName = FFXI.GetFilePath(6720 + this.ID);
+                    if (DATFileName != null)
+                    {
+                        try
+                        {
+                            BinaryReader BR = new BinaryReader(new FileStream(DATFileName, FileMode.Open, FileAccess.Read),
+                                Encoding.ASCII);
+                            while (BR.BaseStream.Position != BR.BaseStream.Length)
+                            {
+                                string Name = new string(BR.ReadChars(0x1C)).TrimEnd('\0');
+                                Result.Add(new NPCInfo(BR.ReadUInt32(), Name));
+                            }
+                            BR.Close();
+                        }
+                        catch
+                        {
+                            Result.Clear();
+                        }
+                    }
+                    return Result;
+                }
+            }
+        }
 
-      public Area(ushort ID) {
-	this.ID = ID;
-      }
+        private class NPCInfo
+        {
+            public uint ID;
+            public string Name;
 
-      public override string ToString() {
-	return FFXIResourceManager.GetAreaName(this.ID);
-      }
+            public NPCInfo(uint ID, string Name)
+            {
+                this.ID = ID;
+                this.Name = Name;
+            }
+        }
 
-      public List<NPCInfo> Contents {
-	get {
-	List<NPCInfo> Result = new List<NPCInfo>();
-	string DATFileName = FFXI.GetFilePath(6720 + this.ID);
-	  if (DATFileName != null) {
-	    try {
-	      BinaryReader BR = new BinaryReader(new FileStream(DATFileName, FileMode.Open, FileAccess.Read), Encoding.ASCII);
-	      while (BR.BaseStream.Position != BR.BaseStream.Length) {
-	      string Name = new string(BR.ReadChars(0x1C)).TrimEnd('\0');
-		Result.Add(new NPCInfo(BR.ReadUInt32(), Name));
-	      }
-	      BR.Close();
-	    }
-	    catch { Result.Clear(); }
-	  }
-	  return Result;
-	}
-      }
+        public MainWindow()
+        {
+            this.InitializeComponent();
+            this.Icon = Icons.TextFile;
+            NameChange.LoadHistory();
+            for (ushort AreaID = 0; AreaID < 256; ++AreaID)
+            {
+                string AreaName = FFXIResourceManager.GetAreaName(AreaID);
+                if (AreaName == null || AreaName == String.Empty)
+                {
+                    continue;
+                }
+                this.cmbArea.Items.Add(new Area(AreaID));
+            }
+        }
 
+        private void MainWindow_Shown(object sender, EventArgs e)
+        {
+            this.cmbArea.Select();
+            this.Update();
+            if (this.cmbArea.Items.Count > 0)
+            {
+                this.cmbArea.SelectedIndex = 0;
+            }
+        }
+
+        private void cmbArea_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.lstNPCNames.Items.Clear();
+            Area A = this.cmbArea.SelectedItem as Area;
+            if (A != null)
+            {
+                foreach (NPCInfo NI in A.Contents)
+                {
+                    ListViewItem LVI = this.lstNPCNames.Items.Add(NI.Name);
+                    LVI.Tag = NI;
+                }
+            }
+        }
+
+        private void lstNPCNames_AfterLabelEdit(object sender, LabelEditEventArgs e)
+        {
+            if (e.Label == null) // User made no changes to the label text
+            {
+                return;
+            }
+            NPCInfo NI = this.lstNPCNames.Items[e.Item].Tag as NPCInfo;
+            if (NI != null)
+            {
+                string NewName = e.Label;
+                if (NewName.Length > 0x1C)
+                {
+                    NewName = NewName.Substring(0, 0x1C);
+                    this.lstNPCNames.Items[e.Item].Text = NewName;
+                }
+                NameChange.Add(NI.ID, NI.Name, NewName);
+                NI.Name = NewName;
+            }
+        }
+
+        private void lstNPCNames_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F2 && this.lstNPCNames.SelectedItems.Count > 0)
+            {
+                this.lstNPCNames.SelectedItems[0].BeginEdit();
+                e.Handled = true;
+            }
+        }
+
+        private void btnShowChanges_Click(object sender, EventArgs e)
+        {
+            using (NameChanges NC = new NameChanges())
+            {
+                NC.ShowDialog(this);
+            }
+        }
+
+        private void btnClose_Click(object sender, EventArgs e) { this.Close(); }
     }
-
-    private class NPCInfo {
-
-      public uint   ID;
-      public string Name;
-
-      public NPCInfo(uint ID, string Name) {
-	this.ID = ID;
-	this.Name = Name;
-      }
-
-    }
-
-    public MainWindow() {
-      this.InitializeComponent();
-      this.Icon = Icons.TextFile;
-      NameChange.LoadHistory();
-      for (ushort AreaID = 0; AreaID < 256; ++AreaID) {
-      string AreaName = FFXIResourceManager.GetAreaName(AreaID);
-	if (AreaName == null || AreaName == String.Empty)
-	  continue;
-	this.cmbArea.Items.Add(new Area(AreaID));
-      }
-    }
-
-    private void MainWindow_Shown(object sender, EventArgs e) {
-      this.cmbArea.Select();
-      this.Update();
-      if (this.cmbArea.Items.Count > 0)
-	this.cmbArea.SelectedIndex = 0;
-    }
-
-    private void cmbArea_SelectedIndexChanged(object sender, EventArgs e) {
-      this.lstNPCNames.Items.Clear();
-    Area A = this.cmbArea.SelectedItem as Area;
-      if (A != null) {
-	foreach (NPCInfo NI in A.Contents) {
-	ListViewItem LVI = this.lstNPCNames.Items.Add(NI.Name);
-	  LVI.Tag = NI;
-	}
-      }
-    }
-
-    private void lstNPCNames_AfterLabelEdit(object sender, LabelEditEventArgs e) {
-      if (e.Label == null) // User made no changes to the label text
-	return;
-    NPCInfo NI = this.lstNPCNames.Items[e.Item].Tag as NPCInfo;
-      if (NI != null) {
-      string NewName = e.Label;
-	if (NewName.Length > 0x1C) {
-	  NewName = NewName.Substring(0, 0x1C);
-	  this.lstNPCNames.Items[e.Item].Text = NewName;
-	}
-	NameChange.Add(NI.ID, NI.Name, NewName);
-	NI.Name = NewName;
-      }
-    }
-
-    private void lstNPCNames_KeyDown(object sender, KeyEventArgs e) {
-      if (e.KeyCode == Keys.F2 && this.lstNPCNames.SelectedItems.Count > 0) {
-	this.lstNPCNames.SelectedItems[0].BeginEdit();
-	e.Handled = true;
-      }
-    }
-
-    private void btnShowChanges_Click(object sender, EventArgs e) {
-      using (NameChanges NC = new NameChanges())
-	NC.ShowDialog(this);
-    }
-
-    private void btnClose_Click(object sender, EventArgs e) {
-      this.Close();
-    }
-
-  }
-
 }

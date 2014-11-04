@@ -12,12 +12,11 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 [assembly: ComVisible(false)]
-
-[assembly: AssemblyTitle        ("MassExtractor")]
-[assembly: AssemblyDescription  ("A utility to scan ALL DAT files and extract all known data in XML form.")]
+[assembly: AssemblyTitle("MassExtractor")]
+[assembly: AssemblyDescription("A utility to scan ALL DAT files and extract all known data in XML form.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany      ("Windower")]
-[assembly: AssemblyProduct      ("POLUtils")]
-[assembly: AssemblyCopyright    ("Copyright © 2004-2014 Tim Van Holder, Nevin Stepan, Windower Team")]
-[assembly: AssemblyTrademark    ("")]
-[assembly: AssemblyCulture      ("")]
+[assembly: AssemblyCompany("Windower")]
+[assembly: AssemblyProduct("POLUtils")]
+[assembly: AssemblyCopyright("Copyright © 2004-2014 Tim Van Holder, Nevin Stepan, Windower Team")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]

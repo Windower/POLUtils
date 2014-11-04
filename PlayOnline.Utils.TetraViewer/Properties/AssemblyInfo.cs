@@ -12,12 +12,11 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 [assembly: ComVisible(false)]
-
-[assembly: AssemblyTitle        ("PlayOnline.Utils.TetraViewer")]
-[assembly: AssemblyDescription  ("Utility for viewing the TetraMaster image data")]
+[assembly: AssemblyTitle("PlayOnline.Utils.TetraViewer")]
+[assembly: AssemblyDescription("Utility for viewing the TetraMaster image data")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany      ("Windower")]
-[assembly: AssemblyProduct      ("POLUtils")]
-[assembly: AssemblyCopyright    ("Copyright © 2004-2014 Tim Van Holder, Windower Team")]
-[assembly: AssemblyTrademark    ("PlayOnline, Final Fantasy and Vanadiel are registered trademarks of Square Enix Co., Ltd.")]
-[assembly: AssemblyCulture      ("")]
+[assembly: AssemblyCompany("Windower")]
+[assembly: AssemblyProduct("POLUtils")]
+[assembly: AssemblyCopyright("Copyright © 2004-2014 Tim Van Holder, Windower Team")]
+[assembly: AssemblyTrademark("PlayOnline, Final Fantasy and Vanadiel are registered trademarks of Square Enix Co., Ltd.")]
+[assembly: AssemblyCulture("")]

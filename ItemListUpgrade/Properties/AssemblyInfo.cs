@@ -12,12 +12,11 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 [assembly: ComVisible(false)]
-
-[assembly: AssemblyTitle        ("ItemListUpgrade")]
-[assembly: AssemblyDescription  ("A utility to upgrade XML item dumps to the format used by the current version of POLUtils.")]
+[assembly: AssemblyTitle("ItemListUpgrade")]
+[assembly: AssemblyDescription("A utility to upgrade XML item dumps to the format used by the current version of POLUtils.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany      ("Windower")]
-[assembly: AssemblyProduct      ("POLUtils")]
-[assembly: AssemblyCopyright    ("Copyright © 2004-2014 Tim Van Holder, Windower Team")]
-[assembly: AssemblyTrademark    ("")]
-[assembly: AssemblyCulture      ("")]
+[assembly: AssemblyCompany("Windower")]
+[assembly: AssemblyProduct("POLUtils")]
+[assembly: AssemblyCopyright("Copyright © 2004-2014 Tim Van Holder, Windower Team")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
