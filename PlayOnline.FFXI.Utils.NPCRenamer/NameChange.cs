@@ -115,7 +115,7 @@ namespace PlayOnline.FFXI.Utils.NPCRenamer
                         return;
                     }
                     string NewName = NC.New_.PadRight(0x1C, '\0');
-                    DATFile.Position -= 0x1C;
+                    DATFile.Position -= 0x20;
                     DATFile.Write(Encoding.ASCII.GetBytes(NewName), 0, 0x1C);
                     DATFile.Close();
                 }
