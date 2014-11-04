@@ -4,7 +4,10 @@ VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A032E7DB-67AF-4ADF-9D15-085DBBCFA524}"
 	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
 		LICENSE.txt = LICENSE.txt
+		POLUtils.snk = POLUtils.snk
+		README.md = README.md
 		Version.cs = Version.cs
 	EndProjectSection
 EndProject
@@ -16,17 +19,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Wiki Pages", "Wiki Pages", 
 		Wiki\ReleaseHistory.wiki = Wiki\ReleaseHistory.wiki
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItemListUpgrade", "ItemListUpgrade\ItemListUpgrade.csproj", "{C80C8B59-0A38-4A7B-9C73-00603123B006}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POLUtils", "POLUtils\POLUtils.csproj", "{AF3C3123-0BD1-4AD4-9AF4-FD0C33871901}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassExtractor", "MassExtractor\MassExtractor.csproj", "{C9683F0B-16CA-4CEF-907A-2802B5F12C43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItemListUpgrade", "ItemListUpgrade\ItemListUpgrade.csproj", "{C80C8B59-0A38-4A7B-9C73-00603123B006}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayOnline.Core", "PlayOnline.Core\PlayOnline.Core.csproj", "{84C42502-1564-4617-B80C-ACE781051CE8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayOnline.FFXI", "PlayOnline.FFXI\PlayOnline.FFXI.csproj", "{F98E06E7-A9BF-4E8A-9059-96DF4DD2BEEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayOnline.FFXI.Utils.ConfigEditor", "PlayOnline.FFXI.Utils.ConfigEditor\PlayOnline.FFXI.Utils.ConfigEditor.csproj", "{BB3E6667-1B22-4465-98DA-821815A4BA93}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayOnline.FFXI.Utils.DataBrowser", "PlayOnline.FFXI.Utils.DataBrowser\PlayOnline.FFXI.Utils.DataBrowser.csproj", "{0E5DF1A6-9060-4E56-BCFC-6928AC4DB179}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayOnline.FFXI.Utils.ConfigEditor", "PlayOnline.FFXI.Utils.ConfigEditor\PlayOnline.FFXI.Utils.ConfigEditor.csproj", "{BB3E6667-1B22-4465-98DA-821815A4BA93}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayOnline.FFXI.Utils.EngrishOnry", "PlayOnline.FFXI.Utils.EngrishOnry\PlayOnline.FFXI.Utils.EngrishOnry.csproj", "{CBB91A27-923B-4853-9C7F-46B1955D436A}"
 EndProject
@@ -41,8 +46,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayOnline.Utils.AudioManager", "PlayOnline.Utils.AudioManager\PlayOnline.Utils.AudioManager.csproj", "{C75FF527-FF4A-4F2B-8F86-69AA30E33C3A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayOnline.Utils.TetraViewer", "PlayOnline.Utils.TetraViewer\PlayOnline.Utils.TetraViewer.csproj", "{5AE19CFB-270A-4CFA-A89A-E2EDB57CDA3A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POLUtils", "POLUtils\POLUtils.csproj", "{AF3C3123-0BD1-4AD4-9AF4-FD0C33871901}"
 EndProject
 Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "Installer", "Installer\Installer.wixproj", "{C6741D14-0E44-42BC-A17E-2966B9FBD28B}"
 EndProject

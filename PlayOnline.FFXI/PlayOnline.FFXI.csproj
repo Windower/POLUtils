@@ -91,21 +91,21 @@
     <Compile Include="Game.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="IThings\AbilityInfo.cs" />
-    <Compile Include="IThings\AbilityInfo2.cs" />
-    <Compile Include="IThings\SpellInfo2.cs" />
-    <Compile Include="IThings\DMSGStringBlock.cs" />
-    <Compile Include="IThings\MobListEntry.cs" />
-    <Compile Include="IThings\DMSGStringTableEntry.cs" />
-    <Compile Include="IThings\DialogTableEntry.cs" />
-    <Compile Include="IThings\Graphic.cs" />
-    <Compile Include="IThings\Item.cs" />
-    <Compile Include="IThings\QuestInfo.cs" />
-    <Compile Include="IThings\SimpleStringTableEntry.cs" />
-    <Compile Include="IThings\SpellInfo.cs" />
-    <Compile Include="IThings\StatusInfo.cs" />
-    <Compile Include="IThings\Thing.cs" />
-    <Compile Include="IThings\XIStringTableEntry.cs" />
+    <Compile Include="Things\AbilityInfo.cs" />
+    <Compile Include="Things\AbilityInfo2.cs" />
+    <Compile Include="Things\SpellInfo2.cs" />
+    <Compile Include="Things\DMSGStringBlock.cs" />
+    <Compile Include="Things\MobListEntry.cs" />
+    <Compile Include="Things\DMSGStringTableEntry.cs" />
+    <Compile Include="Things\DialogTableEntry.cs" />
+    <Compile Include="Things\Graphic.cs" />
+    <Compile Include="Things\Item.cs" />
+    <Compile Include="Things\QuestInfo.cs" />
+    <Compile Include="Things\SimpleStringTableEntry.cs" />
+    <Compile Include="Things\SpellInfo.cs" />
+    <Compile Include="Things\StatusInfo.cs" />
+    <Compile Include="Things\Thing.cs" />
+    <Compile Include="Things\XIStringTableEntry.cs" />
     <Compile Include="FileTypes\SpellInfo.cs" />
     <Compile Include="FileTypes\SimpleStringTable.cs" />
     <Compile Include="FileTypes\DialogTable.cs" />

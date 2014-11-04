@@ -8,13 +8,9 @@
     <SchemaVersion>2.0</SchemaVersion>
     <OutputName>polutils</OutputName>
     <OutputType>Package</OutputType>
-    <WixToolPath>$(SolutionDir)packages\WiX.Toolset.3.8.1128.0\tools\wix\</WixToolPath>
-    <WixTargetsPath>$(WixToolPath)wix.targets</WixTargetsPath>
-    <WixTasksPath>$(WixToolPath)WixTasks.dll</WixTasksPath>
-    <Name>Installer</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
-    <OutputPath>..\Binaries\$(Configuration)\</OutputPath>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
     <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
     <DefineConstants>Debug</DefineConstants>
     <LeaveTemporaryFiles>True</LeaveTemporaryFiles>
@@ -22,7 +18,7 @@
     </LinkerAdditionalOptions>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
-    <OutputPath>..\Binaries\$(Configuration)\</OutputPath>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
     <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
     <LeaveTemporaryFiles>True</LeaveTemporaryFiles>
   </PropertyGroup>
@@ -162,7 +158,10 @@
     <WixTargetsPath>$(WixToolPath)wix.targets</WixTargetsPath>
     <WixTasksPath>$(WixToolPath)WixTasks.dll</WixTasksPath>
   </PropertyGroup>
-  <Import Project="$(WixTargetsPath)" />
+  <Target Name="Build">
+    <Error Text="Unable to locate WiX Toolset. Please make sure that NuGet Package Restore is enabled. You may need to reload the project to flush Visual Studio's assembly cache." />
+  </Target>
+  <Import Project="$(WixTargetsPath)" Condition="Exists('$(WixTargetsPath)')" />
   <!--
 	To modify your build process, add your task inside one of the targets below and uncomment it.
 	Other similar extension points exist, see Wix.targets.
