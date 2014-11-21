@@ -342,7 +342,7 @@ namespace MassExtractor
                     }
                     for (ushort i = 0; i < 0x100; ++i)
                     {
-                        Program.ExtractFile(86491 + i, String.Format("mob-list-{0:000}.xml", i + 255));
+                        Program.ExtractFile(86490 + i, String.Format("mob-list-{0:000}.xml", i + 255));
                     }
                     for (ushort i = 0; i < 0x100; ++i)
                     {
