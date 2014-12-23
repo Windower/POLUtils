@@ -707,6 +707,7 @@ namespace PlayOnline.FFXI.Things
                 else
                 {
                     // Weapon
+                    BR.ReadUInt32();
                     this.Damage_ = BR.ReadUInt16();
                     this.Delay_ = BR.ReadInt16();
                     this.DPS_ = BR.ReadUInt16();
