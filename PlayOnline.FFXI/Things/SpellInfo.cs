@@ -54,7 +54,7 @@ namespace PlayOnline.FFXI.Things
         private ushort? MPCost_;
         private byte? CastingTime_;
         private ushort? RecastDelay_;
-        private byte[] LevelRequired_;
+        private int[] LevelRequired_;
         private ushort? ID_;
         private byte? ListIconID_;
         private string JapaneseName_;
@@ -260,7 +260,7 @@ namespace PlayOnline.FFXI.Things
                 this.JapaneseName_ = this.LoadTextField(Node);
                 break;
             case "level-required":
-                this.LevelRequired_ = this.LoadByteArray(Node);
+                this.LevelRequired_ = this.LoadIntegerArray<int>(Node);
                 break;
             case "list-icon-id":
                 this.ListIconID_ = (byte)this.LoadUnsignedIntegerField(Node);
@@ -334,7 +334,11 @@ namespace PlayOnline.FFXI.Things
             this.MPCost_ = BR.ReadUInt16();
             this.CastingTime_ = BR.ReadByte();
             this.RecastDelay_ = BR.ReadByte();
-            this.LevelRequired_ = BR.ReadBytes(24);
+            this.LevelRequired_ = new int[0x18];
+            for (var i = 0; i < 0x18; ++i)
+            {
+                this.LevelRequired_[i] = BR.ReadInt16();
+            }
             this.ID_ = BR.ReadUInt16();
             this.ListIconID_ = BR.ReadByte();
             FFXIEncoding E = new FFXIEncoding();

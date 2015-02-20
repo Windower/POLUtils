@@ -65,11 +65,11 @@ namespace PlayOnline.FFXI.FileTypes
                     goto Failed;
                 }
                 uint BlockSize = (SizeInfo & 0xFFFFFF80) >> 3;
-                if ((BlockSize - 0x10) % 0x40 != 0)
+                if ((BlockSize - 0x10) % 0x50 != 0)
                 {
                     goto Failed;
                 }
-                uint EntryCount = (BlockSize - 0x10) / 0x40;
+                uint EntryCount = (BlockSize - 0x10) / 0x50;
                 while (EntryCount-- > 0)
                 {
                     Things.MonsterSpellInfo2 MSI2 = new Things.MonsterSpellInfo2();
@@ -98,11 +98,11 @@ namespace PlayOnline.FFXI.FileTypes
                     goto Failed;
                 }
                 uint BlockSize = (SizeInfo & 0xFFFFFF80) >> 3;
-                if ((BlockSize - 0x10) % 0x40 != 0)
+                if ((BlockSize - 0x10) % 0x50 != 0)
                 {
                     goto Failed;
                 }
-                uint EntryCount = (BlockSize - 0x10) / 0x40;
+                uint EntryCount = (BlockSize - 0x10) / 0x50;
                 while (EntryCount-- > 0)
                 {
                     Things.SpellInfo2 SI2 = new Things.SpellInfo2();

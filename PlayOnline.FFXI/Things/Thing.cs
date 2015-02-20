@@ -206,7 +206,7 @@ namespace PlayOnline.FFXI.Things
         // Generics don't allow specifying value types as constraints, nor does it allow casting to
         // an unbounded type parameter.  As a result, a separate function is needed for each array type.
 
-        protected byte[] LoadByteArray(XmlElement Node)
+        protected T[] LoadIntegerArray<T>(XmlElement Node)
         {
             int ArraySize = 0;
             try
@@ -221,7 +221,7 @@ namespace PlayOnline.FFXI.Things
             {
                 return null;
             }
-            byte[] Result = new byte[ArraySize];
+            T[] Result = new T[ArraySize];
             for (int i = 0; i < ArraySize; ++i)
             {
                 try
@@ -229,7 +229,7 @@ namespace PlayOnline.FFXI.Things
                     XmlNode ElementNode = Node.SelectSingleNode(String.Format("./element[@index = '{0}']", i));
                     if (ElementNode != null && ElementNode is System.Xml.XmlElement)
                     {
-                        Result[i] = (byte)ulong.Parse(ElementNode.InnerText, NumberStyles.Integer);
+                        Result[i] = (T)(object)ulong.Parse(ElementNode.InnerText, NumberStyles.Integer);
                     }
                 }
                 catch

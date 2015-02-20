@@ -56,7 +56,7 @@ namespace PlayOnline.FFXI.Things
         private ushort? MPCost_;
         private byte? CastingTime_;
         private ushort? RecastDelay_;
-        private byte[] LevelRequired_;
+        private int[] LevelRequired_;
         private ushort? ID_;
         private byte? ListIconID_;
         private byte? Unknown1_;
@@ -253,7 +253,7 @@ namespace PlayOnline.FFXI.Things
                 this.Index_ = (ushort)this.LoadUnsignedIntegerField(Node);
                 break;
             case "level-required":
-                this.LevelRequired_ = this.LoadByteArray(Node);
+                this.LevelRequired_ = this.LoadIntegerArray<int>(Node);
                 break;
             case "magic-type":
                 this.MagicType_ = (MagicType)this.LoadHexField(Node);
@@ -312,7 +312,7 @@ namespace PlayOnline.FFXI.Things
             this.Clear();
             try
             {
-                byte[] Bytes = BR.ReadBytes(0x40);
+                byte[] Bytes = BR.ReadBytes(0x50);
                 //if (Bytes[0x3] != 0x00 || Bytes[0x5] != 0x00 || Bytes[0x7] != 0x00 || Bytes[0x9] != 0x00 || Bytes[0xf] != 0xff || Bytes[0x3f] != 0xff)
                 //return false;
                 if (!FFXIEncryption.DecodeDataBlockMask(Bytes))
@@ -333,7 +333,11 @@ namespace PlayOnline.FFXI.Things
             this.MPCost_ = BR.ReadUInt16();
             this.CastingTime_ = BR.ReadByte();
             this.RecastDelay_ = BR.ReadByte();
-            this.LevelRequired_ = BR.ReadBytes(24);
+            this.LevelRequired_ = new int[0x18];
+            for (var i = 0; i < 0x18; ++i)
+            {
+                this.LevelRequired_[i] = BR.ReadInt16();
+            }
             this.ID_ = BR.ReadUInt16();
             this.ListIconID_ = BR.ReadByte();
             this.Unknown1_ = BR.ReadByte();
