@@ -341,6 +341,7 @@ namespace PlayOnline.FFXI.Things
             }
             this.ID_ = BR.ReadUInt16();
             this.ListIconID_ = BR.ReadByte();
+            BR.ReadBytes(0x04);
             FFXIEncoding E = new FFXIEncoding();
             this.JapaneseName_ = E.GetString(BR.ReadBytes(20)).TrimEnd('\0');
             this.EnglishName_ = E.GetString(BR.ReadBytes(20)).TrimEnd('\0');

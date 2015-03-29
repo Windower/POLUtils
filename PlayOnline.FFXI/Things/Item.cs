@@ -122,6 +122,7 @@ namespace PlayOnline.FFXI.Things
         private ushort? Unknown2_;
         private uint? Unknown3_;
         private uint? Unknown4_;
+        private uint? Unknown5_;
 
         #endregion
 
@@ -167,6 +168,7 @@ namespace PlayOnline.FFXI.Things
             this.Unknown2_ = null;
             this.Unknown3_ = null;
             this.Unknown4_ = null;
+            this.Unknown5_ = null;
         }
 
         #endregion
@@ -725,6 +727,7 @@ namespace PlayOnline.FFXI.Things
                 this.ReuseDelay_ = BR.ReadUInt32();
                 this.Unknown2_ = BR.ReadUInt16();
                 this.iLevel_ = BR.ReadUInt16();
+                this.Unknown5_ = BR.ReadUInt32();
             }
             else if (T == Type.PuppetItem)
             {

@@ -63,6 +63,7 @@ namespace PlayOnline.FFXI.Things
         private byte? Unknown2_;
         private byte? Unknown3_;
         private byte? Unknown4_;
+        private uint? Unknown5_;
 
         #endregion
 
@@ -83,6 +84,7 @@ namespace PlayOnline.FFXI.Things
             this.Unknown2_ = null;
             this.Unknown3_ = null;
             this.Unknown4_ = null;
+            this.Unknown5_ = null;
         }
 
         #endregion
@@ -312,7 +314,7 @@ namespace PlayOnline.FFXI.Things
             this.Clear();
             try
             {
-                byte[] Bytes = BR.ReadBytes(0x50);
+                byte[] Bytes = BR.ReadBytes(0x58);
                 //if (Bytes[0x3] != 0x00 || Bytes[0x5] != 0x00 || Bytes[0x7] != 0x00 || Bytes[0x9] != 0x00 || Bytes[0xf] != 0xff || Bytes[0x3f] != 0xff)
                 //return false;
                 if (!FFXIEncryption.DecodeDataBlockMask(Bytes))
@@ -344,6 +346,7 @@ namespace PlayOnline.FFXI.Things
             this.Unknown2_ = BR.ReadByte();
             this.Unknown3_ = BR.ReadByte();
             this.Unknown4_ = BR.ReadByte();
+            this.Unknown5_ = BR.ReadUInt32();
 #if DEBUG // Check the padding bytes for unexpected data
             for (byte i = 0; i < 14; ++i)
             {
