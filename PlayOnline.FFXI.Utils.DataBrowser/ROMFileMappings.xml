@@ -359,8 +359,10 @@
 	  <rom-file id="85606"><area-name id="271"/></rom-file>
 	  <rom-file id="85607"><area-name id="272"/></rom-file>
 	  <rom-file id="85608"><area-name id="273"/></rom-file>
-      <rom-file id="85609"><area-name id="274"/></rom-file>
+    <rom-file id="85609"><area-name id="274"/></rom-file>
 	  <rom-file id="85610"><area-name id="275"/></rom-file>
+	  <rom-file id="85611"><area-name id="276"/></rom-file>
+	  <rom-file id="85612"><area-name id="277"/></rom-file>
     
 	</category>
       </category>
@@ -2815,6 +2817,8 @@
       <rom-file id="86508"><area-name id="273"/></rom-file>
       <rom-file id="86509"><area-name id="274"/></rom-file>
       <rom-file id="86510"><area-name id="275"/></rom-file>
+      <rom-file id="86511"><area-name id="276"/></rom-file>
+      <rom-file id="86512"><area-name id="277"/></rom-file>
       <rom-file id="86519"><area-name id="284"/></rom-file>
       <rom-file id="86515"><area-name id="280"/></rom-file>
      </category>
