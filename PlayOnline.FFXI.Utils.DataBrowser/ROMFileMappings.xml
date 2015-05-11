@@ -402,6 +402,10 @@
 	<rom-file id="06642"><area-name id="222"/></rom-file>
 	<rom-file id="85619"><area-name id="285"/></rom-file>
 	<separator/>
+	<!-- NOTE: <area-name id="210"/> won't do because in the client this is blank,
+		but leaked official documentation names it "GM Home" -->
+	<rom-file id="06630">GM Home</rom-file>
+	<separator/>
 	<!-- These are not area-related -->
 	<rom-file id="07025"><i18n-string id="Menu:EmoteMessages"/></rom-file>
 	<rom-file id="07035"><i18n-string id="Menu:MonsterSkillNames"/></rom-file>
@@ -2867,6 +2871,10 @@
       <separator/>
       <rom-file id="06942"><area-name id="222"/></rom-file>
       <rom-file id="86520"><area-name id="285"/></rom-file>
+      <separator/>
+      <!-- NOTE: <area-name id="210"/> won't do because in the client this is blank,
+           but leaked official documentation names it "GM Home" -->
+      <rom-file id="06930">GM Home</rom-file>
     </category>
   </category>
   <category><name><i18n-string id="Menu:StringTables"/></name>
