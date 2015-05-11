@@ -585,4 +585,7 @@
   <data name="T:MonsterSpellInfo2" xml:space="preserve">
     <value>Monster Spell Info</value>
   </data>
+  <data name="F::superior-level" xml:space="preserve">
+    <value>Superior Level</value>
+  </data>
 </root>
