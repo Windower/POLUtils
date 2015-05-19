@@ -335,6 +335,10 @@ namespace MassExtractor
                     }
                     // Whitegate's 2nd dialog table
                     Program.ExtractFile(57945, "dialog-table-50-2.xml");
+                    for (ushort i = 0; i < 0x100; ++i)
+                    {
+                        Program.ExtractFile(85590 + i, String.Format("dialog-table-{0:000}.xml", i + 255));
+                    }
                     // Mob Lists
                     for (ushort i = 0; i < 0x100; ++i)
                     {
