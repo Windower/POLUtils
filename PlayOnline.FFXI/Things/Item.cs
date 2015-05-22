@@ -775,7 +775,8 @@ namespace PlayOnline.FFXI.Things
             {
                 this.ActivationTime_ = BR.ReadUInt16();
                 this.Unknown1_ = BR.ReadUInt32();
-                this.Unknown1_ = BR.ReadUInt32();
+                this.Unknown3_ = BR.ReadUInt32();
+                this.Unknown4_ = BR.ReadUInt32();
             }
             else if (T == Type.Currency)
             {
