@@ -54,9 +54,9 @@ namespace PlayOnline.FFXI.Things
                     // UsableItem-Specific
                     "activation-time",
                     // Equipment-Specific
-                    "level", "iLevel", "slots", "races", "jobs",
+                    "level", "iLevel", "slots", "races", "jobs", "superior-level",
                     // Armor-Specific
-                    "superior-level", "shield-size",
+                    "shield-size",
                     // Weapon-Specific
                     "damage", "delay", "dps", "skill", "jug-size",
                     // Enchantment Info
@@ -98,8 +98,8 @@ namespace PlayOnline.FFXI.Things
         private EquipmentSlot? Slots_;
         private Race? Races_;
         private Job? Jobs_;
-        // Armor-Specific
         private ushort? SuperiorLevel_;
+        // Armor-Specific
         private ushort? ShieldSize_;
         // Weapon-Specific
         private ushort? Damage_;
@@ -712,15 +712,15 @@ namespace PlayOnline.FFXI.Things
                 this.Slots_ = (EquipmentSlot)BR.ReadUInt16();
                 this.Races_ = (Race)BR.ReadUInt16();
                 this.Jobs_ = (Job)BR.ReadUInt32();
+                this.SuperiorLevel_ = BR.ReadUInt16();
                 if (T == Type.Armor)
                 {
-                    this.SuperiorLevel_ = BR.ReadUInt16();
                     this.ShieldSize_ = BR.ReadUInt16();
                 }
                 else
                 {
                     // Weapon
-                    this.Unknown4_ = BR.ReadUInt32();
+                    this.Unknown4_ = BR.ReadUInt16();
                     this.Damage_ = BR.ReadUInt16();
                     this.Delay_ = BR.ReadInt16();
                     this.DPS_ = BR.ReadUInt16();
