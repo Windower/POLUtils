@@ -1488,6 +1488,11 @@
                 <rom-file id="06174"><area-name id="254"/></rom-file>
                 <rom-file id="06375"><area-name id="255"/></rom-file>
             </category>
+            <category><name><i18n-string id="Rhapsodies of Vana'diel"/></name>
+            <!-- NOTE: For some reason "Menu:" kept showing up in the menu..Even though existing entries were formatted that way.. -->
+                <rom-file id="85323"><area-name id="288"/></rom-file>
+                <rom-file id="85324"><area-name id="289"/></rom-file>
+            </category>
             <category><name><i18n-string id="Menu:Other"/></name>
                 <rom-file id="06344"><area-name id="224"/></rom-file>
                 <rom-file id="06346"><area-name id="226"/></rom-file>
@@ -1507,6 +1512,9 @@
                 <rom-file id="06163"><area-name id="043"/></rom-file>
                 <rom-file id="06164"><area-name id="044"/></rom-file>
                 <rom-file id="06303"><area-name id="183"/></rom-file>
+                <separator/>
+                <!-- NOTE: <area-name id="210"/> won't do because in the client this is blank, but leaked official documentation names it "GM Home" -->
+                <rom-file id="06330">GM Home</rom-file>
                 <separator/>
                 <rom-file id="07034"><i18n-string id="Menu:MonsterSkillNames"/></rom-file>
             </category>
@@ -2925,6 +2933,7 @@
                 <rom-file id="55735">A Crystalline Prophecy</rom-file>
                 <rom-file id="55736">A Moogle Kupo d'Etat</rom-file>
                 <rom-file id="55737">A Shantotto Ascension</rom-file>
+                <rom-file id="56281">Rhapsodies of Vana'diel</rom-file>
             </category>
             <rom-file id="55660"><i18n-string id="Menu:MoonPhases"/></rom-file>
             <rom-file id="55647"><i18n-string id="Menu:POLMessages"/></rom-file>
@@ -3093,6 +3102,7 @@
                 <rom-file id="55615">A Crystalline Prophecy</rom-file>
                 <rom-file id="55616">A Moogle Kupo d'Etat</rom-file>
                 <rom-file id="55617">A Shantotto Ascension</rom-file>
+                <rom-file id="55621">Rhapsodies of Vana'diel</rom-file>
             </category>
             <rom-file id="55540"><i18n-string id="Menu:MoonPhases"/></rom-file>
             <rom-file id="55527"><i18n-string id="Menu:POLMessages"/></rom-file>
