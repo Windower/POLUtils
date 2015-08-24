@@ -334,6 +334,10 @@
 	</category>
 	<category><name><region-name id="045"/></name>
 	</category>
+	<category><name><region-name id="047"/></name>
+		<rom-file id="06602"><area-name id="182"/></rom-file>
+		<rom-file id="06642"><area-name id="222"/></rom-file>
+	</category>
       </category>
       <category><name>&amp;<i18n-string id="FFXI9"/></name>
 	<category><name><region-name id="049"/></name>
@@ -373,7 +377,6 @@
 	<rom-file id="06636"><area-name id="216"/></rom-file>
 	<rom-file id="06465"><area-name id="045"/></rom-file>
 	<rom-file id="06637"><area-name id="217"/></rom-file>
-	<rom-file id="06602"><area-name id="182"/></rom-file>
 	<rom-file id="06673"><area-name id="253"/></rom-file>
 	<rom-file id="06674"><area-name id="254"/></rom-file>
 	<rom-file id="06675"><area-name id="255"/></rom-file>
@@ -399,7 +402,6 @@
 	<rom-file id="06464"><area-name id="044"/></rom-file>
 	<rom-file id="06603"><area-name id="183"/></rom-file>
 	<separator/>
-	<rom-file id="06642"><area-name id="222"/></rom-file>
 	<rom-file id="85619"><area-name id="285"/></rom-file>
 	<separator/>
 	<!-- NOTE: <area-name id="210"/> won't do because in the client this is blank,
@@ -739,6 +741,10 @@
 	</category>
 	<category><name><region-name id="045"/></name>
 	</category>
+	<category><name><region-name id="047"/></name>
+		<rom-file id="56467"><area-name id="182"/></rom-file>
+		<rom-file id="56507"><area-name id="222"/></rom-file>
+	</category>
       </category>
       <category><name><i18n-string id="Menu:Abyssea"/></name>
 	<rom-file id="56500"><area-name id="215"/></rom-file>
@@ -751,7 +757,6 @@
 	<rom-file id="56528"><area-name id="253"/></rom-file>
 	<rom-file id="56529"><area-name id="254"/></rom-file>
 	<rom-file id="56530"><area-name id="255"/></rom-file>
-	<rom-file id="56467"><area-name id="182"/></rom-file>
       </category>
       <category><name><i18n-string id="Menu:Other"/></name>
 	<rom-file id="56509"><area-name id="224"/></rom-file>
@@ -772,8 +777,6 @@
 	<rom-file id="56328"><area-name id="043"/></rom-file>
 	<rom-file id="56329"><area-name id="044"/></rom-file>
 	<rom-file id="56468"><area-name id="183"/></rom-file>
-	<separator/>
-	<rom-file id="56507"><area-name id="222"/></rom-file>
 	<separator/>
 	<rom-file id="56271"><i18n-string id="Menu:MonsterSkillNames"/></rom-file>
       </category>
@@ -1101,6 +1104,10 @@
 	</category>
 	<category><name><region-name id="045"/></name>
 	</category>
+	<category><name><region-name id="047"/></name>
+		<rom-file id="56047"><area-name id="182"/></rom-file>
+		<rom-file id="56087"><area-name id="222"/></rom-file>
+	</category>
       </category>
       <category><name><i18n-string id="Menu:Abyssea"/></name>
 	<rom-file id="56080"><area-name id="215"/></rom-file>
@@ -1113,7 +1120,6 @@
 	<rom-file id="56118"><area-name id="253"/></rom-file>
 	<rom-file id="56119"><area-name id="254"/></rom-file>
 	<rom-file id="56120"><area-name id="255"/></rom-file>
-	<rom-file id="56047"><area-name id="182"/></rom-file>
       </category>
       <category><name><i18n-string id="Menu:Other"/></name>
 	<rom-file id="56089"><area-name id="224"/></rom-file>
@@ -1134,8 +1140,6 @@
 	<rom-file id="55908"><area-name id="043"/></rom-file>
 	<rom-file id="55909"><area-name id="044"/></rom-file>
 	<rom-file id="56048"><area-name id="183"/></rom-file>
-	<separator/>
-	<rom-file id="56087"><area-name id="222"/></rom-file>
 	<separator/>
 	<rom-file id="55851"><i18n-string id="Menu:MonsterSkillNames"/></rom-file>
       </category>
@@ -1463,6 +1467,10 @@
 	</category>
 	<category><name><region-name id="045"/></name>
 	</category>
+	<category><name><region-name id="047"/></name>
+		<rom-file id="06302"><area-name id="182"/></rom-file>
+		<rom-file id="06342"><area-name id="222"/></rom-file>
+	</category>
       </category>
       <category><name><i18n-string id="Menu:Abyssea"/></name>
 	<rom-file id="06335"><area-name id="215"/></rom-file>
@@ -1475,7 +1483,6 @@
 	<rom-file id="06373"><area-name id="253"/></rom-file>
 	<rom-file id="06174"><area-name id="254"/></rom-file>
 	<rom-file id="06375"><area-name id="255"/></rom-file>
-	<rom-file id="06302"><area-name id="182"/></rom-file>
       </category>
       <category><name><i18n-string id="Menu:Other"/></name>
 	<rom-file id="06344"><area-name id="224"/></rom-file>
@@ -1496,8 +1503,6 @@
 	<rom-file id="06163"><area-name id="043"/></rom-file>
 	<rom-file id="06164"><area-name id="044"/></rom-file>
 	<rom-file id="06303"><area-name id="183"/></rom-file>
-	<separator/>
-	<rom-file id="06342"><area-name id="222"/></rom-file>
 	<separator/>
 	<rom-file id="07034"><i18n-string id="Menu:MonsterSkillNames"/></rom-file>
       </category>
@@ -2783,6 +2788,10 @@
       </category>
       <category><name><region-name id="045"/></name>
       </category>
+    <category><name><region-name id="047"/></name>
+        <rom-file id="06902"><area-name id="182"/></rom-file>
+        <rom-file id="06942"><area-name id="222"/></rom-file>
+    </category>
     </category>
     <category><name><i18n-string id="Menu:Abyssea"/></name>
       <rom-file id="06935"><area-name id="215"/></rom-file>
@@ -2795,7 +2804,6 @@
       <rom-file id="06973"><area-name id="253"/></rom-file>
       <rom-file id="06974"><area-name id="254"/></rom-file>
       <rom-file id="06975"><area-name id="255"/></rom-file>
-      <rom-file id="06902"><area-name id="182"/></rom-file>
     </category>
     <category><name>&amp;<i18n-string id="FFXI9"/></name>
      <category><name><region-name id="049"/></name>
@@ -2869,7 +2877,6 @@
       <rom-file id="06764"><area-name id="044"/></rom-file>
       <rom-file id="06903"><area-name id="183"/></rom-file>
       <separator/>
-      <rom-file id="06942"><area-name id="222"/></rom-file>
       <rom-file id="86520"><area-name id="285"/></rom-file>
       <separator/>
       <!-- NOTE: <area-name id="210"/> won't do because in the client this is blank,
