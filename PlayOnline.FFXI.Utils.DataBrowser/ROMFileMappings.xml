@@ -1810,6 +1810,7 @@
                         <rom-file id="05520">Hidden Elevator 3</rom-file>
                     </category>
                     <rom-file id="05336"><area-name id="126"/></rom-file>
+                    <rom-file id="53658"><area-name id="291"/></rom-file>
                 </category>
             </category>
             <category><name>&amp;<i18n-string id="FFXI2"/></name>
@@ -2385,6 +2386,12 @@
                     <rom-file id="53568"><i18n-string id="Menu:MapN"/>3</rom-file>
                 </category>
             </category>
+            <category><name><i18n-string id="Rhapsodies of Vana'diel"/></name>
+            <!-- NOTE: For some reason "Menu:" kept showing up in the menu..Even though existing entries were formatted that way.. -->
+                <rom-file id="53656"><area-name id="288"/></rom-file>
+                <rom-file id="53657"><area-name id="289"/></rom-file>
+                <rom-file id="53658"><area-name id="291"/></rom-file>
+            </category>
             <category><name><i18n-string id="Menu:Other"/></name>
                 <rom-file id="53416">Besieged Map</rom-file>
                 <rom-file id="05312">Conquest Map</rom-file>
@@ -2851,6 +2858,8 @@
         <!-- NOTE: For some reason "Menu:" kept showing up in the menu..Even though existing entries were formatted that way.. -->
             <rom-file id="86523"><area-name id="288"/></rom-file>
             <rom-file id="86524"><area-name id="289"/></rom-file>
+            <rom-file id="86525"><area-name id="290"/></rom-file>
+            <rom-file id="86526"><area-name id="291"/></rom-file>
         </category>
         <category><name><i18n-string id="Menu:Other"/></name>
             <category><name><i18n-string id="Menu:MoblinMaze"/></name>
