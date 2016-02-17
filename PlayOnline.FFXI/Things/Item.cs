@@ -643,7 +643,7 @@ namespace PlayOnline.FFXI.Things
                         {
                             T = Type.Armor;
                         }
-                        else if (ID < 0x6000)
+                        else if (ID < 0x5A00)
                         {
                             T = Type.Weapon;
                         }
