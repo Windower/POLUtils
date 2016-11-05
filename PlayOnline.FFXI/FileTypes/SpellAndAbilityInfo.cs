@@ -9,170 +9,110 @@
 
 using System;
 using System.IO;
-using System.Text;
-using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using PlayOnline.Core;
 
 namespace PlayOnline.FFXI.FileTypes
 {
     public class SpellAndAbilityInfo : FileType
     {
+        private enum BlockType
+        {
+            ContainerEnd = 0x00,
+            ContainerBegin = 0x01,
+            SpellData = 0x49,
+            AbilityData = 0x53,
+        }
+
+        [StructLayout(LayoutKind.Sequential)]
+        private struct Header
+        {
+            private int id;
+            private int size;
+            private long padding;
+
+            public int ID => id;
+            public int Size => (size >> 3 & ~0xF) - 0x10;
+            public BlockType Type => (BlockType) (size & 0x7F);
+        }
+
+        public static T Read<T>(Stream stream)
+        {
+            var size = Marshal.SizeOf(typeof(T));
+            var data = new byte[size];
+            stream.Read(data, 0, data.Length);
+
+            var ptr = IntPtr.Zero;
+            try
+            {
+                ptr = Marshal.AllocHGlobal(data.Length);
+                Marshal.Copy(data, 0, ptr, data.Length);
+                return (T)Marshal.PtrToStructure(ptr, typeof(T));
+            }
+            finally
+            {
+                if (ptr != IntPtr.Zero)
+                {
+                    Marshal.FreeHGlobal(ptr);
+                }
+            }
+        }
+
         public override ThingList Load(BinaryReader BR, ProgressCallback ProgressCallback)
         {
-            ThingList TL = new ThingList();
-            if (ProgressCallback != null)
+            var TL = new ThingList();
+            ProgressCallback?.Invoke(I18N.GetText("FTM:CheckingFile"), 0);
+
+            var stream = BR.BaseStream;
+
+            var header = Read<Header>(stream);
+            var block = stream.Position;
+
+            if (header.Type != BlockType.ContainerBegin)
             {
-                ProgressCallback(I18N.GetText("FTM:CheckingFile"), 0);
+                throw new InvalidDataException();
             }
-            if (BR.BaseStream.Position != 0)
+
+            while (header.Type != BlockType.ContainerEnd)
             {
-                goto Failed;
-            }
-            if (Encoding.ASCII.GetString(BR.ReadBytes(4)) != "menu")
-            {
-                goto Failed;
-            }
-            if (BR.ReadInt32() != 0x101)
-            {
-                goto Failed;
-            }
-            if (BR.ReadInt64() != 0)
-            {
-                goto Failed;
-            }
-            if (BR.ReadInt64() != 0)
-            {
-                goto Failed;
-            }
-            if (BR.ReadInt64() != 0)
-            {
-                goto Failed;
-            }
-            if (ProgressCallback != null)
-            {
+                stream.Position = block + header.Size;
+
+                header = Read<Header>(stream);
+                block = stream.Position;
+
+                switch (header.Type)
+                {
+                case BlockType.SpellData:
+                    while (stream.Position < block + header.Size)
+                    {
+                        var SI2 = new Things.SpellInfo2();
+                        if (!SI2.Read(BR))
+                        {
+                            TL.Clear();
+                            return TL;
+                        }
+                        TL.Add(SI2);
+                    }
+                    break;
+
+                case BlockType.AbilityData:
+                    while (stream.Position < block + header.Size)
+                    {
+                        var AI2 = new Things.AbilityInfo2();
+                        if (!AI2.Read(BR))
+                        {
+                            TL.Clear();
+                            return TL;
+                        }
+                        TL.Add(AI2);
+                    }
+                    break;
+
+                }
+
                 ProgressCallback(I18N.GetText("FTM:LoadingData"), (double)BR.BaseStream.Position / BR.BaseStream.Length);
             }
-            string firstFourBytes = Encoding.ASCII.GetString(BR.ReadBytes(4));
-            {
-                // Part 0: Monster?
-                if (firstFourBytes != "mon_")
-                {
-                    goto Part1;
-                }
-                uint SizeInfo = BR.ReadUInt32();
-                if (BR.ReadInt64() != 0)
-                {
-                    goto Failed;
-                }
-                uint BlockSize = (SizeInfo & 0xFFFFFF80) >> 3;
-                if ((BlockSize - 0x10) % 0x58 != 0)
-                {
-                    goto Failed;
-                }
-                uint EntryCount = (BlockSize - 0x10) / 0x58;
-                while (EntryCount-- > 0)
-                {
-                    Things.MonsterSpellInfo2 MSI2 = new Things.MonsterSpellInfo2();
-                    if (!MSI2.Read(BR))
-                    {
-                        goto Failed;
-                    }
-                    if (ProgressCallback != null)
-                    {
-                        ProgressCallback(null, (double)BR.BaseStream.Position / BR.BaseStream.Length);
-                    }
-                    TL.Add(MSI2);
-                }
-            }
-            firstFourBytes = Encoding.ASCII.GetString(BR.ReadBytes(4));
-            Part1:
-            {
-                // Part 1: Spell Info
-                if (firstFourBytes != "mgc_")
-                {
-                    goto Failed;
-                }
-                uint SizeInfo = BR.ReadUInt32();
-                if (BR.ReadInt64() != 0)
-                {
-                    goto Failed;
-                }
-                uint BlockSize = (SizeInfo & 0xFFFFFF80) >> 3;
-                if ((BlockSize - 0x10) % 0x58 != 0)
-                {
-                    goto Failed;
-                }
-                uint EntryCount = (BlockSize - 0x10) / 0x58;
-                while (EntryCount-- > 0)
-                {
-                    Things.SpellInfo2 SI2 = new Things.SpellInfo2();
-                    if (!SI2.Read(BR))
-                    {
-                        goto Failed;
-                    }
-                    if (ProgressCallback != null)
-                    {
-                        ProgressCallback(null, (double)BR.BaseStream.Position / BR.BaseStream.Length);
-                    }
-                    TL.Add(SI2);
-                }
-            }
-            {
-                // Part 2: Ability Info
-                if (Encoding.ASCII.GetString(BR.ReadBytes(4)) != "comm")
-                {
-                    goto Failed;
-                }
-                uint SizeInfo = BR.ReadUInt32();
-                if (BR.ReadInt64() != 0)
-                {
-                    goto Failed;
-                }
-                uint BlockSize = (SizeInfo & 0xFFFFFF80) >> 3;
-                if ((BlockSize - 0x10) % 0x30 != 0)
-                {
-                    goto Failed;
-                }
-                uint EntryCount = (BlockSize - 0x10) / 0x30;
-                while (EntryCount-- > 0)
-                {
-                    Things.AbilityInfo2 AI2 = new Things.AbilityInfo2();
-                    if (!AI2.Read(BR))
-                    {
-                        goto Failed;
-                    }
-                    if (ProgressCallback != null)
-                    {
-                        ProgressCallback(null, (double)BR.BaseStream.Position / BR.BaseStream.Length);
-                    }
-                    TL.Add(AI2);
-                }
-            }
-            {
-                // Part 3: End Marker
-                if (Encoding.ASCII.GetString(BR.ReadBytes(4)) != "end\0")
-                {
-                    goto Failed;
-                }
-                uint SizeInfo = BR.ReadUInt32();
-                if (BR.ReadInt64() != 0)
-                {
-                    goto Failed;
-                }
-                uint BlockSize = (SizeInfo & 0xFFFFFF80) >> 3;
-                if (BlockSize != 0x10) // Header only
-                {
-                    goto Failed;
-                }
-                if (ProgressCallback != null)
-                {
-                    ProgressCallback(null, (double)BR.BaseStream.Position / BR.BaseStream.Length);
-                }
-            }
-            goto Done;
-            Failed:
-            TL.Clear();
-            Done:
+
             return TL;
         }
     }

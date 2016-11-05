@@ -10,7 +10,6 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using PlayOnline.Core;
 
 namespace PlayOnline.FFXI.Things
 {
@@ -19,29 +18,20 @@ namespace PlayOnline.FFXI.Things
         public SpellInfo2()
         {
             // Clear fields
-            this.Clear();
+            Clear();
         }
 
-        public override string ToString() { return String.Format("Spell #{0}", this.Index_); }
-
-        public override List<PropertyPages.IThing> GetPropertyPages() { return base.GetPropertyPages(); }
+        public override string ToString() { return $"Spell #{Index_}"; }
 
         #region Fields
 
-        public static List<string> AllFields
+        public static List<string> AllFields => new List<string>(new []
         {
-            get
-            {
-                return
-                    new List<string>(new string[]
-                    {
-                        "id", "index", "magic-type", "element", "valid-targets", "skill", "level-required", "mp-cost", "casting-time",
-                        "recast-delay", "list-icon-id", "unknown-1", "unknown-2", "unknown-3", "unknown-4",
-                    });
-            }
-        }
+            "id", "index", "magic-type", "element", "valid-targets", "skill", "level-required", "mp-cost", "casting-time",
+            "recast-delay", "list-icon-id", "unknown-1", "unknown-2", "unknown-3", "unknown-4", "unknown-5",
+        });
 
-        public override List<string> GetAllFields() { return SpellInfo2.AllFields; }
+        public override List<string> GetAllFields() { return AllFields; }
 
         #region Data Fields
 
@@ -64,23 +54,23 @@ namespace PlayOnline.FFXI.Things
 
         #endregion
 
-        public override void Clear()
+        public sealed override void Clear()
         {
-            this.Index_ = null;
-            this.MagicType_ = null;
-            this.Element_ = null;
-            this.ValidTargets_ = null;
-            this.Skill_ = null;
-            this.MPCost_ = null;
-            this.CastingTime_ = null;
-            this.RecastDelay_ = null;
-            this.LevelRequired_ = null;
-            this.ID_ = null;
-            this.ListIconID_ = null;
-            this.Unknown1_ = null;
-            this.Unknown2_ = null;
-            this.Unknown3_ = null;
-            this.Unknown4_ = null;
+            Index_ = null;
+            MagicType_ = null;
+            Element_ = null;
+            ValidTargets_ = null;
+            Skill_ = null;
+            MPCost_ = null;
+            CastingTime_ = null;
+            RecastDelay_ = null;
+            LevelRequired_ = null;
+            ID_ = null;
+            ListIconID_ = null;
+            Unknown1_ = null;
+            Unknown2_ = null;
+            Unknown3_ = null;
+            Unknown4_ = null;
         }
 
         #endregion
@@ -93,36 +83,38 @@ namespace PlayOnline.FFXI.Things
             {
                 // Objects
             case "level-required":
-                return (this.LevelRequired_ != null);
+                return LevelRequired_ != null;
                 // Nullables
             case "casting-time":
-                return this.CastingTime_.HasValue;
+                return CastingTime_.HasValue;
             case "element":
-                return this.Element_.HasValue;
+                return Element_.HasValue;
             case "list-icon-id":
-                return this.ListIconID_.HasValue;
+                return ListIconID_.HasValue;
             case "id":
-                return this.ID_.HasValue;
+                return ID_.HasValue;
             case "index":
-                return this.Index_.HasValue;
+                return Index_.HasValue;
             case "magic-type":
-                return this.MagicType_.HasValue;
+                return MagicType_.HasValue;
             case "mp-cost":
-                return this.MPCost_.HasValue;
+                return MPCost_.HasValue;
             case "recast-delay":
-                return this.RecastDelay_.HasValue;
+                return RecastDelay_.HasValue;
             case "skill":
-                return this.Skill_.HasValue;
+                return Skill_.HasValue;
             case "unknown-1":
-                return this.Unknown1_.HasValue;
+                return Unknown1_.HasValue;
             case "unknown-2":
-                return this.Unknown2_.HasValue;
+                return Unknown2_.HasValue;
             case "unknown-3":
-                return this.Unknown3_.HasValue;
+                return Unknown3_.HasValue;
             case "unknown-4":
-                return this.Unknown4_.HasValue;
+                return Unknown4_.HasValue;
+            case "unknown-5":
+                return Unknown5_.HasValue;
             case "valid-targets":
-                return this.ValidTargets_.HasValue;
+                return ValidTargets_.HasValue;
             default:
                 return false;
             }
@@ -135,55 +127,55 @@ namespace PlayOnline.FFXI.Things
                 // Special Values
             case "level-required":
             {
-                string LevelInfo = String.Empty;
-                if (this.LevelRequired_ == null || this.LevelRequired_.Length > sizeof(Job) * 8)
+                string LevelInfo = string.Empty;
+                if (LevelRequired_ == null || LevelRequired_.Length > sizeof(Job) * 8)
                 {
                     return LevelInfo;
                 }
-                for (int i = 0; i < this.LevelRequired_.Length; ++i)
+                for (int i = 0; i < LevelRequired_.Length; ++i)
                 {
-                    if (this.LevelRequired_[i] != 0xff)
+                    if (LevelRequired_[i] != 0xff)
                     {
-                        if (LevelInfo != String.Empty)
+                        if (LevelInfo != string.Empty)
                         {
                             LevelInfo += '/';
                         }
-                        LevelInfo += String.Format("{0:00}{1}", this.LevelRequired_[i], (Job)(1 << i));
+                        LevelInfo += $"{LevelRequired_[i]:00}{(Job)(1 << i)}";
                     }
                 }
                 return LevelInfo;
             }
                 // Nullables - Simple Values
             case "element":
-                return (!this.Element_.HasValue ? String.Empty : String.Format("{0}", this.Element_.Value));
+                return !Element_.HasValue ? string.Empty : $"{Element_.Value}";
             case "list-icon-id":
-                return (!this.ListIconID_.HasValue ? String.Empty : String.Format("{0}", this.ListIconID_.Value));
+                return !ListIconID_.HasValue ? string.Empty : $"{ListIconID_.Value}";
             case "id":
-                return (!this.ID_.HasValue ? String.Empty : String.Format("{0:000}", this.ID_.Value));
+                return !ID_.HasValue ? string.Empty : $"{ID_.Value:000}";
             case "index":
-                return (!this.ID_.HasValue ? String.Empty : String.Format("{0:000}", this.Index_.Value));
+                return !Index_.HasValue ? string.Empty : $"{Index_.Value:000}";
             case "magic-type":
-                return (!this.MagicType_.HasValue ? String.Empty : String.Format("{0}", this.MagicType_.Value));
+                return !MagicType_.HasValue ? string.Empty : $"{MagicType_.Value}";
             case "mp-cost":
-                return (!this.MPCost_.HasValue ? String.Empty : String.Format("{0}", this.MPCost_.Value));
+                return !MPCost_.HasValue ? string.Empty : $"{MPCost_.Value}";
             case "skill":
-                return (!this.Skill_.HasValue ? String.Empty : String.Format("{0}", this.Skill_.Value));
+                return !Skill_.HasValue ? string.Empty : $"{Skill_.Value}";
             case "valid-targets":
-                return (!this.ValidTargets_.HasValue ? String.Empty : String.Format("{0}", this.ValidTargets_.Value));
+                return !ValidTargets_.HasValue ? string.Empty : $"{ValidTargets_.Value}";
                 // Nullables - Hex Values
             case "unknown-1":
-                return (!this.Unknown1_.HasValue ? String.Empty : String.Format("{0:X2} ({0})", this.Unknown1_.Value));
+                return !Unknown1_.HasValue ? string.Empty : string.Format("{0:X2} ({0})", Unknown1_.Value);
             case "unknown-2":
-                return (!this.Unknown1_.HasValue ? String.Empty : String.Format("{0:X2} ({0})", this.Unknown2_.Value));
+                return !Unknown2_.HasValue ? string.Empty : string.Format("{0:X2} ({0})", Unknown2_.Value);
             case "unknown-3":
-                return (!this.Unknown1_.HasValue ? String.Empty : String.Format("{0:X2} ({0})", this.Unknown3_.Value));
+                return !Unknown3_.HasValue ? string.Empty : string.Format("{0:X2} ({0})", Unknown3_.Value);
             case "unknown-4":
-                return (!this.Unknown1_.HasValue ? String.Empty : String.Format("{0:X2} ({0})", this.Unknown4_.Value));
+                return !Unknown4_.HasValue ? string.Empty : string.Format("{0:X2} ({0})", Unknown4_.Value);
                 // Nullables - Time Values
             case "casting-time":
-                return (!this.CastingTime_.HasValue ? String.Empty : this.FormatTime(this.CastingTime_.Value / 4.0));
+                return !CastingTime_.HasValue ? string.Empty : FormatTime(CastingTime_.Value / 4.0);
             case "recast-delay":
-                return (!this.RecastDelay_.HasValue ? String.Empty : this.FormatTime(this.RecastDelay_.Value / 4.0));
+                return !RecastDelay_.HasValue ? string.Empty : FormatTime(RecastDelay_.Value / 4.0);
             default:
                 return null;
             }
@@ -195,36 +187,38 @@ namespace PlayOnline.FFXI.Things
             {
                 // Objects
             case "level-required":
-                return this.LevelRequired_;
+                return LevelRequired_;
                 // Nullables
             case "casting-time":
-                return (!this.CastingTime_.HasValue ? null : (object)this.CastingTime_.Value);
+                return !CastingTime_.HasValue ? null : (object)CastingTime_.Value;
             case "element":
-                return (!this.Element_.HasValue ? null : (object)this.Element_.Value);
+                return !Element_.HasValue ? null : (object)Element_.Value;
             case "list-icon-id":
-                return (!this.ListIconID_.HasValue ? null : (object)this.ListIconID_.Value);
+                return !ListIconID_.HasValue ? null : (object)ListIconID_.Value;
             case "id":
-                return (!this.ID_.HasValue ? null : (object)this.ID_.Value);
+                return !ID_.HasValue ? null : (object)ID_.Value;
             case "index":
-                return (!this.Index_.HasValue ? null : (object)this.Index_.Value);
+                return !Index_.HasValue ? null : (object)Index_.Value;
             case "magic-type":
-                return (!this.MagicType_.HasValue ? null : (object)this.MagicType_.Value);
+                return !MagicType_.HasValue ? null : (object)MagicType_.Value;
             case "mp-cost":
-                return (!this.MPCost_.HasValue ? null : (object)this.MPCost_.Value);
+                return !MPCost_.HasValue ? null : (object)MPCost_.Value;
             case "recast-delay":
-                return (!this.RecastDelay_.HasValue ? null : (object)this.RecastDelay_.Value);
+                return !RecastDelay_.HasValue ? null : (object)RecastDelay_.Value;
             case "skill":
-                return (!this.Skill_.HasValue ? null : (object)this.Skill_.Value);
+                return !Skill_.HasValue ? null : (object)Skill_.Value;
             case "unknown-1":
-                return (!this.Unknown1_.HasValue ? null : (object)this.Unknown1_.Value);
+                return !Unknown1_.HasValue ? null : (object)Unknown1_.Value;
             case "unknown-2":
-                return (!this.Unknown2_.HasValue ? null : (object)this.Unknown2_.Value);
+                return !Unknown2_.HasValue ? null : (object)Unknown2_.Value;
             case "unknown-3":
-                return (!this.Unknown3_.HasValue ? null : (object)this.Unknown3_.Value);
+                return !Unknown3_.HasValue ? null : (object)Unknown3_.Value;
             case "unknown-4":
-                return (!this.Unknown4_.HasValue ? null : (object)this.Unknown4_.Value);
+                return !Unknown4_.HasValue ? null : (object)Unknown4_.Value;
+            case "unknown-5":
+                return !Unknown5_.HasValue ? null : (object)Unknown5_.Value;
             case "valid-targets":
-                return (!this.ValidTargets_.HasValue ? null : (object)this.ValidTargets_.Value);
+                return !ValidTargets_.HasValue ? null : (object)ValidTargets_.Value;
             default:
                 return null;
             }
@@ -236,49 +230,52 @@ namespace PlayOnline.FFXI.Things
             {
                 // "Simple" Fields
             case "casting-time":
-                this.CastingTime_ = (byte)this.LoadUnsignedIntegerField(Node);
+                CastingTime_ = (byte)LoadUnsignedIntegerField(Node);
                 break;
             case "element":
-                this.Element_ = (Element)this.LoadHexField(Node);
+                Element_ = (Element)LoadHexField(Node);
                 break;
             case "list-icon-id":
-                this.ListIconID_ = (byte)this.LoadUnsignedIntegerField(Node);
+                ListIconID_ = (byte)LoadUnsignedIntegerField(Node);
                 break;
             case "id":
-                this.ID_ = (ushort)this.LoadUnsignedIntegerField(Node);
+                ID_ = (ushort)LoadUnsignedIntegerField(Node);
                 break;
             case "index":
-                this.Index_ = (ushort)this.LoadUnsignedIntegerField(Node);
+                Index_ = (ushort)LoadUnsignedIntegerField(Node);
                 break;
             case "level-required":
-                this.LevelRequired_ = this.LoadIntegerArray<int>(Node);
+                LevelRequired_ = LoadIntegerArray<int>(Node);
                 break;
             case "magic-type":
-                this.MagicType_ = (MagicType)this.LoadHexField(Node);
+                MagicType_ = (MagicType)LoadHexField(Node);
                 break;
             case "mp-cost":
-                this.MPCost_ = (ushort)this.LoadUnsignedIntegerField(Node);
+                MPCost_ = (ushort)LoadUnsignedIntegerField(Node);
                 break;
             case "recast-delay":
-                this.RecastDelay_ = (ushort)this.LoadUnsignedIntegerField(Node);
+                RecastDelay_ = (ushort)LoadUnsignedIntegerField(Node);
                 break;
             case "skill":
-                this.Skill_ = (Skill)this.LoadHexField(Node);
+                Skill_ = (Skill)LoadHexField(Node);
                 break;
             case "unknown-1":
-                this.Unknown1_ = (byte)this.LoadUnsignedIntegerField(Node);
+                Unknown1_ = (byte)LoadUnsignedIntegerField(Node);
                 break;
             case "unknown-2":
-                this.Unknown2_ = (byte)this.LoadUnsignedIntegerField(Node);
+                Unknown2_ = (byte)LoadUnsignedIntegerField(Node);
                 break;
             case "unknown-3":
-                this.Unknown3_ = (byte)this.LoadUnsignedIntegerField(Node);
+                Unknown3_ = (byte)LoadUnsignedIntegerField(Node);
                 break;
             case "unknown-4":
-                this.Unknown4_ = (byte)this.LoadUnsignedIntegerField(Node);
+                Unknown4_ = (byte)LoadUnsignedIntegerField(Node);
+                break;
+            case "unknown-5":
+                Unknown5_ = (byte)LoadUnsignedIntegerField(Node);
                 break;
             case "valid-targets":
-                this.ValidTargets_ = (ValidTarget)this.LoadHexField(Node);
+                ValidTargets_ = (ValidTarget)LoadHexField(Node);
                 break;
             }
         }
@@ -307,12 +304,11 @@ namespace PlayOnline.FFXI.Things
         // 03f-03f U8  End marker (0xff)
         public bool Read(BinaryReader BR)
         {
-            this.Clear();
+            Clear();
             try
             {
-                byte[] Bytes = BR.ReadBytes(0x50);
-                if (Bytes[0x3] != 0x00 || Bytes[0x5] != 0x00 || Bytes[0x7] != 0x00 || Bytes[0x9] != 0x00 || Bytes[0xe] != (0xFF) ||
-                    Bytes[0x3f] != 0xff)
+                var Bytes = BR.ReadBytes(0x64);
+                if (Bytes[0x3] != 0x00 || Bytes[0x5] != 0x00 || Bytes[0x7] != 0x00 || Bytes[0x9] != 0x00 || Bytes[0xE] != 0xFF || Bytes[0x63] != 0xFF)
                 {
                     return false;
                 }
@@ -326,35 +322,34 @@ namespace PlayOnline.FFXI.Things
             {
                 return false;
             }
-            this.Index_ = BR.ReadUInt16();
-            this.MagicType_ = (MagicType)BR.ReadUInt16();
-            this.Element_ = (Element)BR.ReadUInt16();
-            this.ValidTargets_ = (ValidTarget)BR.ReadUInt16();
-            this.Skill_ = (Skill)BR.ReadUInt16();
-            this.MPCost_ = BR.ReadUInt16();
-            this.CastingTime_ = BR.ReadByte();
-            this.RecastDelay_ = BR.ReadByte();
-            this.LevelRequired_ = new int[0x18];
+            Index_ = BR.ReadUInt16();
+            MagicType_ = (MagicType)BR.ReadUInt16();
+            Element_ = (Element)BR.ReadUInt16();
+            ValidTargets_ = (ValidTarget)BR.ReadUInt16();
+            Skill_ = (Skill)BR.ReadUInt16();
+            MPCost_ = BR.ReadUInt16();
+            CastingTime_ = BR.ReadByte();
+            RecastDelay_ = BR.ReadByte();
+            LevelRequired_ = new int[0x18];
             for (var i = 0; i < 0x18; ++i)
             {
-                this.LevelRequired_[i] = BR.ReadInt16();
+                LevelRequired_[i] = BR.ReadInt16();
             }
-            this.ID_ = BR.ReadUInt16();
-            this.ListIconID_ = BR.ReadByte();
-            this.Unknown1_ = BR.ReadByte();
-            this.Unknown2_ = BR.ReadByte();
-            this.Unknown3_ = BR.ReadByte();
-            this.Unknown4_ = BR.ReadByte();
-            this.Unknown5_ = BR.ReadUInt32();
+            ID_ = BR.ReadUInt16();
+            ListIconID_ = BR.ReadByte();
+            Unknown1_ = BR.ReadByte();
+            Unknown2_ = BR.ReadByte();
+            Unknown3_ = BR.ReadByte();
+            Unknown4_ = BR.ReadByte();
+            Unknown5_ = BR.ReadUInt32();
 
 #if DEBUG // Check the padding bytes for unexpected data
-            for (byte i = 0; i < 14; ++i)
+            for (byte i = 0; i < 26; ++i)
             {
-                byte PaddingByte = BR.ReadByte();
+                var PaddingByte = BR.ReadByte();
                 if (PaddingByte != 0)
                 {
-                    Console.WriteLine("SpellInfo2: Entry #{0}: Padding Byte #{1} is non-zero: {2:X2} ({2})", this.Index_, i + 1,
-                        PaddingByte);
+                    Console.WriteLine("SpellInfo2: Entry #{0}: Padding Byte #{1} is non-zero: {2:X2} ({2})", Index_, i + 1, PaddingByte);
                 }
             }
 #endif
