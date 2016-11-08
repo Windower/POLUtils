@@ -16,10 +16,10 @@ before_deploy:
     'POLUtils\bin\Release\POLUtils.exe')).FileVersion
 deploy:
 - provider: GitHub
-  tag: $env:BUILD_VERSION_STRING
+  tag: $(BUILD_VERSION_STRING)
   description: |
-    $env:APPVEYOR_REPO_COMMIT_MESSAGE
-    $env:APPVEYOR_REPO_COMMIT_MESSAGE_EXTENDED
+    $(APPVEYOR_REPO_COMMIT_MESSAGE)
+    $(APPVEYOR_REPO_COMMIT_MESSAGE_EXTENDED)
   artifact: Installer\bin\Release\polutils.msi
   force_update: true
   auth_token:
