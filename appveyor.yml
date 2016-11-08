@@ -11,15 +11,13 @@ artifacts:
 - path: Installer\bin\Release\polutils.msi
   name: polutils.msi
 before_deploy:
-- ps: >
-    $env:BUILD_VERSION_STRING = [System.Diagnostics.FileVersionInfo]::GetVersionInfo((Join-Path $env:APPVEYOR_BUILD_FOLDER
-    'POLUtils\bin\Release\POLUtils.exe')).FileVersion
+- ps: |
+    $env:BUILD_VERSION_STRING = [System.Diagnostics.FileVersionInfo]::GetVersionInfo((Join-Path $env:APPVEYOR_BUILD_FOLDER 'POLUtils\bin\Release\POLUtils.exe')).FileVersion
+    $env:RELEASE_DESCRIPTION = "$env:APPVEYOR_REPO_COMMIT_MESSAGE`n$env:APPVEYOR_REPO_COMMIT_MESSAGE_EXTENDED"
 deploy:
 - provider: GitHub
   tag: $(BUILD_VERSION_STRING)
-  description: |
-    $(APPVEYOR_REPO_COMMIT_MESSAGE)
-    $(APPVEYOR_REPO_COMMIT_MESSAGE_EXTENDED)
+  description: $(RELEASE_DESCRIPTION)
   artifact: Installer\bin\Release\polutils.msi
   force_update: true
   auth_token:
