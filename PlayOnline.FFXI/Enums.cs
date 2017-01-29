@@ -95,10 +95,10 @@ namespace PlayOnline.FFXI
     {
         None = 0x0000,
         // Simple Flags - mostly assumed meanings
-        Flag00 = 0x0001,
+        WallHanging = 0x0001, // Used by furnishing like paintings.
         Flag01 = 0x0002,
-        Flag02 = 0x0004,
-        Flag03 = 0x0008,
+        MysteryBox = 0x0004,  // Can be gained from Gobbie Mystery Box
+        MogGarden = 0x0008,   // Can use in Mog Garden
         CanSendPOL = 0x0010,
         Inscribable = 0x0020,
         NoAuction = 0x0040,
