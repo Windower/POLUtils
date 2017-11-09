@@ -49,11 +49,14 @@ namespace PlayOnline.FFXI.Utils.DataBrowser
                                         this.FSD.SetProgress(Message, PercentCompleted);
                                     }));
                                 }));
-                            this.FSD.Invoke(new AnonymousMethod(delegate() { this.FSD.Finish(); }));
                         }
                         catch
                         {
                             this.FileContents = null;
+                        }
+                        finally
+                        {
+                            this.FSD.Invoke(new AnonymousMethod(delegate() { this.FSD.Finish(); }));
                         }
                     }));
                     T.CurrentUICulture = Thread.CurrentThread.CurrentUICulture;
