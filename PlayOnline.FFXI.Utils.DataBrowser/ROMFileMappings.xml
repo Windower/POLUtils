@@ -417,13 +417,14 @@
                 <rom-file id="06630">GM Home</rom-file>
                 <separator/>
                 <!-- These are not area-related -->
-                <rom-file id="07025"><i18n-string id="Menu:EmoteMessages"/></rom-file>
                 <rom-file id="07035"><i18n-string id="Menu:MonsterSkillNames"/></rom-file>
                 <rom-file id="07029"><i18n-string id="Menu:StatusNames"/></rom-file>
+                <rom-file id="07025"><i18n-string id="Menu:EmoteMessages"/></rom-file>
                 <rom-file id="07023"><i18n-string id="Menu:SystemMessages"/> (1)</rom-file>
                 <rom-file id="07031"><i18n-string id="Menu:SystemMessages"/> (2)</rom-file>
                 <rom-file id="07021"><i18n-string id="Menu:SystemMessages"/> (3)</rom-file>
                 <rom-file id="07027"><i18n-string id="Menu:SystemMessages"/> (4)</rom-file>
+                <rom-file id="07039"><i18n-string id="Unity Dialogs"/></rom-file>
             </category>
         </category>
         <!-- French: 56285-56540 -->
@@ -1626,6 +1627,13 @@
                 <rom-file id="06330">GM Home</rom-file>
                 <separator/>
                 <rom-file id="07034"><i18n-string id="Menu:MonsterSkillNames"/></rom-file>
+                <rom-file id="07028"><i18n-string id="Menu:StatusNames"/></rom-file>
+                <rom-file id="07024"><i18n-string id="Menu:EmoteMessages"/></rom-file>
+                <rom-file id="07022"><i18n-string id="Menu:SystemMessages"/> (1)</rom-file>
+                <rom-file id="07030"><i18n-string id="Menu:SystemMessages"/> (2)</rom-file>
+                <rom-file id="07020"><i18n-string id="Menu:SystemMessages"/> (3)</rom-file>
+                <rom-file id="07026"><i18n-string id="Menu:SystemMessages"/> (4)</rom-file>
+                <rom-file id="07038"><i18n-string id="Unity Dialogs"/></rom-file>
             </category>
         </category>
     </category>
