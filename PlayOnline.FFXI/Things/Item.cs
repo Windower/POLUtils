@@ -494,7 +494,7 @@ namespace PlayOnline.FFXI.Things
                     this.iLevel_ = (ushort)this.LoadUnsignedIntegerField(Node);
                     break;
                 case "instinct-cost:":
-                    this.iLevel_ = (ushort)this.LoadUnsignedIntegerField(Node);
+                    this.InstinctCost_ = (ushort)this.LoadUnsignedIntegerField(Node);
                     break;
                 case "jobs":
                     this.Jobs_ = (Job)this.LoadHexField(Node);
