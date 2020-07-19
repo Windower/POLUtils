@@ -66,7 +66,7 @@ namespace PlayOnline.FFXI.Things
                     //Monstrosity Related
                     "instinct-cost",
                     // Special Stuff
-                    "icon", "unknown-1", "unknown-2", "unknown-3", "unknown-4",
+                    "icon", "unknown-1", "unknown-2", "unknown-3", "unknown-4", "unknown-5",
                 });
             }
         }
@@ -93,7 +93,7 @@ namespace PlayOnline.FFXI.Things
         // UsableItem-Specific
         private ushort? ActivationTime_;
         // Equipment-Specific
-        private ushort? iLevel_;
+        private byte? iLevel_;
         private ushort? Level_;
         private EquipmentSlot? Slots_;
         private Race? Races_;
@@ -123,6 +123,7 @@ namespace PlayOnline.FFXI.Things
         private ushort? Unknown2_;
         private uint? Unknown3_;
         private uint? Unknown4_;
+        private byte? Unknown5_;
 
         #endregion
 
@@ -169,6 +170,7 @@ namespace PlayOnline.FFXI.Things
             this.Unknown2_ = null;
             this.Unknown3_ = null;
             this.Unknown4_ = null;
+            this.Unknown5_ = null;
         }
 
         #endregion
@@ -251,6 +253,8 @@ namespace PlayOnline.FFXI.Things
                     return this.Unknown3_.HasValue;
                 case "unknown-4":
                     return this.Unknown4_.HasValue;
+                case "unknown-5":
+                    return this.Unknown5_.HasValue;
                 case "use-delay":
                     return this.UseDelay_.HasValue;
                 case "valid-targets":
@@ -351,6 +355,8 @@ namespace PlayOnline.FFXI.Things
                     return (!this.Unknown3_.HasValue ? String.Empty : String.Format("{0:X8} ({0})", this.Unknown3_.Value));
                 case "unknown-4":
                     return (!this.Unknown4_.HasValue ? String.Empty : String.Format("{0}", this.Unknown4_.Value));
+                case "unknown-5":
+                    return (!this.Unknown5_.HasValue ? String.Empty : String.Format("{0}", this.Unknown5_.Value));
                 // Nullables - Time Values
                 case "activation-time":
                     return (!this.ActivationTime_.HasValue ? String.Empty : this.FormatTime(this.ActivationTime_.Value / 4.0));
@@ -446,6 +452,8 @@ namespace PlayOnline.FFXI.Things
                     return (!this.Unknown3_.HasValue ? null : (object)this.Unknown3_.Value);
                 case "unknown-4":
                     return (!this.Unknown4_.HasValue ? null : (object)this.Unknown4_.Value);
+                case "unknown-5":
+                    return (!this.Unknown5_.HasValue ? null : (object)this.Unknown5_.Value);
                 case "use-delay":
                     return (!this.UseDelay_.HasValue ? null : (object)this.UseDelay_.Value);
                 case "valid-targets":
@@ -491,10 +499,10 @@ namespace PlayOnline.FFXI.Things
                     this.ID_ = (uint)this.LoadUnsignedIntegerField(Node);
                     break;
                 case "iLevel:":
-                    this.iLevel_ = (ushort)this.LoadUnsignedIntegerField(Node);
+                    this.iLevel_ = (byte)this.LoadUnsignedIntegerField(Node);
                     break;
                 case "instinct-cost:":
-                    this.iLevel_ = (ushort)this.LoadUnsignedIntegerField(Node);
+                    this.InstinctCost_ = (ushort)this.LoadUnsignedIntegerField(Node);
                     break;
                 case "jobs":
                     this.Jobs_ = (Job)this.LoadHexField(Node);
@@ -561,6 +569,9 @@ namespace PlayOnline.FFXI.Things
                     break;
                 case "unknown-4":
                     this.Unknown4_ = (uint)this.LoadUnsignedIntegerField(Node);
+                    break;
+                case "unknown-5":
+                    this.Unknown5_ = (byte)this.LoadUnsignedIntegerField(Node);
                     break;
                 case "use-delay":
                     this.UseDelay_ = (ushort)this.LoadUnsignedIntegerField(Node);
@@ -732,7 +743,8 @@ namespace PlayOnline.FFXI.Things
                 this.UseDelay_ = BR.ReadUInt16();
                 this.ReuseDelay_ = BR.ReadUInt32();
                 this.Unknown2_ = BR.ReadUInt16();
-                this.iLevel_ = BR.ReadUInt16();
+                this.iLevel_ = BR.ReadByte();
+                this.Unknown5_ = BR.ReadByte();
                 this.Unknown3_ = BR.ReadUInt32();
             }
             else if (T == Type.PuppetItem)
