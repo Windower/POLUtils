@@ -124,6 +124,8 @@ namespace PlayOnline.FFXI.Things
         private uint? Unknown3_;
         private uint? Unknown4_;
         private byte? Unknown5_;
+        // New, u16 field added by the 0xC00 -> 0x1400 record shift; not exposed anywhere.
+        private ushort? UnknownPostRaces_;
 
         #endregion
 
@@ -171,6 +173,7 @@ namespace PlayOnline.FFXI.Things
             this.Unknown3_ = null;
             this.Unknown4_ = null;
             this.Unknown5_ = null;
+            this.UnknownPostRaces_ = null;
         }
 
         #endregion
@@ -619,7 +622,7 @@ namespace PlayOnline.FFXI.Things
                 while (BR.BaseStream.Position != BR.BaseStream.Length)
                 {
                     FirstItem = BR.ReadBytes(0x4);
-                    BR.BaseStream.Position += (0xc00 - 0x4);
+                    BR.BaseStream.Position += (0x1400 - 0x4);
                     FFXIEncryption.Rotate(FirstItem, 5);
                     {
                         // Type -> Based on ID
@@ -689,7 +692,7 @@ namespace PlayOnline.FFXI.Things
             this.Clear();
             try
             {
-                byte[] ItemBytes = BR.ReadBytes(0xC00);
+                byte[] ItemBytes = BR.ReadBytes(0x1400);
                 FFXIEncryption.Rotate(ItemBytes, 5);
                 BR = new BinaryReader(new MemoryStream(ItemBytes, false));
                 BR.BaseStream.Seek(0x280, SeekOrigin.Begin);
@@ -707,22 +710,25 @@ namespace PlayOnline.FFXI.Things
             {
                 return false;
             }
-            // Common Fields (14 bytes)
+            // Common Fields (16 bytes)
             this.ID_ = BR.ReadUInt32();
-            this.Flags_ = (ItemFlags)BR.ReadUInt16();
+            this.Flags_ = (ItemFlags)BR.ReadUInt16(); 
+            BR.ReadBytes(0x02); // reserved
             this.StackSize_ = BR.ReadUInt16(); // 0xe0ff for Currency, which kinda suggests this is really 2 separate bytes
             this.Type_ = (ItemType)BR.ReadUInt16();
             this.ResourceID_ = BR.ReadUInt16();
             this.ValidTargets_ = (ValidTarget)BR.ReadUInt16();
-            // Extra Fields (22/30/10/6/2 bytes for Armor/Weapon/Puppet/Item/UsableItem)
+            // Extra Fields (24/32/10/8/2 bytes for Armor/Weapon/Puppet/Item/UsableItem)
 
             if (T == Type.Armor || T == Type.Weapon)
             {
                 this.Level_ = BR.ReadUInt16();
                 this.Slots_ = (EquipmentSlot)BR.ReadUInt16();
                 this.Races_ = (Race)BR.ReadUInt16();
+                this.UnknownPostRaces_ = BR.ReadUInt16(); // new field, see remarks above
                 this.Jobs_ = (Job)BR.ReadUInt32();
-                this.SuperiorLevel_ = BR.ReadUInt16();
+                this.SuperiorLevel_ = BR.ReadByte(); 
+                BR.ReadByte(); // unknown
                 if (T == Type.Armor)
                 {
                     this.ShieldSize_ = BR.ReadUInt16();
@@ -755,6 +761,7 @@ namespace PlayOnline.FFXI.Things
             }
             else if (T == Type.Instinct)
             {
+                this.UnknownPostRaces_ = BR.ReadUInt16(); // new field, see remarks above
                 BR.ReadUInt32();
                 BR.ReadUInt32();
                 BR.ReadUInt16();
@@ -766,6 +773,7 @@ namespace PlayOnline.FFXI.Things
             }
             else if (T == Type.Item)
             {
+                this.UnknownPostRaces_ = BR.ReadUInt16(); // new field, see remarks above
                 switch (this.Type_.Value)
                 {
                     case ItemType.Flowerpot:
@@ -787,7 +795,7 @@ namespace PlayOnline.FFXI.Things
                 this.ActivationTime_ = BR.ReadUInt16();
                 this.Unknown1_ = BR.ReadUInt32();
                 this.Unknown3_ = BR.ReadUInt32();
-                this.Unknown4_ = BR.ReadUInt32();
+                this.Unknown4_ = BR.ReadUInt16();
             }
             else if (T == Type.Currency)
             {
@@ -808,6 +816,7 @@ namespace PlayOnline.FFXI.Things
                 {
                     BR.ReadInt32();
                 }
+                this.UnknownPostRaces_ = BR.ReadUInt16(); // new field, see remarks above
             }
             // Next Up: Strings (variable size)
             long StringBase = BR.BaseStream.Position;
