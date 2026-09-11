@@ -100,8 +100,8 @@ namespace PlayOnline.FFXI
                 {
                     Item.Type T;
                     Item.DeduceType(BR, out T);
-                    long Offset = (ID & 0xfff) * 0xc00;
-                    if (BR.BaseStream.Length >= Offset + 0xc00)
+                    long Offset = (ID & 0xfff) * 0x1400;
+                    if (BR.BaseStream.Length >= Offset + 0x1400)
                     {
                         Item I = new Item();
                         BR.BaseStream.Position = Offset;

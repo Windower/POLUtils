@@ -24,7 +24,7 @@ namespace PlayOnline.FFXI.FileTypes
             {
                 ProgressCallback(I18N.GetText("FTM:CheckingFile"), 0);
             }
-            if ((BR.BaseStream.Length % 0xC00) != 0 || BR.BaseStream.Length < 0xc000 || BR.BaseStream.Position != 0)
+            if ((BR.BaseStream.Length % 0x1400) != 0 || BR.BaseStream.Length < 0x14000 || BR.BaseStream.Position != 0)
             {
                 return TL;
             }
@@ -36,7 +36,7 @@ namespace PlayOnline.FFXI.FileTypes
             {
                 ProgressCallback(I18N.GetText("FTM:LoadingData"), 0);
             }
-            long ItemCount = BR.BaseStream.Length / 0xC00;
+            long ItemCount = BR.BaseStream.Length / 0x1400;
             long CurrentItem = 0;
             while (BR.BaseStream.Position < BR.BaseStream.Length)
             {
@@ -53,7 +53,7 @@ namespace PlayOnline.FFXI.FileTypes
                 TL.Add(I);
                 // A currency DAT currently has 1 "real" item and 15 dummy entries (all NULs); a better thing to do would be to break if such a dummy entry
                 // is seen, but since we currently detect currency from its 0xFFFF ID, this is safe enough for now.
-                if (BR.BaseStream.Length == 0xc000 && T == Item.Type.Currency)
+                if (BR.BaseStream.Length == 0x14000 && T == Item.Type.Currency)
                 {
                     break;
                 }
